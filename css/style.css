@@ -118,7 +118,7 @@ section h2{
 }
 
 
-/* SEC01 VISION
+/* VISION
 ------------------------------------------------------------*/
 
 .vision{
@@ -128,7 +128,7 @@ section h2{
 }
 
 
-/* SEC02 MESSAGE
+/* MESSAGE
 ------------------------------------------------------------*/
 .wrap{
 	clear: both;
@@ -145,7 +145,7 @@ section h2{
 }
 
 
-/* SEC03 SERVICE MESSAGE STORY
+/* SERVICE MESSAGE STORY
 ------------------------------------------------------------*/
 .col3 li{
 	margin-bottom: 50px;
@@ -158,18 +158,30 @@ section h2{
 }
 
 
-/* SEC04 STORY & SUCCESS
+/* App
 ------------------------------------------------------------*/
 #sec04{
-	background: url(../images/bgSec04.jpg) no-repeat 100% 100% fixed;
+	background: url(../images/flower.jpg) no-repeat 100% 100% fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
-	color: #fff;
+	color: #ffffff;
+}
+
+.appname{
+	color: #000000;
 }
 
 
-/* SEC05 PROFILE
+/* Privacy
 ------------------------------------------------------------*/
+.privacy{
+	color: #2f4f4f;
+}
+
+.twitter{
+	color: #2f4f4f;
+}
+
 #sec05{
 	padding-top: 50px;
 }
