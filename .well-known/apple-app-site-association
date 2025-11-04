@@ -6,7 +6,6 @@
         "components": [
           {
             "/": "/que-app/friend",
-            "?": { "friendId": "*" },
             "comment": "Open app on invite link with friendId"
           }
         ]
