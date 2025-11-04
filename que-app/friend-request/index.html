@@ -12,68 +12,33 @@
   <style>
     :root { color-scheme: light dark; }
     body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
+      margin: 0; padding: 0; min-height: 100vh;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
                    "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
-      /* 背景グラデーション：水色 → 緑系 */
+      /* 背景グラデーション：水色 → 緑 → 白 */
       background: linear-gradient(160deg, #a6f0ff 0%, #c5fce3 40%, #ffffff 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
     }
-
     .card {
       background: rgba(255,255,255,0.9);
       box-shadow: 0 8px 24px rgba(0,0,0,0.1);
       border-radius: 20px;
-      max-width: 380px;
-      width: 90%;
-      padding: 2rem;
-      text-align: center;
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
+      max-width: 380px; width: 90%;
+      padding: 2rem; text-align: center;
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
       animation: fadeIn 0.6s ease;
     }
-
-    h1 {
-      margin-top: 0;
-      font-size: 1.6rem;
-      color: #2c4c4b;
-    }
-
-    p {
-      margin: 0.6rem 0;
-      line-height: 1.5;
-      color: #334;
-    }
-
+    h1 { margin-top: 0; font-size: 1.6rem; color: #2c4c4b; }
+    p { margin: 0.6rem 0; line-height: 1.5; color: #334; }
     button, a.btn {
-      display: inline-block;
-      padding: 0.9rem 1.4rem;
-      margin-top: 1rem;
-      border: none;
-      border-radius: 12px;
-      font-size: 1rem;
-      background: linear-gradient(135deg, #5FB8B8, #7FEACA);
-      color: #fff;
-      text-decoration: none;
-      cursor: pointer;
-      transition: opacity 0.2s ease;
+      display: inline-block; padding: 0.9rem 1.4rem; margin-top: 1rem;
+      border: none; border-radius: 12px; font-size: 1rem;
+      background: linear-gradient(135deg, #5FB8B8, #7FEACA); color: #fff;
+      text-decoration: none; cursor: pointer; transition: opacity .2s ease;
     }
-    button:hover, a.btn:hover { opacity: 0.85; }
-
-    .muted {
-      opacity: 0.7;
-      font-size: 0.9rem;
-      margin-top: 1rem;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    button:hover, a.btn:hover { opacity: .85; }
+    .muted { opacity: .7; font-size: .9rem; margin-top: 1rem; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(12px);} to { opacity:1; transform: none;} }
   </style>
 </head>
 <body>
@@ -81,65 +46,84 @@
     <h1 id="title">Open in Que App</h1>
     <p id="lead">Tap below to open this friend request in the app.</p>
 
+    <!-- 手動起動ボタン（残します） -->
     <button id="open-app">Open in App</button>
     <p id="note" class="muted">If it doesn’t open automatically, you’ll be redirected to the App Store.</p>
 
-    <p><a id="open-store" class="btn" href="https://apps.apple.com/app/id6752609590">
-      Open App Store
-    </a></p>
+    <p><a id="open-store" class="btn" href="https://apps.apple.com/app/id6752609590">Open App Store</a></p>
   </div>
 
   <script>
     (function() {
       const APP_ID = '6752609590';
-      const SCHEME_BASE = 'que-app://friend-request?friendId=';
+      const SCHEME_BASE = 'que-app://friend-request?friendId=';  // 指定のスキーム
       const STORE_URL = `https://apps.apple.com/app/id${APP_ID}`;
-      const fallbackDelay = 1200;
+      const fallbackDelay = 1200;  // 自動フォールバックまでの待機時間(ms)
+      let autoTimer = null;
+      let userInteracted = false;
 
-      // 言語辞書
+      // i18n
       const T = {
         en: {
           title: "Open in Que App",
-          lead: "Tap below to open this friend request in the app.",
+          lead: "We’re opening this friend request in the app.",
           openApp: "Open in App",
           note: "If it doesn’t open automatically, you’ll be redirected to the App Store.",
           openStore: "Open App Store"
         },
         ja: {
           title: "Queアプリで開く",
-          lead: "下のボタンをタップすると、アプリで友達リクエストを開きます。",
+          lead: "アプリで友達リクエストを自動的に開いています。",
           openApp: "アプリで開く",
           note: "自動で開かない場合は、App Storeに移動します。",
           openStore: "App Storeを開く"
         }
       };
 
-      // 言語判定
       const qs = new URLSearchParams(location.search);
       const qLang = qs.get('lang');
       let lang = 'en';
       if (qLang === 'ja' || navigator.language.toLowerCase().startsWith('ja')) lang = 'ja';
 
-      // friendId取得
       const friendId = (qs.get('friendId') || '').replace(/[^a-zA-Z0-9._-]/g, '');
       const schemeURL = `${SCHEME_BASE}${encodeURIComponent(friendId)}`;
 
-      // Smart App Bannerのapp-argumentを動的変更
+      // Smart App Banner の app-argument を現在のURLに置換
       const meta = document.getElementById('smart-app-banner');
       if (meta) {
         const content = `app-id=${APP_ID}, app-argument=https://sadasada1729.github.io/que-app/friend-request/?friendId=${friendId}`;
         meta.setAttribute('content', content);
       }
 
-      // 文言反映
+      // 文言
       document.getElementById('title').textContent = T[lang].title;
-      document.getElementById('lead').textContent = T[lang].lead;
+      document.getElementById('lead').textContent  = T[lang].lead;
       document.getElementById('open-app').textContent = T[lang].openApp;
-      document.getElementById('note').textContent = T[lang].note;
+      document.getElementById('note').textContent  = T[lang].note;
       document.getElementById('open-store').textContent = T[lang].openStore;
 
-      // ボタン動作
+      // 自動起動 → 失敗時フォールバック
+      function tryAutoOpen() {
+        const start = Date.now();
+        // Deeplink を試す
+        window.location.href = schemeURL;
+
+        // 失敗（アプリ未インストール/ブロック）時だけ App Store へ
+        autoTimer = setTimeout(() => {
+          const stayed = !document.hidden && (Date.now() - start) < (fallbackDelay + 500);
+          if (!userInteracted && stayed) {
+            window.location.href = STORE_URL;
+          }
+        }, fallbackDelay);
+      }
+
+      // 初回自動実行（ロード直後）。一部環境ではブロックされますが、失敗時は自動でフォールバック。
+      window.addEventListener('load', tryAutoOpen);
+
+      // 手動ボタン：押されたら自動フォールバックはキャンセル
       document.getElementById('open-app').addEventListener('click', function() {
+        userInteracted = true;
+        if (autoTimer) { clearTimeout(autoTimer); autoTimer = null; }
         const start = Date.now();
         window.location.href = schemeURL;
         setTimeout(() => {
@@ -151,3 +135,4 @@
   </script>
 </body>
 </html>
+
