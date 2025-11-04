@@ -1,125 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Open in App – Que</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <title>Open in Que App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Smart App Banner（初期値は friendId 未挿入。直後の <script> で動的に差し替え） -->
-  <meta id="smart-app-banner" name="apple-itunes-app" content="app-id=6752609590">
-
-  <!-- 基本OG（任意） -->
-  <meta property="og:title" content="Open in App – Que">
-  <meta property="og:description" content="Open the invite in the Que app.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sadasada1729.github.io/que-app/friend">
+  <!-- Smart App Banner（Safari専用） -->
+  <meta name="apple-itunes-app"
+        content="app-id=6752609590, app-argument=https://sadasada1729.github.io/que-app/friend-request/?friendId={{FRIEND_ID}}">
 
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Apple Color Emoji", "Segoe UI Emoji", sans-serif; margin: 0; padding: 24px; line-height: 1.6; }
-    .container { max-width: 680px; margin: 0 auto; }
-    h1 { margin: 0 0 12px; font-size: 1.6rem; }
-    p { margin: 0 0 12px; }
-    .btn { display: inline-block; padding: 12px 16px; border-radius: 10px; text-decoration: none; border: 1px solid currentColor; }
-    .muted { opacity: .72; font-size: .95rem; }
-    code { padding: .2em .35em; border-radius: 6px; background: rgba(127,127,127,.12); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans JP", sans-serif;
+      margin: 0; padding: 2rem; line-height: 1.6;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      min-height: 100vh;
+    }
+    h1 { margin-bottom: 1rem; font-size: 1.5rem; }
+    p { margin: 0.5rem 0; text-align: center; }
+    button, a.btn {
+      padding: 0.8rem 1.2rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+      background: #5FB8B8;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    button:hover, a.btn:hover { opacity: 0.85; }
+    .muted { opacity: 0.7; font-size: 0.9rem; margin-top: 1rem; }
   </style>
-
-  <script>
-    // --- tiny i18n ---
-    const M = {
-      en: {
-        title: "Open in App",
-        lead: "If you have the app installed, tap the banner at the top to open this invite in Que.",
-        fallback: "If you don't have the app, you can get it from the App Store:",
-        openAppStore: "Open in App Store",
-        debug: "Invite ID",
-        note: "If the banner doesn't appear, use the button above."
-      },
-      ja: {
-        title: "アプリで開く",
-        lead: "アプリをインストール済みの場合は、画面上部のバナーからQueでこの招待を開けます。",
-        fallback: "未インストールの方は App Store から入手できます：",
-        openAppStore: "App Storeで開く",
-        debug: "招待ID",
-        note: "バナーが表示されない場合は、上のボタンをご利用ください。"
-      }
-    };
-
-    // 言語決定（?lang=en/ja 優先 → ブラウザ言語）
-    function decideLang() {
-      const qs = new URLSearchParams(location.search);
-      const ql = qs.get('lang');
-      if (ql && /^(en|ja)$/.test(ql)) return ql;
-      const nav = (navigator.language || 'en').toLowerCase();
-      return nav.startsWith('ja') ? 'ja' : 'en';
-    }
-
-    // 安全なクエリ取得
-    function getFriendId() {
-      const qs = new URLSearchParams(location.search);
-      // 簡易サニタイズ（表示用途のみ。サーバで使う場合は必ず厳格にサニタイズ/検証してください）
-      return (qs.get('friendId') || '').replace(/[^a-zA-Z0-9._-]/g, '').slice(0, 128);
-    }
-
-    // Smart App Banner の app-argument を現在URLに差し替え（friendIdをアプリへ渡す）
-    function setSmartAppBanner(appId) {
-      const meta = document.getElementById('smart-app-banner');
-      if (!meta) return;
-      // 現在の完全URL（lang は渡してもOK / 不要なら削除）
-      const appArgument = location.href;
-      meta.setAttribute('content', `app-id=${appId}, app-argument=${appArgument}`);
-    }
-
-    // App Store へのフォールバック遷移（任意：数百ms後に自動遷移したい場合）
-    function setupAutoFallback(appId) {
-      // ユーザー体験を損ねないよう、強制自動遷移は避けるのが無難。必要ならコメントアウト解除。
-      setTimeout(() => { location.href = `https://apps.apple.com/app/id${appId}`; }, 1200);
-    }
-
-    // DOM 塗り込み
-    document.addEventListener('DOMContentLoaded', () => {
-      const APP_ID = '6752609590';
-      const DOMAIN = 'sadasada1729.github.io';
-
-      const lang = decideLang();
-      document.documentElement.lang = lang;
-
-      const t = M[lang];
-      const fid = getFriendId();
-
-      setSmartAppBanner(APP_ID);
-      setupAutoFallback(APP_ID);
-
-      // 文言描画
-      document.getElementById('h1').textContent = t.title;
-      document.getElementById('lead').textContent = t.lead;
-      document.getElementById('fallback-label').textContent = t.fallback;
-      document.getElementById('btn-store').textContent = t.openAppStore;
-      document.getElementById('note').textContent = t.note;
-
-      // デバッグ表示（任意 / 本番では削除可）
-      if (fid) {
-        document.getElementById('debug').innerHTML =
-          `${t.debug}: <code>${fid}</code>`;
-      }
-
-      // App Store ボタン
-      const storeUrl = `https://apps.apple.com/app/id${APP_ID}`;
-      const btn = document.getElementById('btn-store');
-      btn.href = storeUrl;
-    });
-  </script>
 </head>
 <body>
-  <div class="container">
-    <h1 id="h1">Open in App</h1>
-    <p id="lead" class="muted">If you have the app installed, tap the banner above.</p>
+  <h1>Open in Que App</h1>
+  <p>If you have the app installed, tap below to open your friend request.</p>
 
-    <p id="fallback-label">If you don't have the app, you can get it from the App Store:</p>
-    <p><a id="btn-store" class="btn" href="https://apps.apple.com/app/id6752609590">Open in App Store</a></p>
+  <!-- 内蔵ブラウザ優先: カスタムスキーム経由で開く -->
+  <button id="open-app">Open in App</button>
 
-    <p id="note" class="muted">If the banner doesn't appear, use the button above.</p>
-  </div>
+  <p class="muted">If it doesn’t open automatically, you’ll be redirected to the App Store.</p>
+
+  <p><a class="btn" href="https://apps.apple.com/app/id6752609590">Open App Store</a></p>
+
+  <script>
+    (function() {
+      const APP_ID = '6752609590';
+      const SCHEME_BASE = 'queapp://friend-request?friendId=';
+      const STORE_URL = `https://apps.apple.com/app/id${APP_ID}`;
+      const fallbackDelay = 1200;
+
+      // friendId を取得
+      const qs = new URLSearchParams(location.search);
+      const friendId = (qs.get('friendId') || '').replace(/[^a-zA-Z0-9._-]/g, '');
+      const schemeURL = `${SCHEME_BASE}${encodeURIComponent(friendId)}`;
+
+      // Smart App Bannerのapp-argumentを動的差し替え
+      const meta = document.querySelector('meta[name="apple-itunes-app"]');
+      if (meta) {
+        const content = `app-id=${APP_ID}, app-argument=https://sadasada1729.github.io/que-app/friend-request/?friendId=${friendId}`;
+        meta.setAttribute('content', content);
+      }
+
+      // 「Open in App」ボタン押下時
+      document.getElementById('open-app').addEventListener('click', function() {
+        const start = Date.now();
+        window.location.href = schemeURL;
+
+        // 失敗（アプリ未インストール等）時は App Store にフォールバック
+        setTimeout(() => {
+          const stayed = !document.hidden && (Date.now() - start) < (fallbackDelay + 500);
+          if (stayed) window.location.href = STORE_URL;
+        }, fallbackDelay);
+      });
+    })();
+  </script>
 </body>
 </html>
+
