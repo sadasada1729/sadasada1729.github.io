@@ -5,7 +5,7 @@
         "appIDs": ["M92QFT5Y23.com.koki.osada.hundred-things-this-year.prod"],
         "components": [
           {
-            "/": "/que-app/friend",
+            "/": "/que-app/*",
             "comment": "Open app on invite link with friendId"
           }
         ]
