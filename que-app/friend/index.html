@@ -74,7 +74,7 @@
     // App Store へのフォールバック遷移（任意：数百ms後に自動遷移したい場合）
     function setupAutoFallback(appId) {
       // ユーザー体験を損ねないよう、強制自動遷移は避けるのが無難。必要ならコメントアウト解除。
-      // setTimeout(() => { location.href = `https://apps.apple.com/app/id${appId}`; }, 1200);
+      setTimeout(() => { location.href = `https://apps.apple.com/app/id${appId}`; }, 1200);
     }
 
     // DOM 塗り込み
@@ -120,8 +120,6 @@
     <p><a id="btn-store" class="btn" href="#">Open in App Store</a></p>
 
     <p id="note" class="muted">If the banner doesn't appear, use the button above.</p>
-
-    <!-- 任意：friendIdの確認用（本番では外してOK） -->
   </div>
 </body>
 </html>
