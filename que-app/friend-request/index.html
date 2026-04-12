@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <title>Open in Que App</title>
@@ -107,6 +107,8 @@
       }
 
       // 文言
+      document.documentElement.lang = lang;
+      document.title = T[lang].title;
       document.getElementById('title').textContent = T[lang].title;
       document.getElementById('lead').textContent  = T[lang].lead;
       document.getElementById('open-app').textContent = T[lang].openApp;
@@ -146,4 +148,3 @@
   </script>
 </body>
 </html>
-
