@@ -2,9 +2,9 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="医療とIT、陸上競技">
-<meta name="viewport" content="width=device-width">
-<title>Developer Site | Runnerの未来へ</title>
+<meta name="description" content="Koki Osada / Sadasada の個人開発アプリ紹介。医療、ランニング、iOSアプリ開発。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koki Osada | Developer Portfolio</title>
 <link rel="stylesheet" media="all" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script src="js/script.js"></script>
@@ -17,11 +17,11 @@
     <div class="panel">
         <ul>
             <li><a href="#header">TOP</a></li>
-            <li><a href="#sec01">VISION</a></li>
-            <li><a href="#sec02">MESSAGE</a></li>
-            <li><a href="#sec03">SERVICE</a></li>
-            <li><a href="#sec04">STORY</a></li>
-            <li><a href="#sec05">PRIVACY POLICY</a></li>
+            <li><a href="#sec01">ABOUT</a></li>
+            <li><a href="#sec02">APPS</a></li>
+            <li><a href="#sec03">STORY</a></li>
+            <li><a href="#sec04">POLICY</a></li>
+            <li><a href="#sec05">CONTACT</a></li>
         </ul>
     </div>
 </nav>
@@ -29,119 +29,210 @@
 <header id="header">
     <img src="images/view.jpg" alt="">
     <div id="slogan">
-        <h1>Sadasada</h1>
-        <h2>医療　IT　ランナー</h2>
+        <p class="eyebrow">Medical Doctor / Runner / iOS Developer</p>
+        <h1>Koki Osada</h1>
+        <h2>医療、陸上競技、日々の不便からアプリを作っています。</h2>
+        <div class="heroLinks">
+            <a href="https://apps.apple.com/jp/developer/koki-osada/id1501162473">App Store</a>
+            <a href="#sec02">Apps</a>
+        </div>
     </div>
 </header>
 
-<!-- VISION -->
-<section id="sec01">
-    <header>
-        <h2>VISION</h2>
-    </header>
-    <div class="vision">
-        医療とIT、そして陸上競技の融合を目指した新たなアプリケーション、サービスの開発を目指しています。
-    </div>
-</section>
-<!-- // VISION -->
+<main>
+    <section id="sec01" class="introSection">
+        <div class="inner">
+            <header>
+                <p class="sectionLabel">ABOUT</p>
+                <h2>Sadasada</h2>
+            </header>
+            <p class="leadText">Koki Osada として App Store でアプリを公開しています。個人開発を軸に、医療現場で感じる学習や記録の課題、ランナーとして競技現場で欲しかった道具、そして日常の小さな不便を iOS アプリに落とし込んでいます。</p>
+            <ul class="statGrid">
+                <li>
+                    <span class="statNumber">14万DL</span>
+                    <span class="statLabel">Multi-Timer 累計ダウンロード</span>
+                    <span class="statNote">2026年6月16日現在</span>
+                </li>
+                <li>
+                    <span class="statNumber">1.7万DL</span>
+                    <span class="statLabel">スターターキット 累計ダウンロード</span>
+                    <span class="statNote">2026年6月16日現在</span>
+                </li>
+                <li>
+                    <span class="statNumber">6 Apps</span>
+                    <span class="statLabel">App Store 掲載中のアプリ</span>
+                    <span class="statNote">iPhone / iPad 向け</span>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-<!-- MESSAGE -->
-<section id="sec02">
-    <div class="wrap">
-        <p class="bg"><img src="images/md_view.jpg" alt=""></p>
-        <div class="txt">
-            <div class="vMid">
-                <h2>MESSAGE</h2>
-                <p>初期研修医として杜の都で修行を積んでいます。時間を見つけ個人開発、外部との共同開発を行っています。</p>
+    <section id="sec02" class="appsSection">
+        <div class="inner">
+            <header>
+                <p class="sectionLabel">APPS</p>
+                <h2>Developed Apps</h2>
+            </header>
+            <div class="appGrid">
+                <article class="appCard featured">
+                    <a class="appVisual" href="./Multi_Timer_jpn/index.html">
+                        <img src="images/app-icons/multi-timer.jpg" alt="Multi-Timer app icon" width="512" height="512">
+                    </a>
+                    <div class="appBody">
+                        <p class="appCategory">ヘルスケア / フィットネス</p>
+                        <h3>Multi-Timer</h3>
+                        <p>複数人のストップウォッチやタイマーを同時に扱える計測アプリです。部活のマネージャー、コーチ、練習会の運営など、「一人ずつ計っていたら追いつかない」場面を起点に作りました。</p>
+                        <p class="appMetric">累計14万DL <span>2026年6月16日現在</span></p>
+                        <div class="appLinks">
+                            <a href="./Multi_Timer_jpn/index.html">マーケティングページ</a>
+                            <a href="https://apps.apple.com/jp/app/multi-timer-%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%B9%E3%83%88%E3%83%83%E3%83%97%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81-%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id1501162474">App Store</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="appCard featured">
+                    <a class="appVisual" href="./StarterKit/app/jp/index.html">
+                        <img src="images/app-icons/starterkit.jpg" alt="スターターキット app icon" width="512" height="512">
+                    </a>
+                    <div class="appBody">
+                        <p class="appCategory">スポーツ</p>
+                        <h3>スターターキット</h3>
+                        <p>陸上競技のスタート練習を手軽に行うためのアプリです。練習環境を大がかりにしなくても、号砲に近い体験を用意できるように設計しています。</p>
+                        <p class="appMetric">累計1.7万DL <span>2026年6月16日現在</span></p>
+                        <div class="appLinks">
+                            <a href="./StarterKit/app/jp/index.html">マーケティングページ</a>
+                            <a href="https://apps.apple.com/jp/app/%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88/id6473805472">App Store</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="appCard">
+                    <a class="appVisual" href="./SprintLens/app/jp/index.html">
+                        <img src="SprintLens/app/jp/images/app-icon.png" alt="シンプル写真判定 app icon" width="288" height="288">
+                    </a>
+                    <div class="appBody">
+                        <p class="appCategory">ユーティリティ</p>
+                        <h3>シンプル写真判定</h3>
+                        <p>2台のスマホをスタート地点とゴール地点に置き、短距離走のタイム計測を支えるアプリです。写真判定と手動計時を、競技現場で扱いやすい形にまとめています。</p>
+                        <div class="appLinks">
+                            <a href="./SprintLens/app/jp/index.html">マーケティングページ</a>
+                            <a href="https://apps.apple.com/jp/developer/koki-osada/id1501162473">App Store</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="appCard">
+                    <a class="appVisual" href="./Multi_Timer_Connect/app/jp/index.html">
+                        <img src="images/app-icons/multi-timer-connect.jpg" alt="Multi-Timer Connect app icon" width="512" height="512">
+                    </a>
+                    <div class="appBody">
+                        <p class="appCategory">仕事効率化</p>
+                        <h3>Multi-Timer Connect</h3>
+                        <p>Multi-Timer の思想を複数端末の連携に広げたアプリです。現場の計測を一人の手元だけに閉じず、チームや複数デバイスで扱うための実験でもあります。</p>
+                        <div class="appLinks">
+                            <a href="./Multi_Timer_Connect/app/jp/index.html">マーケティングページ</a>
+                            <a href="https://apps.apple.com/jp/app/multi-timer-connect/id6471321727">App Store</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="appCard">
+                    <a class="appVisual" href="./Communi/app/jp/index.html">
+                        <img src="Communi/app/jp/images/communi.png" alt="Communi app image" width="288" height="288">
+                    </a>
+                    <div class="appBody">
+                        <p class="appCategory">教育</p>
+                        <h3>Communi 英会話</h3>
+                        <p>英会話の練習を、より自然な対話の反復として続けるためのアプリです。言語学習を「開いて、少し話して、また戻れる」軽い体験に寄せています。</p>
+                        <div class="appLinks">
+                            <a href="./Communi/app/jp/index.html">マーケティングページ</a>
+                            <a href="https://apps.apple.com/jp/app/communi-fluent-conversations/id6744375629">App Store</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="appCard">
+                    <a class="appVisual" href="./Medipatho/index.html">
+                        <img src="images/app-icons/pathogen-input.jpg" alt="Pathogen Input app icon" width="512" height="512">
+                    </a>
+                    <div class="appBody">
+                        <p class="appCategory">教育</p>
+                        <h3>Pathogen Input</h3>
+                        <p>感染症法指定疾患を、単なる暗記ではなく繰り返し触れながら覚えるための学習アプリです。医療学習とゲーム感覚を近づける試みとして開発しました。</p>
+                        <div class="appLinks">
+                            <a href="./Medipatho/index.html">プライバシーポリシー</a>
+                            <a href="https://apps.apple.com/jp/app/medipatho/id1506576751">App Store</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
-    </div>
-    <div id="sec02_02" class="wrap">
-        <p class="bg"><img src="images/sheep_me.jpg" alt=""></p>
-        <div class="txt">
-            <div class="vMid">
-                <h2>MESSAGE</h2>
-                <p><b>陸上競技</b><br>
-                    ハーフ：72分01秒 <br>
-                    市民ランナーとしてフルマラソンも考えています。走れる限り、自己ベストを更新し続けるつもりです。 <br>
-                    <b>医療</b><br>
-                    眼科医を目指しています、ITと医療の橋渡しが目標です。<br>
-                    老後はニュージーランドで羊を飼いながら過ごす所存です。
-                </p>
+    </section>
+
+    <section id="sec03" class="storySection">
+        <div class="inner">
+            <header>
+                <p class="sectionLabel">STORY</p>
+                <h2>開発の背景</h2>
+            </header>
+            <div class="storyGrid">
+                <article>
+                    <h3>競技現場から作る</h3>
+                    <p>ランナーとして練習や記録会に関わる中で、タイム計測やスタート練習には小さな手間が多いと感じていました。Multi-Timer、スターターキット、シンプル写真判定は、その現場感から生まれたアプリです。</p>
+                </article>
+                <article>
+                    <h3>医療と学習をつなぐ</h3>
+                    <p>医療の勉強では、知識を覚えるだけでなく、繰り返し触れて自然に取り出せる形にすることが大切です。Pathogen Input では、学習の負荷を少しでも軽くする体験を目指しました。</p>
+                </article>
+                <article>
+                    <h3>小さく作り、長く直す</h3>
+                    <p>個人開発では、完璧な初版よりも、使われ方を見ながら直し続けることを大事にしています。DL数の伸びやレビューは、次に直すべき場所を教えてくれる大切な信号です。</p>
+                </article>
             </div>
         </div>
-    </div>
-</section>
-<!-- // MESSAGE -->
+    </section>
 
-<!-- SERVICE -->
-<section id="sec03">
-    <div class="inner">
-        <ul class="col3">
-            <li>
-                <a href="https://apps.apple.com/us/app/multi-timer-stopwatch-timer/id1501162474" class="appname"><h2>Multi-Timer</h2></a>
-                <a href="https://apps.apple.com/us/app/multi-timer-stopwatch-timer/id1501162474"><img src="images/icon.png" width="288" height="288" alt=""></a>
-                <p>部活のマネージャーなど複数のタイム計測が同時に必要になる人にとって最適のアプリです。
-タイマー機能もありトレーニングの時間管理や勉強、料理など様々な用途に使えます。</p>
-            </li>
-            <li>
-                <a href="https://apps.apple.com/us/app/medipatho/id1506576751" class="appname"><h2>Medipatho</h2></a>
-                <a href="https://apps.apple.com/us/app/medipatho/id1506576751"><img src="images/icon01.png" width="288" height="288" alt=""></a>
-                <p>数ある感染症法指定疾患をより楽しく覚えられるアプリを作りたいと病原体のイメージから全て開発しました。ゲームを繰り返すうちに何度も出てくるので自然と身についていくでしょう。</p>
-            </li>
-            <li>
-                <h2>New</h2>
-                <img src="images/runner2.jpg" width="288" height="288" alt="">
-                <p>これら以外に新たなサービスの開発に並行して取り組んでおります。ご意見、アイデア等があればぜひお気軽にご連絡ください。コントリビューションしていただけると大変ありがたいです。</p>
-            </li>
-        </ul>
-    </div>
-</section>
-<!-- // SERVICE -->
+    <section id="sec04" class="policySection">
+        <div class="inner">
+            <header>
+                <p class="sectionLabel">POLICY</p>
+                <h2>Privacy Policy / Terms</h2>
+            </header>
+            <div class="policyGrid">
+                <a href="./Multi_Timer/Japanese/index.html">Multi-Timer 日本語</a>
+                <a href="./Multi_Timer/English/index.html">Multi-Timer English</a>
+                <a href="./StarterKit/Privacy_Policy/jp/index.html">スターターキット 日本語</a>
+                <a href="./StarterKit/Privacy_Policy/en/index.html">StarterKit English</a>
+                <a href="./Multi_Timer_Connect/Privacy_Policy/jp/index.html">Multi-Timer Connect 日本語</a>
+                <a href="./Multi_Timer_Connect/Privacy_Policy/en/index.html">Multi-Timer Connect English</a>
+                <a href="./Communi/privacy_policy/jpn/index.html">Communi 日本語</a>
+                <a href="./Communi/privacy_policy/en/index.html">Communi English</a>
+                <a href="./SprintLens/privacy_policy/jp/index.html">シンプル写真判定 日本語</a>
+                <a href="./SprintLens/privacy_policy/en/index.html">SprintLens English</a>
+                <a href="./Que/privacy_policy/jp/index.html">Que 日本語</a>
+                <a href="./Que/privacy_policy/en/index.html">Que English</a>
+                <a href="./Medipatho/index.html">Pathogen Input</a>
+            </div>
+        </div>
+    </section>
 
-<!-- Privacy policy -->
-<section id="sec04">
-    <div class="inner">
-        <ul class="col2">
-            <li>
-                <h2>STORY</h2>
-                <p align="center">Pytyonによるデータ解析、機械学習の必要性を感じながらも物作りの楽しさに魅了されiOSエンジニアとして個人開発、チーム開発に取り組んでいます。ChatGPTが出てきましたが、これらのAI技術が使われていない分野は多くあるように感じます。</p>
-            </li>
-            <li>
-                <h2>FUTURE</h2>
-                <p align="center">眼科医、ランナー、iOSデベロッパーとして様々な分野のニーズに答えていきます</p>
-            </li>
-        </ul>
-    </div>
-</section>
-<!-- // Privacy policy -->
-
-<!-- PROFILE -->
-<section id="sec05">
-    <header>
-        <h2>PROFILE</h2>
-    </header>
-    <div class="inner">
-        <ul class="col2">
-            <li>
-                <h2>Privacy Policy</h2>
-                <p align="center"><b>Multi-Timer</b></p>
-                <p align="center"> <a href="./Multi_Timer/Japanese/index.html" class="privacy"><u>日本語</u></a> </p>
-                <p align="center"> <a href="./Multi_Timer/English/index.html" class="privacy"> <u>English</u></a></p>
-                <br><p align="center"><b>Medipatho</b></p>
-                <p align="center"> <a href="./Medipatho/index.html" class="privacy"><u>English/日本語</u></a> </p>
-            </li>
-            <li>
+    <section id="sec05" class="contactSection">
+        <div class="inner">
+            <header>
+                <p class="sectionLabel">CONTACT</p>
                 <h2>Contact</h2>
-                <p align="center">Mail: math1729abc@gmail.com</p>
-                <p align="center">Twitter: <a href="https://twitter.com/math1729abc" class="twitter">@math1729abc</a></p>
-            </li>
-        </ul>
-    </div>
-</section>
+            </header>
+            <p class="contactText">アプリの不具合報告、競技現場での使い方の相談、共同開発の相談などがあればご連絡ください。</p>
+            <div class="contactLinks">
+                <a href="mailto:math1729abc@gmail.com">math1729abc@gmail.com</a>
+                <a href="https://twitter.com/math1729abc">@math1729abc</a>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer id="footer">
-    Copyright(c) 2021 Koki Osada. All Rights Reserved. <!-- Es4tdVJK-->
+    Copyright(c) 2026 Koki Osada. All Rights Reserved.
 </footer>
 
 </body>
