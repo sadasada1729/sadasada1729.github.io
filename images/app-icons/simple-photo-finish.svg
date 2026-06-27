@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Simple Photo Finish icon</title>
+  <desc id="desc">A stopwatch and finish line motif.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <path fill="#fff" d="M132 124h248v56H132zM132 220h248v56H132zM132 316h248v56H132z" opacity=".16"/>
+  <path fill="#fff" d="M256 114a142 142 0 1 0 0 284 142 142 0 0 0 0-284Zm0 242a100 100 0 1 1 0-200 100 100 0 0 1 0 200Z"/>
+  <path fill="#fff" d="M236 70h40v58h-40zM203 76h106v34H203z"/>
+  <path fill="#fff" d="M276 248h78v32h-112V174h34z"/>
+  <path fill="#0f172a" d="M372 118h26v276h-26z" opacity=".32"/>
+  <path fill="#fff" d="M398 128h42v42h-42zM398 212h42v42h-42zM398 296h42v42h-42z"/>
+  <path fill="#0f172a" d="M398 170h42v42h-42zM398 254h42v42h-42zM398 338h42v42h-42z" opacity=".42"/>
+</svg>
