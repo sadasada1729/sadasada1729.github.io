@@ -299,6 +299,15 @@ section h2{
 	object-fit: cover;
 }
 
+.appVisualContain{
+	padding: 14px;
+	background: #f4f6f4;
+}
+
+.appVisualContain img{
+	object-fit: contain;
+}
+
 .appBody{
 	min-width: 0;
 }
