@@ -168,7 +168,7 @@
 
                 <article class="appCard">
                     <a class="appVisual" href="./PhotoFinish/privacy_policy/jpn/index.html">
-                        <img src="images/app-icons/simple-photo-finish.svg" alt="シンプル写真判定 app icon" width="512" height="512">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="シンプル写真判定 app icon" width="512" height="512" data-itunes-artwork-id="1570213012">
                     </a>
                     <div class="appBody">
                         <p class="appCategory">ユーティリティ</p>
@@ -266,6 +266,31 @@
 <footer id="footer">
     Copyright(c) 2026 Koki Osada. All Rights Reserved.
 </footer>
+
+<script>
+(function(){
+    var artwork = document.querySelector('[data-itunes-artwork-id]');
+    if (!artwork) {
+        return;
+    }
+
+    var appId = artwork.getAttribute('data-itunes-artwork-id');
+    var callbackName = 'setItunesArtwork' + appId;
+
+    window[callbackName] = function(response) {
+        var result = response && response.results && response.results[0];
+        if (result && result.artworkUrl512) {
+            artwork.src = result.artworkUrl512;
+        }
+        delete window[callbackName];
+    };
+
+    var script = document.createElement('script');
+    script.src = 'https://itunes.apple.com/lookup?id=' + encodeURIComponent(appId) + '&country=jp&entity=software&callback=' + encodeURIComponent(callbackName);
+    script.async = true;
+    document.head.appendChild(script);
+})();
+</script>
 
 </body>
 </html>
