@@ -305,32 +305,44 @@ section h2 span{
 }
 
 .screenshotStrip{
-	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	align-items: end;
-	gap: clamp(10px, 1.6vw, 18px);
+	position: relative;
+	width: min(100%, 540px);
+	aspect-ratio: 1.06 / 1;
+	margin: 0 auto;
+	isolation: isolate;
 }
 
 .screenshotStrip img{
 	aspect-ratio: 440 / 956;
-	width: 100%;
-	max-height: 620px;
+	position: absolute;
+	bottom: 4%;
+	width: 40%;
+	max-height: none;
 	object-fit: cover;
 	border: 8px solid #151719;
 	border-radius: 28px;
 	box-shadow: 0 22px 58px rgba(0,0,0,.24);
+	transform-origin: bottom center;
 }
 
 .screenshotStrip img:nth-child(1){
-	transform: rotate(-5deg);
+	left: 0;
+	z-index: 1;
+	transform: rotate(-6deg);
 }
 
 .screenshotStrip img:nth-child(2){
-	transform: translateY(-18px);
+	left: 50%;
+	bottom: 7%;
+	z-index: 2;
+	width: 42%;
+	transform: translateX(-50%) translateY(-6%);
 }
 
 .screenshotStrip img:nth-child(3){
-	transform: rotate(5deg);
+	right: 0;
+	z-index: 1;
+	transform: rotate(6deg);
 }
 
 .promoList{
@@ -521,7 +533,7 @@ section h2 span{
 	}
 
 	.screenshotStrip img:nth-child(2){
-		transform: translateY(-10px);
+		transform: translateX(-50%) translateY(-5%);
 	}
 
 	.characterCard{
