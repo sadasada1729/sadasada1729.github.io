@@ -21,7 +21,7 @@
 <body>
   <header>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last Updated: August 9, 2026</p>
+    <p class="meta">Last Updated: August 28, 2026</p>
     <p><strong>Reeno</strong> (the "App") is an iOS application provided by Koki Osada (the "Developer"). The Developer respects user privacy and handles information appropriately. This Privacy Policy explains how information is collected, used, stored, and managed in the App.</p>
   </header>
 
@@ -41,12 +41,13 @@
         <li>App usage data, screen events, feature usage, device information, OS version, app version, crash data, diagnostics, and performance information</li>
         <li>Inquiry, feedback, bug report, and support information submitted by the user</li>
       </ul>
+      <p>This information is collected or generated through user input, speech during conversations, in-app settings, device permissions, authentication providers, App Store and StoreKit, third-party services such as Firebase, and logs or metadata automatically generated while using the App.</p>
     </section>
 
     <section id="audio">
       <h2>2. Audio, Transcripts, and AI Processing</h2>
       <ul>
-        <li>To provide real-time voice conversations with AI, the App sends microphone audio during calls to external services such as Firebase AI Logic for processing.</li>
+        <li>To provide real-time voice conversations with AI, the App sends microphone audio during calls, conversation content, transcripts, prompts, AI responses, and related metadata to external services such as Firebase AI Logic / Vertex AI Gemini API (Google LLC) for processing.</li>
         <li>The Developer's policy is not to store the call audio itself in persistent storage managed by the Developer, persistent device storage, or similar storage.</li>
         <li>However, the App may store transcripts, conversation summaries, learning notes, and profile information in order to review conversations and personalize future calls.</li>
         <li>If users speak personal or sensitive information during a call, such as name, address, occupation, relationships, health status, romantic relationships, or personal concerns, that information may appear in transcripts, summaries, or profile information.</li>
@@ -54,8 +55,19 @@
       </ul>
     </section>
 
+    <section id="ai-sharing">
+      <h2>3. Sharing with Third-Party AI Services and Consent</h2>
+      <p>For AI voice conversations, transcription, summarization, profile extraction, conversation personalization, quality improvement, troubleshooting, and fraud prevention, the App may send the following information to Firebase AI Logic / Vertex AI Gemini API and related Google Cloud / Firebase services provided by Google LLC.</p>
+      <ul>
+        <li>Microphone audio during calls, transcripts generated from conversation content, prompts sent to AI, and AI audio responses</li>
+        <li>Conversation language, language level, voice preference, user-entered or edited profile information, previous conversation summaries, learning notes, and other information needed to personalize conversations</li>
+        <li>Call session IDs, transmission times, call duration, error information, device and app technical information, and related metadata needed for processing, quality, security, and fraud prevention</li>
+      </ul>
+      <p>Before the App sends personal data to a third-party AI service, the App explains in-app what data will be sent, who it will be sent to, and why it will be used, and asks for the user's explicit permission. If a user does not grant permission or later revokes it, some features such as AI voice conversations, transcription, summaries, profile extraction, and conversation personalization may be unavailable.</p>
+    </section>
+
     <section id="purpose">
-      <h2>3. Purpose of Use</h2>
+      <h2>4. Purpose of Use</h2>
       <p>Collected or processed information is used for the following purposes:</p>
       <ul>
         <li>To provide account, authentication, call settings, random incoming calls, VoIP push, CallKit, AI voice conversation, transcription, summaries, profiles, learning records, and purchase features</li>
@@ -69,7 +81,7 @@
     </section>
 
     <section id="local-storage">
-      <h2>4. Local Storage and Data Loss</h2>
+      <h2>5. Local Storage and Data Loss</h2>
       <ul>
         <li>The App may store some authentication information in secure device storage, lightweight settings in UserDefaults, and domain data in temporary or in-memory storage.</li>
         <li>Some local caches and in-memory data are designed to be deleted when the App process ends, when the user logs out, or when the App resets its local database.</li>
@@ -78,66 +90,66 @@
     </section>
 
     <section id="cloud-storage">
-      <h2>5. Cloud Services and Synchronization</h2>
+      <h2>6. Cloud Services and Synchronization</h2>
       <p>The App uses cloud services to support authentication, call scheduling, VoIP push, call records, transcripts, summaries, profiles, purchase entitlement records, analytics, and other app functionality. Information stored in the cloud is used for the user's App experience, for operation by the Developer, and for processing by service providers.</p>
     </section>
 
     <section id="third-parties">
-      <h2>6. Disclosure to Third Parties</h2>
-      <p>The Developer does not sell personal information. Information may be shared or processed by third parties only in the following cases:</p>
+      <h2>7. Disclosure to Third Parties</h2>
+      <p>The Developer does not sell personal information. The Developer confirms that third-party service providers used by the App will provide the same or equal protection for user data as described in this Policy and as required by applicable laws and platform rules. Information may be shared or processed by third parties only in the following cases:</p>
       <ul>
         <li>When the user has given consent</li>
         <li>When required by law, court order, or public authority</li>
         <li>When necessary to provide App functionality through service providers</li>
-        <li>When conversation audio, transcripts, prompts, AI responses, related metadata, or similar information is sent to and processed by external AI service providers in order to provide AI voice conversation, transcription, summarization, or other generative AI processing</li>
+        <li>When conversation audio, transcripts, prompts, AI responses, profiles, conversation settings, related metadata, or similar information is sent to and processed by external AI service providers, including Google LLC, in order to provide AI voice conversation, transcription, summarization, or other generative AI processing</li>
         <li>When necessary to investigate fraud, security incidents, abuse, or technical issues</li>
         <li>When purchases, refunds, and subscription management are processed by Apple through the App Store</li>
       </ul>
     </section>
 
     <section id="services">
-      <h2>7. Third-Party Services</h2>
+      <h2>8. Third-Party Services</h2>
       <p>The App may use the following third-party services. These services may collect or process information in accordance with their own policies.</p>
       <ul>
         <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase (Google LLC)</a>: Authentication, Firestore, Cloud Functions, Remote Config, Analytics, Messaging, fraud-prevention features, and related services</li>
-        <li><a href="https://firebase.google.com/docs/ai-logic" target="_blank" rel="noopener noreferrer">Firebase AI Logic / Vertex AI Gemini API (Google LLC)</a>: AI voice conversation, transcription, summarization, and generative AI processing</li>
+        <li><a href="https://firebase.google.com/docs/ai-logic" target="_blank" rel="noopener noreferrer">Firebase AI Logic / Vertex AI Gemini API (Google LLC)</a>: AI voice conversation, transcription, summarization, profile extraction, and generative AI processing. The main data sent includes call audio, conversation content, transcripts, prompts, AI responses, conversation settings, profiles, previous summaries, learning notes, and related metadata.</li>
         <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
         <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple services</a>: Sign in with Apple, App Store, StoreKit, APNs, PushKit, CallKit, and device permissions</li>
       </ul>
     </section>
 
     <section id="tracking">
-      <h2>8. Tracking and Analytics</h2>
+      <h2>9. Tracking and Analytics</h2>
       <p>The App may use analytics and diagnostic information to improve quality and reliability. The App does not use collected information for cross-app or cross-site tracking unless the user has consented where required by applicable law or platform rules.</p>
     </section>
 
     <section id="security">
-      <h2>9. Data Security</h2>
+      <h2>10. Data Security</h2>
       <p>The Developer takes reasonable measures to manage collected information securely and to prevent unauthorized access, leakage, loss, or alteration. However, no method of transmission or storage is completely secure, and the Developer cannot guarantee absolute security.</p>
     </section>
 
     <section id="retention">
-      <h2>10. Retention and Deletion</h2>
-      <p>The Developer retains information only for as long as necessary for the purposes described in this Policy, for operation of the App, for fraud prevention, for legal compliance, or for resolving disputes. If a user requests account or data deletion, the Developer will respond in accordance with applicable law and to the extent technically feasible. Some information may remain in backups, logs, App Store records, or third-party service records for a limited period.</p>
+      <h2>11. Retention, Consent Revocation, and Deletion</h2>
+      <p>The Developer retains information only for as long as necessary for the purposes described in this Policy, for operation of the App, for fraud prevention, for legal compliance, or for resolving disputes. Users can request revocation of consent for sending personal data to third-party AI services, account deletion, or data deletion through the App settings or the contact information below. The Developer will respond in accordance with applicable law and to the extent technically feasible. Some information may remain in backups, logs, App Store records, or third-party service records for a limited period.</p>
     </section>
 
     <section id="rights">
-      <h2>11. User Rights</h2>
+      <h2>12. User Rights</h2>
       <p>If a user requests disclosure, correction, deletion, or suspension of use of their personal information, the Developer will respond appropriately in accordance with applicable laws. Please contact us using the information below.</p>
     </section>
 
     <section id="children">
-      <h2>12. Children's Privacy</h2>
+      <h2>13. Children's Privacy</h2>
       <p>If a minor uses the App, a parent or guardian should review this Policy and supervise the use of the App as appropriate. The App is not intended to knowingly collect personal information from children in violation of applicable law.</p>
     </section>
 
     <section id="changes">
-      <h2>13. Changes to This Policy</h2>
+      <h2>14. Changes to This Policy</h2>
       <p>This Privacy Policy may be revised as necessary. Any updates will take effect from the time they are posted within the App or on the official website, unless otherwise specified.</p>
     </section>
 
     <section id="contact">
-      <h2>14. Contact Information</h2>
+      <h2>15. Contact Information</h2>
       <p>
         Developer: Koki Osada<br />
         Email: <a href="mailto:math1729abc@gmail.com">math1729abc@gmail.com</a>
