@@ -54,4 +54,36 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://sadasada1729.github.io/Reeno/app/jp/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sadasada1729.github.io/Reeno/app/en/"/>
   </url>
+  <url>
+    <loc>https://sadasada1729.github.io/SprintLens/app/jp/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sadasada1729.github.io/SprintLens/app/jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sadasada1729.github.io/SprintLens/app/en/"/>
+  </url>
+  <url>
+    <loc>https://sadasada1729.github.io/SprintLens/app/en/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sadasada1729.github.io/SprintLens/app/jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sadasada1729.github.io/SprintLens/app/en/"/>
+  </url>
+  <url>
+    <loc>https://sadasada1729.github.io/Que/app/jp/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sadasada1729.github.io/Que/app/jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sadasada1729.github.io/Que/app/en/"/>
+  </url>
+  <url>
+    <loc>https://sadasada1729.github.io/Que/app/en/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sadasada1729.github.io/Que/app/jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sadasada1729.github.io/Que/app/en/"/>
+  </url>
 </urlset>
