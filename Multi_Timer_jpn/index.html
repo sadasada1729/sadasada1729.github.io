@@ -2,94 +2,129 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="新たなストップウォッチ">
-	<meta name="viewport" content="width=device-width">
-	<title>Multi-Timer | Promotion</title>
-	<link rel="stylesheet" media="all" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Multi-Timerは、複数のストップウォッチやタイマーを1台のiPhone・iPadで同時に操作できる計測アプリです。陸上・水泳・レース運営からゲーム、業務の時間管理まで幅広く利用されています。">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+	<link rel="canonical" href="https://sadasada1729.github.io/Multi_Timer_jpn/">
+	<link rel="alternate" hreflang="ja" href="https://sadasada1729.github.io/Multi_Timer_jpn/">
+	<link rel="alternate" hreflang="en" href="https://sadasada1729.github.io/Multi_Timer/">
+	<link rel="alternate" hreflang="x-default" href="https://sadasada1729.github.io/Multi_Timer/">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:site_name" content="Sadasada">
+	<meta property="og:title" content="Multi-Timer | 複数人を同時に計測できるタイマーアプリ">
+	<meta property="og:description" content="陸上・水泳・レース運営・ゲーム・業務など、複数対象の時間を同時に計測・保存・共有できるiPhone・iPadアプリです。">
+	<meta property="og:url" content="https://sadasada1729.github.io/Multi_Timer_jpn/">
+	<meta property="og:image" content="https://sadasada1729.github.io/Multi_Timer_jpn/images/timer.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<title>Multi-Timer | 複数人を同時に計測できるタイマーアプリ</title>
+	<link rel="stylesheet" media="all" href="../Multi_Timer/css/style.css">
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@graph": [
+	    {
+	      "@type": "SoftwareApplication",
+	      "@id": "https://sadasada1729.github.io/Multi_Timer_jpn/#app",
+	      "name": "Multi-Timer",
+	      "description": "スポーツ、レース運営、ゲーム、業務などで複数のストップウォッチやタイマーを同時に操作し、計測データを保存・共有できるiPhone・iPadアプリ。",
+	      "url": "https://sadasada1729.github.io/Multi_Timer_jpn/",
+	      "sameAs": "https://apps.apple.com/jp/app/multi-timer-%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%B9%E3%83%88%E3%83%83%E3%83%97%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81-%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id1501162474",
+	      "image": "https://sadasada1729.github.io/images/app-icons/multi-timer.jpg",
+	      "operatingSystem": "iOS, iPadOS",
+	      "applicationCategory": "HealthApplication",
+	      "inLanguage": "ja",
+	      "author": {"@type": "Person", "name": "Koki Osada", "alternateName": "長田 公喜", "url": "https://sadasada1729.github.io/"}
+	    },
+	    {
+	      "@type": "FAQPage",
+	      "mainEntity": [
+	        {"@type": "Question", "name": "Multi-Timerはどんなアプリですか？", "acceptedAnswer": {"@type": "Answer", "text": "1台のiPhoneまたはiPadで、複数のストップウォッチやタイマーを同じ画面から操作できる計測アプリです。"}},
+	        {"@type": "Question", "name": "Multi-Timerはどんな用途で使われていますか？", "acceptedAnswer": {"@type": "Answer", "text": "ユーザーフィードバックでは、陸上・水泳の選手管理、競輪・自動車レース・競艇の時間管理、ゲーム時間の管理、ビジネス現場での複数作業の時間管理などが報告されています。ダウンロード傾向から、MDMで管理された組織端末にも広く導入されています。"}},
+	        {"@type": "Question", "name": "Multi-Timerの計測結果は保存・共有できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。計測結果を保存して過去のデータを確認できるほか、画像やCSVファイルでの共有、データのコピーができます。"}}
+	      ]
+	    }
+	  ]
+	}
+	</script>
 </head>
 
 <body id="top">
 	<div id="wrapper">
-
-		<div id="sidebar">
+		<aside id="sidebar">
 			<div id="sidebarWrap">
-				<h1><img src="images/sadasada.png" width="87" height="25" alt="logo"></h1>
-				<nav id="mainnav">
-					<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
-					<div class="panel">
-						<ul>
-							<li><a href="#top">TOP</a></li>
-							<li><a href="#sec01">NEW STYLE</a></li>
-							<li><a href="#sec02">GALLERY</a></li>
-							<li><a href="#sec05">DEVELOPER</a></li>
-						</ul>
-					</div>
+				<p class="brand"><a href="../"><img src="images/sadasada.png" width="87" height="25" alt="Sadasada"></a></p>
+				<nav id="mainnav" aria-label="メインナビゲーション">
+					<p id="menuWrap"><a id="menu" href="#mainnav" aria-label="メニューを開く"><span id="menuBtn"></span></a></p>
+					<div class="panel"><ul>
+						<li><a href="#top">トップ</a></li><li><a href="#features">機能</a></li><li><a href="#use-cases">利用例</a></li><li><a href="#gallery">画面</a></li><li><a href="#faq">よくある質問</a></li><li><a href="#developer">開発者</a></li><li><a href="../Multi_Timer/" lang="en">English</a></li>
+					</ul></div>
 				</nav>
 			</div>
-		</div>
+		</aside>
 
-		<div id="content">
-			<p id="mainImg"><img src="images/timer.jpg" alt=""></p>
-			<!-- MESSAGE -->
-			<section id="sec01">
-				<header>
-					<h2><span>New Style</span></h2>
-				</header>
-				<div class="innerS">
+		<main id="content">
+			<section class="productHero" aria-labelledby="product-title">
+				<div class="productHeroText">
+					<p class="eyebrow">複数ストップウォッチ・タイマー</p>
+					<h1 id="product-title">Multi-Timer</h1>
+					<p class="heroLead">複数人・複数対象のストップウォッチやタイマーを、1台のiPhone・iPadで同時に操作。陸上や水泳などのスポーツから、レース運営、ゲーム、ビジネス現場まで、一つずつでは追いつかない時間管理を支えます。</p>
+					<p class="proof"><strong>累計15.8万ダウンロード</strong><span>2026年9月20日現在</span></p>
+					<a class="primaryCta" href="https://apps.apple.com/jp/app/multi-timer-%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%B9%E3%83%88%E3%83%83%E3%83%97%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81-%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id1501162474">App Storeで見る</a>
+				</div>
+				<img src="images/timer.jpg" alt="複数のストップウォッチを1画面に表示するMulti-Timer">
+			</section>
+
+			<section id="features" class="contentSection">
+				<header><p class="sectionLabel">できること</p><h2>複数人・複数の作業を並行して計測</h2></header>
+				<div class="featureGrid">
+					<article><h3>1画面に複数の計測欄</h3><p>それぞれを個別にスタート・ストップ・リセットでき、複数の計測をまとめて操作することもできます。</p></article>
+					<article><h3>ストップウォッチとタイマー</h3><p>選手ごとのタイムやインターバル、複数作業のカウントダウンなど、目的に合わせて使えます。</p></article>
+					<article><h3>計測データを保存・共有</h3><p>過去の計測を確認し、結果を画像やCSVファイルで共有できます。データのコピーにも対応しています。</p></article>
+					<article><h3>名前と見た目を設定</h3><p>選手名や項目名を付けて見分けやすく整理できます。カラーテーマやダークな表示も選べます。</p></article>
 				</div>
 			</section>
-			<!-- // MESSAGE -->
-			<!-- GALLERY -->
-			<section id="sec02">
-				<header>
-					<h2><span>GALLERY</span></h2>
-				</header>
-				<ul id="gallery">
-					<li><img src="images/photo01.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo02.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo03.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo04.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo05.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo06.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo07.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo08.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo09.png" width="360" height="350" alt=""></li>
-					<li><img src="images/photo11.jpg" width="360" height="350" alt=""></li>
-					<li><img src="images/photo12.jpg" width="360" height="350" alt=""></li>
-					<li><img src="images/photo13.jpg" width="360" height="350" alt=""></li>
+
+			<section id="use-cases" class="contentSection useCaseSection">
+				<header><p class="sectionLabel">ユーザーから届いた利用例</p><h2>スポーツ以外にも広がるMulti-Timer</h2></header>
+				<p class="sectionIntro">ユーザーフィードバック調査とダウンロード傾向から、次のような利用場面が確認されています。用途に合わせて各計測欄へ名前を付け、複数の対象を並行して管理できます。</p>
+				<div class="featureGrid">
+					<article><h3>陸上・水泳などのチーム管理</h3><p>複数選手のタイムやインターバルを、コーチやマネージャーが1台の端末から同時に記録します。</p></article>
+					<article><h3>競輪・自動車レース・競艇</h3><p>複数の選手・車両・艇や進行項目を区別しながら、レースや運営に関わる時間を把握します。</p></article>
+					<article><h3>ゲームの時間管理</h3><p>参加者やチームごとの持ち時間、複数卓・複数進行のプレイ時間を個別に管理します。</p></article>
+					<article><h3>ビジネス・組織端末</h3><p>複数作業や工程の時間管理に利用されています。MDMで管理された組織端末にも広く導入されています。</p></article>
+				</div>
+			</section>
+
+			<section id="gallery" class="gallerySection">
+				<header><p class="sectionLabel">アプリ画面</p><h2>Multi-Timerの操作イメージ</h2></header>
+				<ul id="galleryGrid">
+					<li><img src="images/photo01.png" width="1284" height="2778" loading="lazy" alt="Multi-Timerの複数ストップウォッチ画面"></li>
+					<li><img src="images/photo02.png" width="1284" height="2778" loading="lazy" alt="複数の選手を同時に計測する画面"></li>
+					<li><img src="images/photo03.png" width="1284" height="2778" loading="lazy" alt="Multi-Timerで選べるカラーテーマ"></li>
+					<li><img src="images/photo05.png" width="1284" height="2778" loading="lazy" alt="計測データの保存と共有機能"></li>
 				</ul>
 			</section>
-			<!-- // PROJECT -->
-			<!-- COMPANY -->
-			<section id="sec05">
-				<header>
-					<h2><span>DEVELOPER</span></h2>
-				</header>
-				<div class="inner">
-					<ul class="col2">
-						<li>
-							<p><b>Sadasada</b><br>Medical Student</p>
-							<p>Runner</p>
-							<p>e-Mail: <br> math1729abc@gmail.com</p>
-							<p>Twitter: <br> <a href="https://twitter.com/math1729abc" class="twitter">@math1729abc</a></p>
-						</li>
-						<li>
-							<img src="./images/sadasada.png" alt="" height="100" width="250">
-							<a href="https://apps.apple.com/us/app/multi-timer-stopwatch-timer/id1501162474"> <img src="./images/app_store_IMG.png" alt="" height="100" width="250" > </a>
-						</li>
-					</ul>
+
+			<section id="faq" class="contentSection faqSection">
+				<header><p class="sectionLabel">すぐわかる回答</p><h2>よくある質問</h2></header>
+				<div class="faqList">
+					<details open><summary>Multi-Timerはどんなアプリですか？</summary><p>1台のiPhoneまたはiPadで、複数のストップウォッチやタイマーを同じ画面から操作できる計測アプリです。</p></details>
+					<details><summary>どんな用途で使われていますか？</summary><p>ユーザーフィードバックでは、陸上・水泳の選手管理、競輪・自動車レース・競艇の時間管理、ゲーム時間の管理、ビジネス現場での複数作業の時間管理などが報告されています。ダウンロード傾向から、MDMで管理された組織端末にも広く導入されています。</p></details>
+					<details><summary>計測結果は保存・共有できますか？</summary><p>はい。計測結果を保存して過去のデータを確認できるほか、画像やCSVファイルでの共有、データのコピーができます。</p></details>
+					<details><summary>ストップウォッチを個別に操作できますか？</summary><p>はい。それぞれの行に操作ボタンがあり、個別にスタート・ストップ・リセットできます。</p></details>
 				</div>
 			</section>
-			<!-- // COMPANY -->
 
-			<footer id="footer">
-				Copyright(c) 2021 Koki Osada. All Rights Reserved. <!-- Es4tdVJK-->
-			</footer>
-
-		</div>
+			<section id="developer" class="contentSection developerSection">
+				<header><p class="sectionLabel">開発者</p><h2>Koki Osada（長田 公喜）</h2></header>
+				<div class="developerGrid">
+					<div><p>医師・ランナーとして活動しながら、iOSアプリの企画・開発・運営を行う個人開発者です。Multi-Timerは、実際の練習で複数人を計測する際の課題から生まれました。</p><p><a href="mailto:osadab6mb@gmail.com">osadab6mb@gmail.com</a> · <a href="https://twitter.com/math1729abc">@math1729abc</a></p></div>
+					<div class="utilityLinks"><a href="Japanese/">プライバシーポリシー</a><a href="https://apps.apple.com/jp/app/multi-timer-%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%B9%E3%83%88%E3%83%83%E3%83%97%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81-%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id1501162474">App Store</a><a href="../">すべてのアプリ</a></div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">Copyright(c) 2026 Koki Osada. All Rights Reserved.</footer>
 	</div>
-
 </body>
 </html>
