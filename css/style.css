@@ -225,6 +225,19 @@ section h2{
 	text-align: center;
 }
 
+.profileSource{
+	max-width: 780px;
+	margin: -16px auto 34px;
+	text-align: center;
+}
+
+.profileSource a{
+	color: #145a47;
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
 .statGrid{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
