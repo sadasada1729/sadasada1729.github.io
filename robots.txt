@@ -1,0 +1,10 @@
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sadasada1729.github.io/sitemap.xml

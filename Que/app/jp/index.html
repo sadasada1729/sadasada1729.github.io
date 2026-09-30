@@ -1,86 +1,167 @@
 <!doctype html>
 <html lang="ja">
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="やりたいことリスト">
-	<meta name="viewport" content="width=device-width">
-	<title>Que | Promotion</title>
-	<link rel="stylesheet" media="all" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Queは、今年やりたい100のことを記録し、進捗を見える化できるiPhoneアプリです。ひとりでも、友人・カップル・グループでも目標を共有して応援し合えます。">
+  <meta name="author" content="Koki Osada">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://sadasada1729.github.io/Que/app/jp/">
+  <link rel="alternate" hreflang="ja" href="https://sadasada1729.github.io/Que/app/jp/">
+  <link rel="alternate" hreflang="en" href="https://sadasada1729.github.io/Que/app/en/">
+  <link rel="alternate" hreflang="x-default" href="https://sadasada1729.github.io/Que/app/jp/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="Sadasada">
+  <meta property="og:title" content="Que - 今年やりたい100のことを、ひとりでもみんなでも">
+  <meta property="og:description" content="100のやりたいことを記録し、達成までを見える化。友人、カップル、グループで共有して応援し合えるアプリです。">
+  <meta property="og:url" content="https://sadasada1729.github.io/Que/app/jp/">
+  <meta property="og:image" content="https://sadasada1729.github.io/Que/app/jp/images/que.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Que - 今年やりたい100のこと | 公式</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://sadasada1729.github.io/Que/app/jp/#app",
+        "name": "Que - 今年やりたい100の事",
+        "alternateName": "Que",
+        "description": "今年やりたい100のことを記録して進捗を見える化し、ひとりでも友人・カップル・グループでも共有できるアプリです。",
+        "url": "https://sadasada1729.github.io/Que/app/jp/",
+        "image": "https://sadasada1729.github.io/images/app-icons/que.jpg",
+        "downloadUrl": "https://apps.apple.com/jp/app/id6752609590",
+        "operatingSystem": "iOS",
+        "applicationCategory": "LifestyleApplication",
+        "inLanguage": "ja",
+        "author": {"@type": "Person", "name": "Koki Osada", "url": "https://sadasada1729.github.io/"},
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "description": "無料でダウンロード。アプリ内課金があります。"},
+        "sameAs": ["https://apps.apple.com/jp/app/id6752609590"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Queとは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "Queは、今年やりたい100のことを書き出し、進捗や達成を見える化できるiPhoneアプリです。"}},
+          {"@type": "Question", "name": "Queはひとりでも使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。自分だけのリストとして、今年やりたいことを記録し、進捗を振り返ることができます。"}},
+          {"@type": "Question", "name": "Queでは目標を友人と共有できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。友人とつながって目標や進捗を共有でき、カップルやグループで一緒に達成を目指すこともできます。"}},
+          {"@type": "Question", "name": "Queにはいくつ目標を登録できますか？", "acceptedAnswer": {"@type": "Answer", "text": "1年ごとに、やりたいことを100件までリストにできます。"}},
+          {"@type": "Question", "name": "Queは無料で始められますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。無料でダウンロードして始められます。アプリ内課金があります。"}}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body id="top">
-	<div id="wrapper">
+  <header class="siteHeader">
+    <a class="brand" href="../../../index.html" aria-label="Sadasada トップページ">Sadasada</a>
+    <nav aria-label="ページ内ナビゲーション">
+      <a href="#features">特長</a>
+      <a href="#styles">使い方</a>
+      <a href="#faq">FAQ</a>
+      <a href="../en/" lang="en">English</a>
+    </nav>
+  </header>
 
-		<div id="sidebar">
-			<div id="sidebarWrap">
-				<h1><img src="images/sadasada.png" width="87" height="25" alt="logo"></h1>
-				<nav id="mainnav">
-					<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
-					<div class="panel">
-						<ul>
-							<li><a href="#top">TOP</a></li>
-							<li><a href="#sec01">NEW STYLE</a></li>
-							<li><a href="#sec02">GALLERY</a></li>
-							<li><a href="#sec03">DEVELOPER</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="heroCopy">
+        <img class="appIcon" src="../../../images/app-icons/que.jpg" width="512" height="512" alt="Queアプリアイコン">
+        <p class="eyebrow">100 THINGS TO DO THIS YEAR</p>
+        <h1 id="hero-title">Que</h1>
+        <p class="tagline">今年やりたい100のこと。</p>
+        <p class="summary">いつかやりたいを、今年やるへ。願い、挑戦、行きたい場所を100のリストにして、進み具合を見える化。ひとりでも、みんなでも使えます。</p>
+        <div class="actions">
+          <a class="primaryButton" href="https://apps.apple.com/jp/app/id6752609590">App Storeで見る</a>
+          <a class="secondaryButton" href="#features">機能を見る</a>
+        </div>
+      </div>
+      <div class="heroVisual">
+        <img src="images/que.png" width="2000" height="1200" alt="Que 今年やりたい100のこと">
+      </div>
+    </section>
 
-		<div id="content">
-			<p id="mainImg"><img src="images/que.png" width="2000" height="1200" alt=""></p>
-			<!-- MESSAGE -->
-			<section id="sec01">
-				<header>
-					<h2><span>New Style</span></h2>
-				</header>
-				<div class="innerS">
-				</div>
-			</section>
-			<!-- // MESSAGE -->
-			<!-- GALLERY -->
-			<section id="sec02">
-				<header>
-					<h2><span>GALLERY</span></h2>
-				</header>
-				<ul id="gallery">
-					<li><img src="images/img1.png" width="200" height="420" alt=""></li>
-					<li><img src="images/img2.png" width="200" height="420" alt=""></li>
-					<li><img src="images/img3.png" width="200" height="420" alt=""></li>
-				</ul>
-			</section>
-			<!-- // PROJECT -->
-			<!-- COMPANY -->
-			<section id="sec03">
-				<header>
-					<h2><span>DEVELOPER</span></h2>
-				</header>
-				<div class="inner">
-					<ul class="col2">
-						<li>
-							<p><b>Sadasada</b><br>Medical Doctor</p>
-							<p>Runner</p>
-							<p>e-Mail: math1729abc@gmail.com</p>
-							<p>Twitter: <a href="https://twitter.com/math1729abc" class="twitter">@math1729abc</a></p>
-						</li>
-						<li>
-							<img src="./images/sadasada.png" alt="" height="100" width="250">
-							<a href="https://apps.apple.com/us/app/communi-fluent-conversations/id6744375629"> <img src="./images/app_store_IMG.png" alt="" height="100" width="250" > </a>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- // COMPANY -->
+    <section class="answerSection" aria-labelledby="answer-title">
+      <div class="sectionInner narrow">
+        <p class="sectionLabel">WHAT IS QUE?</p>
+        <h2 id="answer-title">Queとは</h2>
+        <p class="answerLead">Queは、1年のうちにやりたい100のことを記録し、進捗や達成を見える化するiPhoneアプリです。</p>
+        <p>自分だけのウィッシュリストとして使うことも、友人とつながって目標や進み具合を共有することもできます。カップルやグループで、一緒に挑戦して達成を喜びたいときにも使えます。</p>
+      </div>
+    </section>
 
-			<footer id="footer">
-				Copyright(c) 2025 Koki Osada. All Rights Reserved. <!-- Es4tdVJK-->
-			</footer>
+    <section id="features" class="contentSection" aria-labelledby="features-title">
+      <div class="sectionInner">
+        <p class="sectionLabel">FEATURES</p>
+        <h2 id="features-title">やりたいを、忘れない仕組み</h2>
+        <div class="cardGrid">
+          <article><span class="cardNumber">01</span><h3>今年の100リスト</h3><p>旅行、学び、趣味、小さな挑戦まで、今年やりたいことを100件までひとつの場所にまとめられます。</p></article>
+          <article><span class="cardNumber">02</span><h3>進捗を見える化</h3><p>これから、進行中、達成したことを整理。1年を通じて、自分がどこまで進んだか振り返れます。</p></article>
+          <article><span class="cardNumber">03</span><h3>友人と共有</h3><p>友人とつながり、それぞれの目標や進捗を共有。挑戦を知り、応援し合えます。</p></article>
+          <article><span class="cardNumber">04</span><h3>みんなで挑戦</h3><p>カップル、家族、サークルなどでグループを作り、共通のやりたいことを一緒に達成できます。</p></article>
+        </div>
+      </div>
+    </section>
 
-		</div>
-	</div>
+    <section id="styles" class="contentSection alt" aria-labelledby="styles-title">
+      <div class="sectionInner">
+        <p class="sectionLabel">YOUR STYLE</p>
+        <h2 id="styles-title">ひとりで。みんなで。カップルで。</h2>
+        <div class="styleGrid">
+          <article><p class="styleTag">ひとりで</p><h3>自分の一年をつくる</h3><p>人には見せない目標も、ふと思いついた願いも、自分のペースで記録して振り返れます。</p></article>
+          <article><p class="styleTag">みんなで</p><h3>仲間と達成する</h3><p>グループで共通の100リストに挑戦。誰かの進捗が、次の一歩のきっかけになります。</p></article>
+          <article><p class="styleTag">カップルで</p><h3>一緒の思い出を増やす</h3><p>行きたい場所や体験したいことを共有し、達成した記録をふたりの思い出として残せます。</p></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="gallerySection" aria-labelledby="gallery-title">
+      <div class="sectionInner">
+        <p class="sectionLabel">APP PREVIEW</p>
+        <h2 id="gallery-title">書く、つながる、達成する</h2>
+        <div class="screenshots">
+          <figure><img src="images/img1.png" width="1242" height="2688" alt="Queでひとりの100リストを管理する画面"><figcaption>ひとりで記録</figcaption></figure>
+          <figure><img src="images/img2.png" width="1242" height="2688" alt="Queでグループを作る画面"><figcaption>みんなで共有</figcaption></figure>
+          <figure><img src="images/img3.png" width="1242" height="2688" alt="Queで達成した目標を見る画面"><figcaption>達成を振り返る</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="contentSection alt" aria-labelledby="faq-title">
+      <div class="sectionInner narrow">
+        <p class="sectionLabel">FAQ</p>
+        <h2 id="faq-title">よくある質問</h2>
+        <details open><summary>Queとは何ですか？</summary><p>今年やりたい100のことを書き出し、進捗や達成を見える化できるiPhoneアプリです。</p></details>
+        <details><summary>ひとりでも使えますか？</summary><p>はい。自分だけのリストとして、やりたいことを記録し、進捗を振り返れます。</p></details>
+        <details><summary>友人やカップルと共有できますか？</summary><p>はい。友人とつながって目標や進捗を共有でき、カップルやグループで一緒に達成を目指せます。</p></details>
+        <details><summary>目標はいくつ登録できますか？</summary><p>1年ごとに、やりたいことを100件までリストにできます。</p></details>
+        <details><summary>無料で始められますか？</summary><p>はい。無料でダウンロードして始められます。アプリ内課金があります。</p></details>
+      </div>
+    </section>
+
+    <section class="downloadSection" aria-labelledby="download-title">
+      <div class="sectionInner narrow">
+        <img class="downloadIcon" src="../../../images/app-icons/que.jpg" width="512" height="512" alt="">
+        <h2 id="download-title">やりたいことを、今年の物語に。</h2>
+        <p>iPhone向け。無料でダウンロードでき、アプリ内課金があります。</p>
+        <a class="storeLink" href="https://apps.apple.com/jp/app/id6752609590"><img src="images/app_store_IMG.png" width="499" height="167" alt="App Storeからダウンロード"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footerInner">
+      <p><strong>Que</strong><br>Developer: Koki Osada / Sadasada</p>
+      <nav aria-label="関連リンク">
+        <a href="../../../index.html">開発者サイト</a>
+        <a href="../../privacy_policy/jp/">プライバシーポリシー</a>
+        <a href="../../terms_of_service/jp/">利用規約</a>
+        <a href="../en/" lang="en">English</a>
+      </nav>
+      <p class="copyright">Copyright © 2026 Koki Osada.</p>
+    </div>
+  </footer>
 </body>
 </html>
