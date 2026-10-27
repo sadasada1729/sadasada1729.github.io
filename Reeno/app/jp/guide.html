@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reenoの使い方 | 電話が来たら、会話を楽しもう。</title>
-  <meta name="description" content="Reenoの始め方を3ステップで紹介。着信の時間帯の設定から、外国語での会話、通話後の振り返りまで。ReenoとMentaの紹介も。">
+  <meta name="description" content="Reenoの始め方を3ステップで紹介。初回設定・マイク許可・ホーム・履歴とノート・今すぐの着信・時間設定を、ボタンの位置が分かる画面付きで案内。">
   <link rel="canonical" href="https://sadasada1729.github.io/Reeno/app/jp/guide.html">
   <meta property="og:title" content="Reenoの使い方">
   <meta property="og:description" content="AIから、ふいに電話。Reenoと会話を楽しむための利用ガイド。">
@@ -61,6 +61,32 @@
       section { padding-block:32px; }
       nav { gap:16px; }
     }
+
+    .contents { display:flex; flex-wrap:wrap; gap:10px; margin:28px 0; }
+    .contents a { padding:8px 16px; border:1px solid #bccfca; border-radius:999px; background:white; text-decoration:none; }
+    .screen-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; }
+    .screen-card { min-width:0; padding:24px; background:#fff; border:1px solid #e1e8e3; border-radius:24px; }
+    .screen-card h3 { margin-bottom:20px; }
+    .phone { position:relative; display:block; width:min(100%,280px); margin-inline:auto; line-height:0; }
+    .phone img { width:100%; }
+    .hotspot { position:absolute; border:2px solid #b94320; border-radius:8px; box-shadow:0 0 0 1px #fff; pointer-events:none; }
+    .hotspot b { position:absolute; left:-10px; top:-10px; display:grid; place-items:center; width:25px; height:25px; border:2px solid white; border-radius:50%; background:#b94320; color:white; font:700 14px/1 sans-serif; }
+    .screen-card figcaption { text-align:center; font-size:12px; padding:10px 0 18px; }
+    .actions { padding-left:25px; margin:0; }
+    .actions li { padding-left:5px; margin:8px 0; }
+    .actions li::marker { color:#b94320; font-weight:700; }
+    .callout { background:#eaf2ed; border-left:4px solid var(--teal); border-radius:0 12px 12px 0; padding:18px 22px; margin:24px 0; }
+    .callout p:last-child { margin:0; }
+    .back { display:inline-block; margin-top:24px; font-size:14px; }
+    .algorithm { max-width:800px; padding-left:24px; }
+    .algorithm li { padding-left:8px; margin-bottom:14px; }
+    section[id] { scroll-margin-top:20px; }
+    @media (max-width:700px) {
+      .screen-grid { grid-template-columns:1fr; gap:20px; }
+      .screen-card { padding:20px; }
+      .contents { gap:8px; }
+      .contents a { font-size:14px; }
+    }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
 </head>
@@ -69,7 +95,7 @@
     <a class="brand" href="index.html" aria-label="Reenoの紹介ページ"><img src="images/guide/reeno-wordmark-teal.svg" width="1400" height="440" alt="Reeno"></a>
     <nav aria-label="ページナビゲーション"><a href="index.html">Reenoについて</a><a href="#characters">キャラクター</a></nav>
   </header>
-  <main>
+  <main id="top">
     <div class="hero">
       <p class="eyebrow">Reeno 利用ガイド</p>
       <h1>電話が来たら、<br>会話を楽しもう。</h1>
@@ -82,13 +108,164 @@
         <img class="art" src="images/guide/reeno-three-steps.png" width="1080" height="1350" alt="使い方の3ステップ。出られる時間を設定、Reenoから電話が来る、出て会話を楽しむ。">
         <div>
           <ol class="instructions">
-            <li><h3>出られる時間を設定する</h3><p>初期設定の案内に沿って、呼ばれたい名前、会話する言語、会話レベルを設定。電話に出られる曜日と時間帯を選ぶ。AI利用の案内を確認し、マイクの使用を許可する。</p></li>
+            <li><h3>出られる時間を設定する</h3><p>名前・会話する言語などを登録し、AI利用への同意とマイク許可を済ませる。電話に出られる曜日と時間帯を選んだら準備完了。</p></li>
             <li><h3>Reenoからの電話を待つ</h3><p>設定した時間帯の中で、ランダムなタイミングに着信。アプリを開いて待ち続ける必要はない。</p></li>
             <li><h3>電話に出て、会話を楽しむ</h3><p>今日の出来事や好きなものなど、気軽な話題から。通話が終わったら、履歴で会話を振り返れる。</p></li>
           </ol>
           <p class="note">iOS 26以降のiPhoneに対応。最初の7日間は1日1回・最大2分の無料体験があり、その後の継続利用にはサブスクリプションが必要。利用条件・料金はアプリ内の最新表示を確認する。</p>
         </div>
       </div>
+    </section>
+    <section id="contents" aria-labelledby="contents-title">
+      <h2 id="contents-title">画面を見ながら、使ってみよう。</h2>
+      <nav class="contents" aria-label="利用ガイドの目次">
+        <a href="#setup">はじめての設定</a><a href="#home">ホームの使い方</a><a href="#history">履歴・ノート</a><a href="#calls">今すぐ電話・通話設定</a><a href="#timing">着信時刻の決まり方</a><a href="#characters">ReenoとMenta</a>
+      </nav>
+      <p class="note">画像の赤茶色の番号と、下の操作説明が対応しています。画像はタップで拡大できます。画面は日本語表示のサンプルです。登録済みの設定や通話状況により、表示される案内は変わります。</p>
+    </section>
+    <section id="setup" aria-labelledby="setup-title">
+      <h2 id="setup-title">01 はじめて開いてから、ホームまで。</h2>
+      <p>初回は次の順に進みます。入力途中から再開した場合や、すでに許可済みの場合は、一部の画面が省略されます。</p>
+      <div class="screen-grid">
+        <article class="screen-card">
+          <h3>1. Reenoの紹介を読む</h3>
+          <figure><a class="phone" href="images/guide/screenshots/welcome.png" aria-label="1. Reenoの紹介を読むの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/welcome.png" width="1320" height="2868" alt="初回の紹介画面。下部に「次へ」ボタン。"><span class="hotspot" aria-hidden="true" style="left:5%;top:90%;width:90%;height:6%"><b>1</b></span></a><figcaption>紹介画面を下までスクロールした状態。</figcaption></figure>
+          <ol class="actions"><li>紹介を読み、下へスクロールして<strong>「次へ」</strong>を押します。</li></ol>
+        </article>
+        <article class="screen-card">
+          <h3>2. 表示名を登録する</h3>
+          <figure><a class="phone" href="images/guide/screenshots/name.png" aria-label="2. 表示名を登録するの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/name.png" width="1320" height="2868" alt="表示名の入力欄と「登録」ボタン。"><span class="hotspot" aria-hidden="true" style="left:5%;top:33%;width:90%;height:6%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:5%;top:87%;width:90%;height:7%"><b>2</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>アプリに表示する名前を入力します。</li><li><strong>「登録」</strong>を押して進みます。</li></ol>
+        </article>
+        <article class="screen-card">
+          <h3>3. 会話プロフィールを選ぶ</h3>
+          <figure><a class="phone" href="images/guide/screenshots/profile.png" aria-label="3. 会話プロフィールを選ぶの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/profile.png" width="1320" height="2868" alt="呼び名、会話する言語、会話レベル、次へボタン。"><span class="hotspot" aria-hidden="true" style="left:5%;top:29%;width:90%;height:21%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:5%;top:66%;width:90%;height:4%"><b>2</b></span><span class="hotspot" aria-hidden="true" style="left:5%;top:79%;width:90%;height:6%"><b>3</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>Reenoに呼んでほしい名前と、<strong>会話する言語</strong>を選びます。</li><li>会話レベルを選びます。迷ったら「初心者」から。母語を混ぜながらでも大丈夫です。</li><li><strong>「次へ」</strong>を押します。あとから「通話設定」→「会話プロフィール」で変更できます。</li></ol>
+        </article>
+        <article class="screen-card">
+          <h3>4. AI通話の案内を確認する</h3>
+          <figure><a class="phone" href="images/guide/screenshots/ai-consent.png" aria-label="4. AI通話の案内を確認するの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/ai-consent.png" width="1320" height="2868" alt="AI通話のデータ送信についての案内と「同意して続ける」ボタン。"><span class="hotspot" aria-hidden="true" style="left:5%;top:88%;width:90%;height:6%"><b>1</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>データの送信先・利用目的、プライバシーポリシーなどを確認し、同意する場合は<strong>「同意して続ける」</strong>を押します。</li></ol><p class="note">AI通話の利用には同意が必要です。Reenoは通話音声そのものを保存しません。</p>
+        </article>
+        <article class="screen-card">
+          <h3>5. マイクの使用を許可する</h3>
+          <figure><a class="phone" href="images/guide/screenshots/microphone.png" aria-label="5. マイクの使用を許可するの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/microphone.png" width="1320" height="2868" alt="マイクへのアクセスを求めるアプリの説明画面。"><span class="hotspot" aria-hidden="true" style="left:5%;top:87%;width:90%;height:7%"><b>1</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li><strong>「続ける」</strong>を押して、iPhoneの確認ダイアログを表示します。</li></ol><p><strong>マイク許可は必須です。</strong>Reenoとの音声会話に使います。</p>
+        </article>
+        <article class="screen-card">
+          <h3>6. iPhoneの確認で「許可」する</h3>
+          <figure><a class="phone" href="images/guide/screenshots/microphone-dialog.png" aria-label="6. iPhoneの確認で「許可」するの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/microphone-dialog.png" width="1320" height="2868" alt="iOSのマイクアクセス確認ダイアログ。"><span class="hotspot" aria-hidden="true" style="left:51%;top:59.5%;width:32%;height:5.5%"><b>1</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>確認ダイアログの<strong>「許可」</strong>を押します。</li></ol><p class="note">許可しなかった場合は、アプリに戻って「設定を開く」を押し、iPhoneの設定でReenoのマイクをオンにしてから戻ってください。すでに許可済みなら、この確認は表示されません。</p>
+        </article>
+        <article class="screen-card">
+          <h3>7. はじめての電話を体験する</h3>
+          <figure><a class="phone" href="images/guide/screenshots/first-call.png" aria-label="7. はじめての電話を体験するの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/first-call.png" width="1320" height="2868" alt="Reenoの初回案内通話の画面。話しやすい言語を選べる。"><span class="hotspot" aria-hidden="true" style="left:9%;top:51.5%;width:82%;height:6%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:5%;top:66%;width:90%;height:10%"><b>2</b></span><span class="hotspot" aria-hidden="true" style="left:5%;top:77%;width:17%;height:4%"><b>3</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>初回案内通話は<strong>日本語でOK</strong>。気楽に話せる言語を選びます。</li><li><strong>「はじめての電話を受け取る」</strong>を押し、着信に応答します。</li><li>通話後は<strong>「続ける」</strong>へ。今は話せない場合は<strong>「あとで」</strong>でも進められます。</li></ol><p>Reenoの使い方を聞ける、最大5分の案内通話です。初回無料期間中に利用でき、通常の1日の通話回数には含まれません。</p>
+        </article>
+        <article class="screen-card">
+          <h3>8. 出られる曜日・時間帯を選ぶ</h3>
+          <figure><a class="phone" href="images/guide/screenshots/initial-schedule.png" aria-label="8. 出られる曜日・時間帯を選ぶの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/initial-schedule.png" width="1320" height="2868" alt="初期設定の着信設定。曜日、時間帯、1日の回数、次へボタン。"><span class="hotspot" aria-hidden="true" style="left:5%;top:31%;width:90%;height:23%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:5%;top:59%;width:90%;height:15%"><b>2</b></span><span class="hotspot" aria-hidden="true" style="left:5%;top:85%;width:90%;height:6%"><b>3</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li><strong>「着信を受け取る」</strong>をオンにし、出られる曜日を選びます。</li><li>時間帯を確認・追加します。不要な時間帯はごみ箱から削除できます。</li><li>1日の回数を確認し、<strong>「次へ」</strong>でホームへ進みます。</li></ol><p class="note">この設定が先にホームへ引き継がれる場合もあります。その場合は次の案内に沿って完了してください。</p>
+        </article>
+        <article class="screen-card">
+          <h3>9. ホームに着いたら</h3>
+          <figure><a class="phone" href="images/guide/screenshots/home-first.png" aria-label="9. ホームに着いたらの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/home-first.png" width="1320" height="2868" alt="着信設定が未完了のホーム画面の例。"><span class="hotspot" aria-hidden="true" style="left:7.5%;top:50%;width:32%;height:4.7%"><b>1</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>ホームに<strong>「設定を完了」</strong>などの案内が出ていたら、そこから残りの設定を済ませます。</li></ol><p>この例では会話設定が未完了で、「設定を完了」が表示されています。初回案内を後回しにした場合などは、着信の準備や時間設定の案内が表示されることがあります。案内がなければ準備完了です。</p>
+        </article>
+      </div>
+<div class="callout"><p>マイクの許可とAI利用への同意は必須です。通常の通知に関する案内が別途表示された場合は、その画面の説明に沿って設定してください。</p></div>
+      <a class="back" href="#contents">目次へ戻る ↑</a>
+    </section>
+    <section id="home" aria-labelledby="home-title">
+      <h2 id="home-title">02 ホームから、ふりかえりと設定へ。</h2>
+      <p>ホームには今日の通話状況や次のヒントが表示されます。背景は時間帯で変わります。ここでは今日の会話が終わったあとの画面を使って説明します。</p>
+      <div class="screen-grid">
+        <article class="screen-card">
+          <h3>今日の会話をふりかえる</h3>
+          <figure><a class="phone" href="images/guide/screenshots/home.png" aria-label="今日の会話をふりかえるの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/home.png" width="1320" height="2868" alt="会話後のホーム。ふりかえりへのボタンと下部の履歴・通話設定タブ。"><span class="hotspot" aria-hidden="true" style="left:7.5%;top:45.2%;width:41%;height:4.8%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:24%;top:92%;width:17%;height:5.5%"><b>2</b></span><span class="hotspot" aria-hidden="true" style="left:42%;top:92%;width:17%;height:5.5%"><b>3</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>今日の通話後は、ホームの<strong>「ふりかえりを見る」</strong>から「履歴」へ進めます。</li><li>画面下の<strong>「履歴」</strong>からも開けます。</li><li>着信の曜日・時間帯を変えるときは、画面下の<strong>「通話設定」</strong>へ進みます。</li></ol><p class="note">「次のヒント」は次の会話の話題づくりに。ホームの中央の案内・ボタンは、その日の状況に応じて変わります。</p>
+        </article>
+        <article class="screen-card">
+          <h3>下にスクロールして、クイック設定へ</h3>
+          <figure><a class="phone" href="images/guide/screenshots/home-settings.png" aria-label="下にスクロールして、クイック設定への画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/home-settings.png" width="1320" height="2868" alt="ホーム下部の会話言語、会話のサポート、プラン、会話メモ。"><span class="hotspot" aria-hidden="true" style="left:4%;top:52.3%;width:92%;height:16.4%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:4%;top:68.7%;width:92%;height:7.8%"><b>2</b></span><span class="hotspot" aria-hidden="true" style="left:4%;top:83.4%;width:92%;height:6.5%"><b>3</b></span></a><figcaption>ホームを下にスクロールした状態。</figcaption></figure>
+          <ol class="actions"><li><strong>「会話言語」</strong>や<strong>「会話のサポート設定」</strong>から、会話プロフィールの設定へ進めます。</li><li><strong>「プラン」</strong>から利用プランを確認・変更できます。</li><li><strong>「会話メモ」</strong>には、話したいことや伝えておきたいことを残せます。</li></ol>
+        </article>
+      </div>
+
+      <a class="back" href="#contents">目次へ戻る ↑</a>
+    </section>
+    <section id="history" aria-labelledby="history-title">
+      <h2 id="history-title">03 履歴を見て、気になる表現をノートへ。</h2>
+      <p>電話に出た日も、出られなかった日も、「履歴」タブで確認できます。通話後のふりかえりでは、会話のまとめや次に使いたい言葉を読めます。</p>
+      <div class="screen-grid">
+        <article class="screen-card">
+          <h3>通話の一覧を開く</h3>
+          <figure><a class="phone" href="images/guide/screenshots/history.png" aria-label="通話の一覧を開くの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/history.png" width="1320" height="2868" alt="履歴一覧。日付と通話時間が表示された通話行。"><span class="hotspot" aria-hidden="true" style="left:5%;top:20%;width:90%;height:11%"><b>1</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>見たい通話の行を押して<strong>履歴詳細</strong>を開きます。</li></ol>
+        </article>
+        <article class="screen-card">
+          <h3>電話に出られなかったとき</h3>
+          <figure><a class="phone" href="images/guide/screenshots/history-missed.png" aria-label="電話に出られなかったときの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/history-missed.png" width="1320" height="2868" alt="不在着信・拒否した着信の履歴と、再度電話が来ることがある旨の案内。"><span class="hotspot" aria-hidden="true" style="left:5%;top:37%;width:90%;height:21%"><b>1</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>履歴の<strong>不在・拒否の表示</strong>で、そのときの着信状況を確認できます。</li></ol><p>出られなかった着信は、1日の通常通話の応答回数には含まれません。今日の設定時間がまだ残っていれば、もう一度電話が来ることがあります。必ず掛け直されるわけではありません。</p>
+        </article>
+        <article class="screen-card">
+          <h3>会話のまとめを読む</h3>
+          <figure><a class="phone" href="images/guide/screenshots/history-detail.png" aria-label="会話のまとめを読むの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/history-detail.png" width="1320" height="2868" alt="履歴詳細。会話のまとめとReenoからのメモ。"><span class="hotspot" aria-hidden="true" style="left:4%;top:18%;width:92%;height:45.5%"><b>1</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>会話のまとめと<strong>「Reeno からのメモ」</strong>を読みます。</li></ol><p>どんな話をしたか、次にどう話してみるかを見返せます。通話直後は内容を準備中の場合があります。話せなかった通話では、会話のまとめや提案が作られないこともあります。</p>
+        </article>
+        <article class="screen-card">
+          <h3>使ってみたい表現を見つける</h3>
+          <figure><a class="phone" href="images/guide/screenshots/history-phrases.png" aria-label="使ってみたい表現を見つけるの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/history-phrases.png" width="1320" height="2868" alt="履歴詳細の言い換え・次に試したい表現と「ノートに入れる」ボタン。"><span class="hotspot" aria-hidden="true" style="left:9%;top:30%;width:34%;height:4%"><b>1</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>下へスクロールし、気になる表現の<strong>「ノートに入れる」</strong>を押します。</li></ol><p>会話の言い換えや、次に試したい表現を、学習ノート（画面では「ノート」）に残せます。</p>
+        </article>
+        <article class="screen-card">
+          <h3>内容を確認して保存する</h3>
+          <figure><a class="phone" href="images/guide/screenshots/note-draft.png" aria-label="内容を確認して保存するの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/note-draft.png" width="1320" height="2868" alt="ノートに追加する画面。日本語と翻訳の入力欄、タグ、保存ボタン。"><span class="hotspot" aria-hidden="true" style="left:5%;top:16%;width:90%;height:28%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:81%;top:6.5%;width:15%;height:5%"><b>2</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>日本語・翻訳の内容を確認します。必要なら編集し、タグを選びます。</li><li>右上の<strong>「保存」</strong>を押します。保存した表現は、画面下の「ノート」タブで見返せます。</li></ol>
+        </article>
+      </div>
+
+      <a class="back" href="#contents">目次へ戻る ↑</a>
+    </section>
+    <section id="calls" aria-labelledby="calls-title">
+      <h2 id="calls-title">04 今話せるなら、電話をもらおう。</h2>
+      <p>通常はReenoからのランダムな着信を待ちますが、今話したいときには、その日の予定を前倒しできる場合があります。</p>
+      <div class="screen-grid">
+        <article class="screen-card">
+          <h3>「通話設定」から「着信設定」へ</h3>
+          <figure><a class="phone" href="images/guide/screenshots/call-tab.png" aria-label="「通話設定」から「着信設定」への画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/call-tab.png" width="1320" height="2868" alt="通話設定タブ。着信設定と会話プロフィールの入口。"><span class="hotspot" aria-hidden="true" style="left:5%;top:16%;width:90%;height:9%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:5%;top:25%;width:90%;height:9%"><b>2</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li><strong>「着信設定」</strong>を押します。曜日・時間帯や、一時停止を変更できます。</li><li>言語・呼び名・会話レベルを変える場合は、<strong>「会話プロフィール」</strong>を押します。</li></ol>
+        </article>
+        <article class="screen-card">
+          <h3>「今すぐ電話をもらう」を押す</h3>
+          <figure><a class="phone" href="images/guide/screenshots/call-settings.png" aria-label="「今すぐ電話をもらう」を押すの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/call-settings.png" width="1320" height="2868" alt="着信設定の着信オン・今すぐ電話をもらうボタン・一時停止。"><span class="hotspot" aria-hidden="true" style="left:8%;top:24.5%;width:84%;height:5%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:4%;top:39%;width:92%;height:22.5%"><b>2</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li><strong>「今すぐ電話をもらう」</strong>が表示されていたら、押して着信をリクエストできます。受け付けられると「数分以内」の案内に変わります。</li><li>忙しいときは<strong>「一時停止」</strong>を使います。着信そのものを止めたいときは、上の「着信を受け取る」をオフにします。</li></ol><p class="note">変更は自動保存されます。保存中・エラーの表示がある場合は、画面の案内を確認してください。</p>
+        </article>
+        <article class="screen-card">
+          <h3>曜日ごとに、出られる時間を決める</h3>
+          <figure><a class="phone" href="images/guide/screenshots/schedule-windows.png" aria-label="曜日ごとに、出られる時間を決めるの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/schedule-windows.png" width="1320" height="2868" alt="着信設定の曜日別の時間帯一覧と追加ボタン。"><span class="hotspot" aria-hidden="true" style="left:84%;top:43%;width:8%;height:3%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:8%;top:47%;width:84%;height:5%"><b>2</b></span></a><figcaption>着信設定を下にスクロールした状態。</figcaption></figure>
+          <ol class="actions"><li>曜日の<strong>「＋」</strong>から時間帯を追加します。時間帯がない曜日には通常の着信は入りません。</li><li>登録済みの時間帯を押すと編集でき、ごみ箱で削除できます。</li></ol><p>平日は19〜21時、休日は昼と夕方など、生活に合わせて設定できます。1日に複数の時間帯も登録できます。</p>
+        </article>
+        <article class="screen-card">
+          <h3>開始・終了時刻を指定する</h3>
+          <figure><a class="phone" href="images/guide/screenshots/schedule-editor.png" aria-label="開始・終了時刻を指定するの画像を拡大"><img loading="lazy" decoding="async" src="images/guide/screenshots/schedule-editor.png" width="1320" height="2868" alt="曜日の時間帯追加欄。開始と終了の時刻、追加ボタン。"><span class="hotspot" aria-hidden="true" style="left:8%;top:65%;width:84%;height:4.5%"><b>1</b></span><span class="hotspot" aria-hidden="true" style="left:8%;top:70%;width:84%;height:4.5%"><b>2</b></span></a><figcaption>画像をタップすると拡大できます。</figcaption></figure>
+          <ol class="actions"><li>開始と終了の時刻を選びます。</li><li><strong>「追加する」</strong>（既存の時間帯の編集では「保存する」）を押して確定します。</li></ol><p class="note">日付をまたぐ時間帯は分けて登録してください。例えば月曜22〜24時と火曜0〜1時、という形です。終了時刻の「0:00」はその日の「24:00」として扱います。</p>
+        </article>
+      </div>
+      <div class="callout"><p><strong>「今すぐ」は、いつでも即座に掛け直せる機能ではありません。</strong></p><p>その日に残っている着信予定を1件、前倒しします。着信拒否・不在の直後など、前倒しできる予定がまだない場合は利用できません。着信オフ・一時停止中、通話中、1日の回数上限に達した場合なども対象外です。ボタンが表示されるときに利用してください。</p><p>通常の回数枠が追加されるわけではありません。この操作でリクエストした着信は、設定した時間帯の外でも届くことがあります。</p></div>
+      <a class="back" href="#contents">目次へ戻る ↑</a>
+    </section>
+    <section id="timing" aria-labelledby="timing-title">
+      <h2 id="timing-title">05 電話の時刻は、どう決まる？</h2>
+      <p>「毎日19時ちょうど」のような固定時刻ではなく、出られる時間の中からランダムに選びます。</p>
+      <ol class="algorithm">
+        <li><strong>今日の曜日に設定した時間帯を確認。</strong>過ぎた時間や一時停止中の時間を除き、今日これから電話できる時間を探します。</li>
+        <li><strong>今日の残り回数を確認。</strong>希望回数とプランの上限、すでに応答した通話・進行中の予定を踏まえて、追加できる回数を決めます。</li>
+        <li><strong>残った時間からランダムに予定を作成。</strong>複数の時間帯があれば、長い時間帯ほど選ばれやすくなります。続けて鳴りすぎないよう、着信の間隔も考慮します。</li>
+        <li><strong>設定変更や定期的な見直しで調整。</strong>出られなかった場合も、残り時間や回数に応じて予定を組み直すことがあります。</li>
+      </ol>
+      <div class="callout"><p>たとえば「12〜13時」と「19〜21時」なら、そのどこかに電話が来ます。必ず各時間帯に1回ずつ来る、という意味ではありません。設定した時間の長さや通話状況によっては、希望した回数どおりに着信しないこともあります。</p></div>
+      <a class="back" href="#contents">目次へ戻る ↑</a>
     </section>
     <section id="characters" aria-labelledby="characters-title">
       <h2 id="characters-title">電話の向こうの仲間たち。</h2>
@@ -103,14 +280,7 @@
         </figure>
       </div>
     </section>
-    <section aria-labelledby="settings-title">
-      <h2 id="settings-title">自分のペースで、続けよう。</h2>
-      <div class="settings">
-        <article><h3>電話の時間を変える</h3><p>「通話設定」タブの「着信設定」から、曜日・時間帯や着信の一時停止を変更できる。</p></article>
-        <article><h3>話す言語を変える</h3><p>「通話設定」タブの「会話プロフィール」から、会話する言語やレベルを変更できる。</p></article>
-        <article><h3>会話を振り返る</h3><p>「履歴」から通話後の振り返りを確認する。話した内容は、次の会話にも活かされる。</p></article>
-      </div>
-    </section>
+
   </main>
   <footer>
     <p><a href="index.html">Reenoの紹介ページへ</a> · <a href="../../privacy_policy/jp/index.html">プライバシーポリシー</a> · <a href="../../terms_of_service/jp/index.html">利用規約</a></p>
