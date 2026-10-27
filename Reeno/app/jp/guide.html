@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reenoの使い方 | 電話が来たら、会話を楽しもう。</title>
+  <meta name="description" content="Reenoの始め方を3ステップで紹介。着信の時間帯の設定から、外国語での会話、通話後の振り返りまで。ReenoとMentaの紹介も。">
+  <link rel="canonical" href="https://sadasada1729.github.io/Reeno/app/jp/guide.html">
+  <meta property="og:title" content="Reenoの使い方">
+  <meta property="og:description" content="AIから、ふいに電話。Reenoと会話を楽しむための利用ガイド。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://sadasada1729.github.io/Reeno/app/jp/guide.html">
+  <meta property="og:image" content="https://sadasada1729.github.io/Reeno/app/jp/images/guide/reeno-introduction.png">
+  <style>
+    :root { color-scheme: light; --ink:#203b49; --muted:#526a72; --teal:#286f76; --paper:#faf8f1; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; line-height:1.85; }
+    a { color:var(--teal); text-underline-offset:.22em; }
+    a:focus-visible { outline:3px solid var(--teal); outline-offset:5px; border-radius:4px; }
+    header, main, footer { width:min(1080px,calc(100% - 48px)); margin-inline:auto; }
+    header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; padding-block:25px; border-bottom:1px solid #d8e2dd; }
+    .brand { display:block; width:112px; line-height:0; }
+    .brand img { width:100%; height:auto; }
+    nav { display:flex; gap:24px; font-size:14px; }
+    nav a { text-decoration:none; }
+    .hero { padding:72px 0 52px; max-width:850px; }
+    .eyebrow { color:var(--teal); font-size:14px; font-weight:700; letter-spacing:.14em; }
+    h1 { font-size:clamp(30px,4.5vw,52px); line-height:1.5; letter-spacing:-.03em; margin:16px 0 22px; }
+    .lead { color:var(--muted); font-size:18px; max-width:700px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; padding:12px 24px; border-radius:999px; background:var(--teal); color:white; font-weight:700; text-decoration:none; margin-top:14px; }
+    section { padding-block:42px; border-top:1px solid #d8e2dd; }
+    h2 { font-size:clamp(24px,3vw,32px); line-height:1.5; margin:0 0 28px; }
+    h3 { font-size:19px; line-height:1.6; margin:0 0 8px; }
+    p { margin:0 0 18px; }
+    .steps { display:grid; grid-template-columns:minmax(240px,.85fr) minmax(0,1.15fr); gap:48px; align-items:start; }
+    img { display:block; max-width:100%; height:auto; }
+    .art { border-radius:20px; }
+    .instructions { margin:0; padding-left:26px; }
+    .instructions li { padding-left:8px; margin-bottom:24px; }
+    .instructions li::marker { color:var(--teal); font-weight:700; }
+    .instructions p { color:var(--muted); margin:6px 0 0; }
+    .characters { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+    figure { margin:0; }
+    figcaption { font-size:15px; color:var(--muted); padding:16px 8px 0; }
+    .settings { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .settings article { background:white; border-radius:20px; padding:24px; }
+    .settings p { color:var(--muted); margin:0; }
+    .note { color:var(--muted); font-size:14px; }
+    footer { padding-block:32px 48px; border-top:1px solid #d8e2dd; font-size:14px; color:var(--muted); }
+    footer p { margin-bottom:8px; }
+    @media (max-width:700px) {
+      header, main, footer { width:calc(100% - 32px); }
+      .hero { padding:40px 0 32px; }
+      .lead { font-size:16px; }
+      .steps, .settings { grid-template-columns:1fr; gap:24px; }
+      .steps > img { width:min(100%,380px); margin-inline:auto; }
+      .characters { grid-template-columns:1fr; gap:28px; }
+      .characters figure { max-width:480px; margin-inline:auto; }
+      section { padding-block:32px; }
+      nav { gap:16px; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html" aria-label="Reenoの紹介ページ"><img src="images/guide/reeno-wordmark-teal.svg" width="1400" height="440" alt="Reeno"></a>
+    <nav aria-label="ページナビゲーション"><a href="index.html">Reenoについて</a><a href="#characters">キャラクター</a></nav>
+  </header>
+  <main>
+    <div class="hero">
+      <p class="eyebrow">Reeno 利用ガイド</p>
+      <h1>電話が来たら、<br>会話を楽しもう。</h1>
+      <p class="lead">Reenoは、AIからふいに電話がかかってくるiPhoneアプリ。出られる時間を設定したら、電話の向こうのReenoと、好きな外国語でおしゃべりを。</p>
+      <a class="button" href="https://apps.apple.com/jp/app/reeno/id6794762206">App StoreでReenoを開く</a>
+    </div>
+    <section aria-labelledby="start-title">
+      <h2 id="start-title">まずは、3ステップ。</h2>
+      <div class="steps">
+        <img class="art" src="images/guide/reeno-three-steps.png" width="1080" height="1350" alt="使い方の3ステップ。出られる時間を設定、Reenoから電話が来る、出て会話を楽しむ。">
+        <div>
+          <ol class="instructions">
+            <li><h3>出られる時間を設定する</h3><p>初期設定の案内に沿って、呼ばれたい名前、会話する言語、会話レベルを設定。電話に出られる曜日と時間帯を選ぶ。AI利用の案内を確認し、マイクの使用を許可する。</p></li>
+            <li><h3>Reenoからの電話を待つ</h3><p>設定した時間帯の中で、ランダムなタイミングに着信。アプリを開いて待ち続ける必要はない。</p></li>
+            <li><h3>電話に出て、会話を楽しむ</h3><p>今日の出来事や好きなものなど、気軽な話題から。通話が終わったら、履歴で会話を振り返れる。</p></li>
+          </ol>
+          <p class="note">iOS 26以降のiPhoneに対応。最初の7日間は1日1回・最大2分の無料体験があり、その後の継続利用にはサブスクリプションが必要。利用条件・料金はアプリ内の最新表示を確認する。</p>
+        </div>
+      </div>
+    </section>
+    <section id="characters" aria-labelledby="characters-title">
+      <h2 id="characters-title">電話の向こうの仲間たち。</h2>
+      <div class="characters">
+        <figure>
+          <img class="art" loading="lazy" src="images/guide/reeno-introduction.png" width="1080" height="1350" alt="Reeno。外国語でおしゃべりする相手。設定した時間帯にふいに電話。日常の出来事や好きなものを話そう。会話を重ねるほど、あなたを知っていく。">
+          <figcaption>白い毛並みと青い目が目印の「電話の妖精」。会話する外国語は、アプリで選べる。</figcaption>
+        </figure>
+        <figure>
+          <img class="art" loading="lazy" src="images/guide/menta-introduction.png" width="1080" height="1350" alt="Menta。会話のこと、母語で相談。話してみた感想や悩みから、あなたに合う話し方を一緒に考える。">
+          <figcaption>クリーム色の体と青緑の帽子が目印。ホームの「メンターとお話し」から相談できる。利用可能なタイミングは、アプリ内の表示で確認する。</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section aria-labelledby="settings-title">
+      <h2 id="settings-title">自分のペースで、続けよう。</h2>
+      <div class="settings">
+        <article><h3>電話の時間を変える</h3><p>「通話設定」タブの「着信設定」から、曜日・時間帯や着信の一時停止を変更できる。</p></article>
+        <article><h3>話す言語を変える</h3><p>「通話設定」タブの「会話プロフィール」から、会話する言語やレベルを変更できる。</p></article>
+        <article><h3>会話を振り返る</h3><p>「履歴」から通話後の振り返りを確認する。話した内容は、次の会話にも活かされる。</p></article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><a href="index.html">Reenoの紹介ページへ</a> · <a href="../../privacy_policy/jp/index.html">プライバシーポリシー</a> · <a href="../../terms_of_service/jp/index.html">利用規約</a></p>
+    <p>© 2026 Reeno</p>
+  </footer>
+</body>
+</html>
