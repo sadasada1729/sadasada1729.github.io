@@ -472,6 +472,18 @@ section h2 span{
 	color: #dbece6;
 }
 
+
+.faqList .faqLevels{
+	margin: 12px 0 0;
+	padding-left: 1.4em;
+	list-style: disc;
+	color: #dbece6;
+}
+
+.faqList .faqLevels li + li{
+	margin-top: 6px;
+}
+
 #footer{
 	clear: both;
 	padding: 38px 10px 58px 0;
@@ -481,6 +493,10 @@ section h2 span{
 }
 
 @media only screen and (max-width: 980px){
+	.faqList details{
+		scroll-margin-top: 160px;
+	}
+
 	#content{
 		width: 100%;
 	}
