@@ -74,6 +74,7 @@
     .download:hover { background:#205e64; }
     .download span { font-size:12px; font-weight:400; white-space:nowrap; }
     .download.secondary { background:#eaf2ed; color:#205e64; }
+    .save-note { margin:0 0 8px; color:var(--muted); font-size:13px; line-height:1.7; }
     .open-links { display:flex; flex-wrap:wrap; column-gap:18px; align-items:center; margin-top:5px; font-size:13px; }
     .open-links a { display:flex; align-items:center; min-height:44px; }
     .back { display:inline-flex; align-items:center; min-height:44px; margin-top:20px; font-size:14px; }
@@ -130,8 +131,9 @@
     <details id="save-help" class="save-help" open>
       <summary>スマホでの保存方法</summary>
       <ol>
-        <li>各素材の<strong>「PNGを保存」「MP4を保存」</strong>を押すと、そのファイルをダウンロードできます。</li>
-        <li>写真アプリへ保存したい場合は、<strong>「画像を原寸で開く」</strong>から画像の長押し、または<strong>「動画を開く」</strong>からブラウザの共有メニューをお使いください。</li>
+        <li>写真アプリへ画像を保存するには、各素材の<strong>「画像を開いて写真に保存」</strong>を押し、開いた画像を<strong>長押し</strong>して写真アプリへの保存を選んでください。</li>
+        <li>動画を写真アプリへ保存したい場合は、<strong>「動画を開く」</strong>からブラウザの共有メニューをお使いください。</li>
+        <li><strong>「PNGをダウンロード」「MP4をダウンロード」</strong>はファイルとして保存するためのボタンです。写真アプリへ直接保存されるとは限りません。</li>
         <li>SNSアプリ内でうまく保存できない場合は、このページをSafariやChromeで開いてください。</li>
       </ol>
       <p>保存先やメニュー名は端末・ブラウザで異なります。透過画像のプレビューにある市松模様や背景色は、保存する画像には含まれません。</p>
@@ -147,21 +149,21 @@
           <h3>使い方の3ステップ</h3>
           <p class="description">設定して、電話を待って、おしゃべり。アプリの流れを1枚に。</p>
           <p class="meta"><span>1080 × 1350 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/05-how-to/reeno-three-steps.png" download="reeno-three-steps.png" aria-label="使い方の3ステップのPNGを保存（169 KB）">PNGを保存 <span>169 KB ↓</span></a><div class="open-links"><a href="media-kit/05-how-to/reeno-three-steps.png" target="_blank" rel="noopener" aria-label="使い方の3ステップの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/05-how-to/reeno-three-steps.png" target="_blank" rel="noopener" aria-label="使い方の3ステップの画像を開いて写真に保存" aria-describedby="photo-help-intro-1">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-intro-1">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/05-how-to/reeno-three-steps.png" download="reeno-three-steps.png" aria-label="使い方の3ステップのPNGをダウンロード（169 KB）">PNGをダウンロード <span>169 KB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview card" href="media-kit/06-character-cards/reeno-introduction.png" target="_blank" rel="noopener" aria-label="Reenoの紹介カードの画像を原寸で開く"><img src="media-kit/06-character-cards/reeno-introduction.png" width="1080" height="1350" loading="lazy" decoding="async" alt="Reenoの紹介カード"></a>
           <h3>Reenoの紹介カード</h3>
           <p class="description">外国語でおしゃべりする相手、Reenoの紹介に。</p>
           <p class="meta"><span>1080 × 1350 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/06-character-cards/reeno-introduction.png" download="reeno-introduction.png" aria-label="Reenoの紹介カードのPNGを保存（558 KB）">PNGを保存 <span>558 KB ↓</span></a><div class="open-links"><a href="media-kit/06-character-cards/reeno-introduction.png" target="_blank" rel="noopener" aria-label="Reenoの紹介カードの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/06-character-cards/reeno-introduction.png" target="_blank" rel="noopener" aria-label="Reenoの紹介カードの画像を開いて写真に保存" aria-describedby="photo-help-intro-2">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-intro-2">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/06-character-cards/reeno-introduction.png" download="reeno-introduction.png" aria-label="Reenoの紹介カードのPNGをダウンロード（558 KB）">PNGをダウンロード <span>558 KB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview card" href="media-kit/06-character-cards/menta-introduction.png" target="_blank" rel="noopener" aria-label="Mentaの紹介カードの画像を原寸で開く"><img src="media-kit/06-character-cards/menta-introduction.png" width="1080" height="1350" loading="lazy" decoding="async" alt="Mentaの紹介カード"></a>
           <h3>Mentaの紹介カード</h3>
           <p class="description">会話の相談は、日本語でOK。その安心感を伝える1枚。</p>
           <p class="meta"><span>1080 × 1350 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/06-character-cards/menta-introduction.png" download="menta-introduction.png" aria-label="Mentaの紹介カードのPNGを保存（665 KB）">PNGを保存 <span>665 KB ↓</span></a><div class="open-links"><a href="media-kit/06-character-cards/menta-introduction.png" target="_blank" rel="noopener" aria-label="Mentaの紹介カードの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/06-character-cards/menta-introduction.png" target="_blank" rel="noopener" aria-label="Mentaの紹介カードの画像を開いて写真に保存" aria-describedby="photo-help-intro-3">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-intro-3">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/06-character-cards/menta-introduction.png" download="menta-introduction.png" aria-label="Mentaの紹介カードのPNGをダウンロード（665 KB）">PNGをダウンロード <span>665 KB ↓</span></a></div>
         </article>
       </div>
       <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
@@ -176,28 +178,28 @@
           <h3>ロック画面での着信</h3>
           <p class="description">iPhoneに届いたReenoの着信。動画は静止画から文字の光の動きを再現したものです。</p>
           <p class="meta"><span>1206 × 2622 px</span><span class="badge">6秒・無音・再現アニメーション</span></p>
-          <div class="actions"><a class="download" href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.mp4" download="reeno-incoming-lock-screen.mp4" aria-label="ロック画面での着信のMP4を保存（120 KB）">MP4を保存 <span>120 KB ↓</span></a><a class="download secondary" href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" download="reeno-incoming-lock-screen.png" aria-label="ロック画面での着信のPNGを保存（482 KB）">PNGを保存 <span>482 KB ↓</span></a><div class="open-links"><a href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.mp4" target="_blank" rel="noopener" aria-label="ロック画面での着信の動画を開く">動画を開く ↗</a><a href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" target="_blank" rel="noopener" aria-label="ロック画面での着信の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" target="_blank" rel="noopener" aria-label="ロック画面での着信の画像を開いて写真に保存" aria-describedby="photo-help-incoming-1">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-incoming-1">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.mp4" download="reeno-incoming-lock-screen.mp4" aria-label="ロック画面での着信のMP4をダウンロード（120 KB）">MP4をダウンロード <span>120 KB ↓</span></a><a class="download secondary" href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" download="reeno-incoming-lock-screen.png" aria-label="ロック画面での着信のPNGをダウンロード（482 KB）">PNGをダウンロード <span>482 KB ↓</span></a><div class="open-links"><a href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.mp4" target="_blank" rel="noopener" aria-label="ロック画面での着信の動画を開く">動画を開く ↗</a></div></div>
         </article>
         <article class="asset-card">
           <a class="preview phone" href="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" target="_blank" rel="noopener" aria-label="操作中の着信バナーの画像を原寸で開く"><img src="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" width="1206" height="2622" loading="lazy" decoding="async" alt="操作中の着信バナー"></a>
           <h3>操作中の着信バナー</h3>
           <p class="description">スマホを使っているとき、画面上部に届く着信の表示例。</p>
           <p class="meta"><span>1206 × 2622 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" download="reeno-incoming-home-screen.png" aria-label="操作中の着信バナーのPNGを保存（6.8 MB）">PNGを保存 <span>6.8 MB ↓</span></a><div class="open-links"><a href="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" target="_blank" rel="noopener" aria-label="操作中の着信バナーの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" target="_blank" rel="noopener" aria-label="操作中の着信バナーの画像を開いて写真に保存" aria-describedby="photo-help-incoming-2">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-incoming-2">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" download="reeno-incoming-home-screen.png" aria-label="操作中の着信バナーのPNGをダウンロード（6.8 MB）">PNGをダウンロード <span>6.8 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview phone" href="media-kit/09-incoming-promo/reeno-incoming-promo-night.png" target="_blank" rel="noopener" aria-label="Reenoから電話（夜空・イメージ）の画像を原寸で開く"><img src="media-kit/09-incoming-promo/reeno-incoming-promo-night.png" width="1206" height="2622" loading="lazy" decoding="async" alt="Reenoから電話（夜空・イメージ）"></a>
           <h3>Reenoから電話（夜空・イメージ）</h3>
           <p class="description">星空を背景に、Reenoからの電話を待つ雰囲気を伝える1枚。アプリの通話画面を撮影用にアレンジしたもので、実際の着信画面とは異なります。</p>
           <p class="meta"><span>1206 × 2622 px</span><span class="badge">紹介用イメージ</span></p>
-          <div class="actions"><a class="download" href="media-kit/09-incoming-promo/reeno-incoming-promo-night.png" download="reeno-incoming-promo-night.png" aria-label="Reenoから電話（夜空・イメージ）のPNGを保存（3.9 MB）">PNGを保存 <span>3.9 MB ↓</span></a><div class="open-links"><a href="media-kit/09-incoming-promo/reeno-incoming-promo-night.png" target="_blank" rel="noopener" aria-label="Reenoから電話（夜空・イメージ）の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/09-incoming-promo/reeno-incoming-promo-night.png" target="_blank" rel="noopener" aria-label="Reenoから電話（夜空・イメージ）の画像を開いて写真に保存" aria-describedby="photo-help-incoming-3">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-incoming-3">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/09-incoming-promo/reeno-incoming-promo-night.png" download="reeno-incoming-promo-night.png" aria-label="Reenoから電話（夜空・イメージ）のPNGをダウンロード（3.9 MB）">PNGをダウンロード <span>3.9 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview phone" href="media-kit/09-incoming-promo/reeno-incoming-promo-daytime.png" target="_blank" rel="noopener" aria-label="Reenoから電話（青空・イメージ）の画像を原寸で開く"><img src="media-kit/09-incoming-promo/reeno-incoming-promo-daytime.png" width="1206" height="2622" loading="lazy" decoding="async" alt="Reenoから電話（青空・イメージ）"></a>
           <h3>Reenoから電話（青空・イメージ）</h3>
           <p class="description">青空と雲を背景に、Reenoからの電話を明るく紹介する1枚。アプリの通話画面を撮影用にアレンジしたもので、実際の着信画面とは異なります。</p>
           <p class="meta"><span>1206 × 2622 px</span><span class="badge">紹介用イメージ</span></p>
-          <div class="actions"><a class="download" href="media-kit/09-incoming-promo/reeno-incoming-promo-daytime.png" download="reeno-incoming-promo-daytime.png" aria-label="Reenoから電話（青空・イメージ）のPNGを保存（4.5 MB）">PNGを保存 <span>4.5 MB ↓</span></a><div class="open-links"><a href="media-kit/09-incoming-promo/reeno-incoming-promo-daytime.png" target="_blank" rel="noopener" aria-label="Reenoから電話（青空・イメージ）の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/09-incoming-promo/reeno-incoming-promo-daytime.png" target="_blank" rel="noopener" aria-label="Reenoから電話（青空・イメージ）の画像を開いて写真に保存" aria-describedby="photo-help-incoming-4">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-incoming-4">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/09-incoming-promo/reeno-incoming-promo-daytime.png" download="reeno-incoming-promo-daytime.png" aria-label="Reenoから電話（青空・イメージ）のPNGをダウンロード（4.5 MB）">PNGをダウンロード <span>4.5 MB ↓</span></a></div>
         </article>
       </div>
       <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
@@ -212,14 +214,14 @@
           <h3>Reenoとの通話</h3>
           <p class="description">外国語で会話を楽しむReenoの通話画面。サンプル表示のスクリーンショットです。</p>
           <p class="meta"><span>1206 × 2622 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/04-call-screens/reeno-call-ja.png" download="reeno-call-ja.png" aria-label="Reenoとの通話のPNGを保存（3.6 MB）">PNGを保存 <span>3.6 MB ↓</span></a><div class="open-links"><a href="media-kit/04-call-screens/reeno-call-ja.png" target="_blank" rel="noopener" aria-label="Reenoとの通話の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/04-call-screens/reeno-call-ja.png" target="_blank" rel="noopener" aria-label="Reenoとの通話の画像を開いて写真に保存" aria-describedby="photo-help-calls-1">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-calls-1">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/04-call-screens/reeno-call-ja.png" download="reeno-call-ja.png" aria-label="Reenoとの通話のPNGをダウンロード（3.6 MB）">PNGをダウンロード <span>3.6 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview phone" href="media-kit/04-call-screens/menta-call-ja.png" target="_blank" rel="noopener" aria-label="Mentaとの相談の画像を原寸で開く"><img src="media-kit/04-call-screens/menta-call-ja.png" width="1206" height="2622" loading="lazy" decoding="async" alt="Mentaとの相談"></a>
           <h3>Mentaとの相談</h3>
           <p class="description">日本語で気軽に相談できるMentaの通話画面。サンプル表示のスクリーンショットです。</p>
           <p class="meta"><span>1206 × 2622 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/04-call-screens/menta-call-ja.png" download="menta-call-ja.png" aria-label="Mentaとの相談のPNGを保存（3.7 MB）">PNGを保存 <span>3.7 MB ↓</span></a><div class="open-links"><a href="media-kit/04-call-screens/menta-call-ja.png" target="_blank" rel="noopener" aria-label="Mentaとの相談の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/04-call-screens/menta-call-ja.png" target="_blank" rel="noopener" aria-label="Mentaとの相談の画像を開いて写真に保存" aria-describedby="photo-help-calls-2">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-calls-2">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/04-call-screens/menta-call-ja.png" download="menta-call-ja.png" aria-label="Mentaとの相談のPNGをダウンロード（3.7 MB）">PNGをダウンロード <span>3.7 MB ↓</span></a></div>
         </article>
       </div>
       <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
@@ -234,35 +236,35 @@
           <h3>朝のホーム / 7:30</h3>
           <p class="description">やわらかな朝の光。朝の習慣を紹介する投稿に。</p>
           <p class="meta"><span>1320 × 2868 px</span><span class="badge">四隅透過</span></p>
-          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-morning.png" download="home-morning.png" aria-label="朝のホーム / 7:30のPNGを保存（3.2 MB）">PNGを保存 <span>3.2 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-morning.png" target="_blank" rel="noopener" aria-label="朝のホーム / 7:30の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/03-home-backgrounds/home-morning.png" target="_blank" rel="noopener" aria-label="朝のホーム / 7:30の画像を開いて写真に保存" aria-describedby="photo-help-home-1">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-home-1">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/03-home-backgrounds/home-morning.png" download="home-morning.png" aria-label="朝のホーム / 7:30のPNGをダウンロード（3.2 MB）">PNGをダウンロード <span>3.2 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview phone" href="media-kit/03-home-backgrounds/home-daytime.png" target="_blank" rel="noopener" aria-label="昼のホーム / 12:30の画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-daytime.png" width="1320" height="2868" loading="lazy" decoding="async" alt="昼のホーム / 12:30"></a>
           <h3>昼のホーム / 12:30</h3>
           <p class="description">明るい昼の背景。日常のスキマ時間を伝える投稿に。</p>
           <p class="meta"><span>1320 × 2868 px</span><span class="badge">四隅透過</span></p>
-          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-daytime.png" download="home-daytime.png" aria-label="昼のホーム / 12:30のPNGを保存（3.0 MB）">PNGを保存 <span>3.0 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-daytime.png" target="_blank" rel="noopener" aria-label="昼のホーム / 12:30の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/03-home-backgrounds/home-daytime.png" target="_blank" rel="noopener" aria-label="昼のホーム / 12:30の画像を開いて写真に保存" aria-describedby="photo-help-home-2">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-home-2">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/03-home-backgrounds/home-daytime.png" download="home-daytime.png" aria-label="昼のホーム / 12:30のPNGをダウンロード（3.0 MB）">PNGをダウンロード <span>3.0 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview phone" href="media-kit/03-home-backgrounds/home-evening.png" target="_blank" rel="noopener" aria-label="夕方のホーム / 17:30の画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-evening.png" width="1320" height="2868" loading="lazy" decoding="async" alt="夕方のホーム / 17:30"></a>
           <h3>夕方のホーム / 17:30</h3>
           <p class="description">夕暮れの空。1日の終わりのおしゃべりの紹介に。</p>
           <p class="meta"><span>1320 × 2868 px</span><span class="badge">四隅透過</span></p>
-          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-evening.png" download="home-evening.png" aria-label="夕方のホーム / 17:30のPNGを保存（3.0 MB）">PNGを保存 <span>3.0 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-evening.png" target="_blank" rel="noopener" aria-label="夕方のホーム / 17:30の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/03-home-backgrounds/home-evening.png" target="_blank" rel="noopener" aria-label="夕方のホーム / 17:30の画像を開いて写真に保存" aria-describedby="photo-help-home-3">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-home-3">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/03-home-backgrounds/home-evening.png" download="home-evening.png" aria-label="夕方のホーム / 17:30のPNGをダウンロード（3.0 MB）">PNGをダウンロード <span>3.0 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview phone" href="media-kit/03-home-backgrounds/home-night.png" target="_blank" rel="noopener" aria-label="夜のホーム / 21:30の画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-night.png" width="1320" height="2868" loading="lazy" decoding="async" alt="夜のホーム / 21:30"></a>
           <h3>夜のホーム / 21:30</h3>
           <p class="description">星と月が浮かぶ夜。落ち着いた雰囲気の投稿に。</p>
           <p class="meta"><span>1320 × 2868 px</span><span class="badge">四隅透過</span></p>
-          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-night.png" download="home-night.png" aria-label="夜のホーム / 21:30のPNGを保存（3.1 MB）">PNGを保存 <span>3.1 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-night.png" target="_blank" rel="noopener" aria-label="夜のホーム / 21:30の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/03-home-backgrounds/home-night.png" target="_blank" rel="noopener" aria-label="夜のホーム / 21:30の画像を開いて写真に保存" aria-describedby="photo-help-home-4">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-home-4">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/03-home-backgrounds/home-night.png" download="home-night.png" aria-label="夜のホーム / 21:30のPNGをダウンロード（3.1 MB）">PNGをダウンロード <span>3.1 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview wide" href="media-kit/03-home-backgrounds/home-four-times.png" target="_blank" rel="noopener" aria-label="4つの時間帯を1枚での画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-four-times.png" width="1920" height="1400" loading="lazy" decoding="async" alt="4つの時間帯を1枚で"></a>
           <h3>4つの時間帯を1枚で</h3>
           <p class="description">時間帯ごとの違いを、まとめて見せたいときに。</p>
           <p class="meta"><span>1920 × 1400 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-four-times.png" download="home-four-times.png" aria-label="4つの時間帯を1枚でのPNGを保存（1.8 MB）">PNGを保存 <span>1.8 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-four-times.png" target="_blank" rel="noopener" aria-label="4つの時間帯を1枚での画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/03-home-backgrounds/home-four-times.png" target="_blank" rel="noopener" aria-label="4つの時間帯を1枚での画像を開いて写真に保存" aria-describedby="photo-help-home-5">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-home-5">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/03-home-backgrounds/home-four-times.png" download="home-four-times.png" aria-label="4つの時間帯を1枚でのPNGをダウンロード（1.8 MB）">PNGをダウンロード <span>1.8 MB ↓</span></a></div>
         </article>
       </div>
       <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
@@ -277,56 +279,56 @@
           <h3>Reeno / いつもの姿</h3>
           <p class="description">白い毛並みと青い目が目印の、電話の妖精。</p>
           <p class="meta"><span>1374 × 1145 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-wiggling.png" download="reeno-wiggling.png" aria-label="Reeno / いつもの姿のPNGを保存（1.6 MB）">PNGを保存 <span>1.6 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-wiggling.png" target="_blank" rel="noopener" aria-label="Reeno / いつもの姿の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/02-characters/reeno-wiggling.png" target="_blank" rel="noopener" aria-label="Reeno / いつもの姿の画像を開いて写真に保存" aria-describedby="photo-help-characters-1">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-characters-1">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/02-characters/reeno-wiggling.png" download="reeno-wiggling.png" aria-label="Reeno / いつもの姿のPNGをダウンロード（1.6 MB）">PNGをダウンロード <span>1.6 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview character" href="media-kit/02-characters/reeno-calling.png" target="_blank" rel="noopener" aria-label="Reeno / おしゃべりの画像を原寸で開く"><img src="media-kit/02-characters/reeno-calling.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / おしゃべり"></a>
           <h3>Reeno / おしゃべり</h3>
           <p class="description">電話を持ったReeno。着信や会話の紹介に。</p>
           <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-calling.png" download="reeno-calling.png" aria-label="Reeno / おしゃべりのPNGを保存（1.3 MB）">PNGを保存 <span>1.3 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-calling.png" target="_blank" rel="noopener" aria-label="Reeno / おしゃべりの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/02-characters/reeno-calling.png" target="_blank" rel="noopener" aria-label="Reeno / おしゃべりの画像を開いて写真に保存" aria-describedby="photo-help-characters-2">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-characters-2">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/02-characters/reeno-calling.png" download="reeno-calling.png" aria-label="Reeno / おしゃべりのPNGをダウンロード（1.3 MB）">PNGをダウンロード <span>1.3 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview character" href="media-kit/02-characters/reeno-writing.png" target="_blank" rel="noopener" aria-label="Reeno / メモの画像を原寸で開く"><img src="media-kit/02-characters/reeno-writing.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / メモ"></a>
           <h3>Reeno / メモ</h3>
           <p class="description">会話のふりかえりやノートの紹介に。</p>
           <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-writing.png" download="reeno-writing.png" aria-label="Reeno / メモのPNGを保存（1.4 MB）">PNGを保存 <span>1.4 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-writing.png" target="_blank" rel="noopener" aria-label="Reeno / メモの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/02-characters/reeno-writing.png" target="_blank" rel="noopener" aria-label="Reeno / メモの画像を開いて写真に保存" aria-describedby="photo-help-characters-3">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-characters-3">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/02-characters/reeno-writing.png" download="reeno-writing.png" aria-label="Reeno / メモのPNGをダウンロード（1.4 MB）">PNGをダウンロード <span>1.4 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview character" href="media-kit/02-characters/reeno-peeking.png" target="_blank" rel="noopener" aria-label="Reeno / のぞき込みの画像を原寸で開く"><img src="media-kit/02-characters/reeno-peeking.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / のぞき込み"></a>
           <h3>Reeno / のぞき込み</h3>
           <p class="description">画面の端から、ちょこんとのぞく姿。</p>
           <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-peeking.png" download="reeno-peeking.png" aria-label="Reeno / のぞき込みのPNGを保存（1.3 MB）">PNGを保存 <span>1.3 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-peeking.png" target="_blank" rel="noopener" aria-label="Reeno / のぞき込みの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/02-characters/reeno-peeking.png" target="_blank" rel="noopener" aria-label="Reeno / のぞき込みの画像を開いて写真に保存" aria-describedby="photo-help-characters-4">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-characters-4">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/02-characters/reeno-peeking.png" download="reeno-peeking.png" aria-label="Reeno / のぞき込みのPNGをダウンロード（1.3 MB）">PNGをダウンロード <span>1.3 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview character" href="media-kit/02-characters/reeno-exploring.png" target="_blank" rel="noopener" aria-label="Reeno / 探検の画像を原寸で開く"><img src="media-kit/02-characters/reeno-exploring.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / 探検"></a>
           <h3>Reeno / 探検</h3>
           <p class="description">新しい話題を探しに行くような、楽しげな姿。</p>
           <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-exploring.png" download="reeno-exploring.png" aria-label="Reeno / 探検のPNGを保存（1.2 MB）">PNGを保存 <span>1.2 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-exploring.png" target="_blank" rel="noopener" aria-label="Reeno / 探検の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/02-characters/reeno-exploring.png" target="_blank" rel="noopener" aria-label="Reeno / 探検の画像を開いて写真に保存" aria-describedby="photo-help-characters-5">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-characters-5">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/02-characters/reeno-exploring.png" download="reeno-exploring.png" aria-label="Reeno / 探検のPNGをダウンロード（1.2 MB）">PNGをダウンロード <span>1.2 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview character" href="media-kit/02-characters/reeno-concerned.png" target="_blank" rel="noopener" aria-label="Reeno / 困り顔の画像を原寸で開く"><img src="media-kit/02-characters/reeno-concerned.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / 困り顔"></a>
           <h3>Reeno / 困り顔</h3>
           <p class="description">言葉に迷ったときのエピソードにも。</p>
           <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-concerned.png" download="reeno-concerned.png" aria-label="Reeno / 困り顔のPNGを保存（1.3 MB）">PNGを保存 <span>1.3 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-concerned.png" target="_blank" rel="noopener" aria-label="Reeno / 困り顔の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/02-characters/reeno-concerned.png" target="_blank" rel="noopener" aria-label="Reeno / 困り顔の画像を開いて写真に保存" aria-describedby="photo-help-characters-6">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-characters-6">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/02-characters/reeno-concerned.png" download="reeno-concerned.png" aria-label="Reeno / 困り顔のPNGをダウンロード（1.3 MB）">PNGをダウンロード <span>1.3 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview character" href="media-kit/02-characters/reeno-sleeping.png" target="_blank" rel="noopener" aria-label="Reeno / おやすみの画像を原寸で開く"><img src="media-kit/02-characters/reeno-sleeping.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / おやすみ"></a>
           <h3>Reeno / おやすみ</h3>
           <p class="description">夜の投稿や、1日の締めくくりに。</p>
           <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-sleeping.png" download="reeno-sleeping.png" aria-label="Reeno / おやすみのPNGを保存（1.6 MB）">PNGを保存 <span>1.6 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-sleeping.png" target="_blank" rel="noopener" aria-label="Reeno / おやすみの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/02-characters/reeno-sleeping.png" target="_blank" rel="noopener" aria-label="Reeno / おやすみの画像を開いて写真に保存" aria-describedby="photo-help-characters-7">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-characters-7">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/02-characters/reeno-sleeping.png" download="reeno-sleeping.png" aria-label="Reeno / おやすみのPNGをダウンロード（1.6 MB）">PNGをダウンロード <span>1.6 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview character" href="media-kit/02-characters/menta-calling.png" target="_blank" rel="noopener" aria-label="Menta / 相談の画像を原寸で開く"><img src="media-kit/02-characters/menta-calling.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Menta / 相談"></a>
           <h3>Menta / 相談</h3>
           <p class="description">日本語で相談できる、クリーム色のメンター。</p>
           <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/02-characters/menta-calling.png" download="menta-calling.png" aria-label="Menta / 相談のPNGを保存（1.6 MB）">PNGを保存 <span>1.6 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/menta-calling.png" target="_blank" rel="noopener" aria-label="Menta / 相談の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/02-characters/menta-calling.png" target="_blank" rel="noopener" aria-label="Menta / 相談の画像を開いて写真に保存" aria-describedby="photo-help-characters-8">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-characters-8">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/02-characters/menta-calling.png" download="menta-calling.png" aria-label="Menta / 相談のPNGをダウンロード（1.6 MB）">PNGをダウンロード <span>1.6 MB ↓</span></a></div>
         </article>
       </div>
       <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
@@ -341,14 +343,14 @@
           <h3>アプリアイコン / ライト</h3>
           <p class="description">明るい背景のアイコン画像。</p>
           <p class="meta"><span>1024 × 1024 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/01-app-icon/app_icon_light.png" download="app_icon_light.png" aria-label="アプリアイコン / ライトのPNGを保存（4.1 MB）">PNGを保存 <span>4.1 MB ↓</span></a><div class="open-links"><a href="media-kit/01-app-icon/app_icon_light.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ライトの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/01-app-icon/app_icon_light.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ライトの画像を開いて写真に保存" aria-describedby="photo-help-icons-1">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-icons-1">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/01-app-icon/app_icon_light.png" download="app_icon_light.png" aria-label="アプリアイコン / ライトのPNGをダウンロード（4.1 MB）">PNGをダウンロード <span>4.1 MB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview icon" href="media-kit/01-app-icon/app_icon_dark.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ダークの画像を原寸で開く"><img src="media-kit/01-app-icon/app_icon_dark.png" width="1024" height="1024" loading="lazy" decoding="async" alt="アプリアイコン / ダーク"></a>
           <h3>アプリアイコン / ダーク</h3>
           <p class="description">暗い背景のアイコン画像。</p>
           <p class="meta"><span>1024 × 1024 px</span></p>
-          <div class="actions"><a class="download" href="media-kit/01-app-icon/app_icon_dark.png" download="app_icon_dark.png" aria-label="アプリアイコン / ダークのPNGを保存（4.3 MB）">PNGを保存 <span>4.3 MB ↓</span></a><div class="open-links"><a href="media-kit/01-app-icon/app_icon_dark.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ダークの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/01-app-icon/app_icon_dark.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ダークの画像を開いて写真に保存" aria-describedby="photo-help-icons-2">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-icons-2">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/01-app-icon/app_icon_dark.png" download="app_icon_dark.png" aria-label="アプリアイコン / ダークのPNGをダウンロード（4.3 MB）">PNGをダウンロード <span>4.3 MB ↓</span></a></div>
         </article>
       </div>
       <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
@@ -363,21 +365,21 @@
           <h3>ロゴ / 青緑</h3>
           <p class="description">明るい背景に合わせやすい、Reenoのブランドカラー。</p>
           <p class="meta"><span>1400 × 440 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/07-logo/reeno-wordmark-teal.png" download="reeno-wordmark-teal.png" aria-label="ロゴ / 青緑のPNGを保存（57 KB）">PNGを保存 <span>57 KB ↓</span></a><div class="open-links"><a href="media-kit/07-logo/reeno-wordmark-teal.png" target="_blank" rel="noopener" aria-label="ロゴ / 青緑の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/07-logo/reeno-wordmark-teal.png" target="_blank" rel="noopener" aria-label="ロゴ / 青緑の画像を開いて写真に保存" aria-describedby="photo-help-logos-1">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-logos-1">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/07-logo/reeno-wordmark-teal.png" download="reeno-wordmark-teal.png" aria-label="ロゴ / 青緑のPNGをダウンロード（57 KB）">PNGをダウンロード <span>57 KB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview logo" href="media-kit/07-logo/reeno-wordmark-dark.png" target="_blank" rel="noopener" aria-label="ロゴ / 濃色の画像を原寸で開く"><img src="media-kit/07-logo/reeno-wordmark-dark.png" width="1400" height="440" loading="lazy" decoding="async" alt="ロゴ / 濃色"></a>
           <h3>ロゴ / 濃色</h3>
           <p class="description">白や淡い色の背景に。</p>
           <p class="meta"><span>1400 × 440 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/07-logo/reeno-wordmark-dark.png" download="reeno-wordmark-dark.png" aria-label="ロゴ / 濃色のPNGを保存（57 KB）">PNGを保存 <span>57 KB ↓</span></a><div class="open-links"><a href="media-kit/07-logo/reeno-wordmark-dark.png" target="_blank" rel="noopener" aria-label="ロゴ / 濃色の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/07-logo/reeno-wordmark-dark.png" target="_blank" rel="noopener" aria-label="ロゴ / 濃色の画像を開いて写真に保存" aria-describedby="photo-help-logos-2">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-logos-2">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/07-logo/reeno-wordmark-dark.png" download="reeno-wordmark-dark.png" aria-label="ロゴ / 濃色のPNGをダウンロード（57 KB）">PNGをダウンロード <span>57 KB ↓</span></a></div>
         </article>
         <article class="asset-card">
           <a class="preview logo-dark" href="media-kit/07-logo/reeno-wordmark-white.png" target="_blank" rel="noopener" aria-label="ロゴ / 白の画像を原寸で開く"><img src="media-kit/07-logo/reeno-wordmark-white.png" width="1400" height="440" loading="lazy" decoding="async" alt="ロゴ / 白"></a>
           <h3>ロゴ / 白</h3>
           <p class="description">暗い背景や写真の上に。プレビューの背景色は画像に含まれません。</p>
           <p class="meta"><span>1400 × 440 px</span><span class="badge">透過PNG</span></p>
-          <div class="actions"><a class="download" href="media-kit/07-logo/reeno-wordmark-white.png" download="reeno-wordmark-white.png" aria-label="ロゴ / 白のPNGを保存（46 KB）">PNGを保存 <span>46 KB ↓</span></a><div class="open-links"><a href="media-kit/07-logo/reeno-wordmark-white.png" target="_blank" rel="noopener" aria-label="ロゴ / 白の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+          <div class="actions"><a class="download photo-open" href="media-kit/07-logo/reeno-wordmark-white.png" target="_blank" rel="noopener" aria-label="ロゴ / 白の画像を開いて写真に保存" aria-describedby="photo-help-logos-3">画像を開いて写真に保存 <span>↗</span></a><p class="save-note" id="photo-help-logos-3">開いた画像を長押しして、写真アプリへの保存を選んでください。</p><a class="download secondary" href="media-kit/07-logo/reeno-wordmark-white.png" download="reeno-wordmark-white.png" aria-label="ロゴ / 白のPNGをダウンロード（46 KB）">PNGをダウンロード <span>46 KB ↓</span></a></div>
         </article>
       </div>
       <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
