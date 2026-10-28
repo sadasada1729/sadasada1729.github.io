@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reeno 投稿用素材 | 画像・動画を1点ずつ保存</title>
+  <meta name="description" content="Reenoの紹介投稿に使える画像・動画。アプリアイコン、透過キャラクター、着信・通話画面、朝昼夕夜のホーム、紹介カード、ロゴをスマホから1点ずつ保存できます。">
+  <link rel="canonical" href="https://sadasada1729.github.io/Reeno/app/jp/assets.html">
+  <meta property="og:title" content="Reeno 投稿用素材">
+  <meta property="og:description" content="電話が来る楽しみを、あなたの投稿に。画像・動画を1点ずつ選んで保存。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://sadasada1729.github.io/Reeno/app/jp/assets.html">
+  <meta property="og:image" content="https://sadasada1729.github.io/Reeno/app/jp/media-kit/06-character-cards/reeno-introduction.png">
+  <style>
+    :root { color-scheme:light; --ink:#203b49; --muted:#526a72; --teal:#286f76; --paper:#faf8f1; --line:#d8e2dd; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; line-height:1.8; }
+    a { color:var(--teal); text-underline-offset:.22em; }
+    a:focus-visible, summary:focus-visible, video:focus-visible { outline:3px solid #b94320; outline-offset:4px; }
+    header, main, footer { width:min(1120px,calc(100% - 48px)); margin-inline:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; padding-block:22px; border-bottom:1px solid var(--line); }
+    .brand { display:block; width:112px; line-height:0; }
+    .brand img { width:100%; height:auto; }
+    header nav { display:flex; flex-wrap:wrap; gap:8px 22px; font-size:14px; }
+    header nav a { display:flex; align-items:center; min-height:44px; text-decoration:none; }
+    .skip { position:absolute; top:8px; left:8px; z-index:10; padding:12px; background:white; transform:translateY(-180%); }
+    .skip:focus { transform:none; }
+    .hero { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr); align-items:center; gap:32px; padding:56px 0 38px; }
+    .eyebrow { margin:0 0 12px; color:var(--teal); font-size:13px; font-weight:700; letter-spacing:.14em; }
+    h1 { font-size:clamp(32px,4.3vw,52px); letter-spacing:-.035em; line-height:1.4; margin:0 0 20px; }
+    .hero p:not(.eyebrow) { max-width:580px; color:var(--muted); }
+    .hero-art { display:grid; place-items:center; padding:16px; border-radius:50%; background:#e9efdf; }
+    .hero-art img { display:block; width:100%; max-width:260px; height:auto; }
+    .hero-links { display:flex; flex-wrap:wrap; align-items:center; gap:12px 24px; }
+    .pill { display:inline-flex; align-items:center; justify-content:center; padding:12px 24px; min-height:48px; border-radius:99px; color:white; background:var(--teal); font-weight:700; text-decoration:none; }
+    .counts { display:flex; align-items:center; gap:12px; margin:0 0 24px; color:var(--muted); font-size:14px; }
+    .counts span { padding-right:12px; border-right:1px solid var(--line); }
+    .counts span:last-child { border:0; }
+    .save-help { margin:0 0 24px; padding:18px 22px; background:#eaf2ed; border-radius:16px; }
+    .save-help summary { font-weight:700; cursor:pointer; min-height:44px; display:list-item; align-content:center; }
+    .save-help ol { padding-left:24px; margin:12px 0; }
+    .save-help li { padding-left:5px; margin-bottom:10px; }
+    .save-help p { margin:12px 0 0; font-size:14px; color:var(--muted); }
+    .category-nav { display:flex; flex-wrap:wrap; gap:10px; padding:0 0 30px; }
+    .category-nav a { display:flex; align-items:center; min-height:44px; padding:8px 17px; border:1px solid #bccfca; border-radius:99px; background:white; font-size:14px; text-decoration:none; }
+    .category-nav a:hover { background:#eaf2ed; }
+    section { padding:36px 0 42px; border-top:1px solid var(--line); scroll-margin-top:16px; }
+    .section-number { font-size:13px; color:var(--teal); font-weight:700; letter-spacing:.12em; margin-bottom:8px; }
+    h2 { margin:0 0 12px; font-size:clamp(23px,2.8vw,32px); line-height:1.5; letter-spacing:-.02em; }
+    .section-intro { color:var(--muted); max-width:720px; margin:0 0 26px; }
+    .asset-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+    .asset-card { display:flex; flex-direction:column; min-width:0; padding:16px; border:1px solid #e1e8e3; border-radius:22px; background:white; }
+    .preview { display:grid; place-items:center; aspect-ratio:1/1; overflow:hidden; border-radius:13px; background:#f1f3ef; text-decoration:none; }
+    .preview img, .preview video { display:block; width:100%; height:100%; max-height:320px; object-fit:contain; }
+    .preview.phone { aspect-ratio:4/5; background:#edf1ed; }
+    .preview.phone img, .preview.phone video { max-height:360px; }
+    .preview.card { aspect-ratio:4/5; background:var(--paper); }
+    .preview.card img { max-height:360px; }
+    .preview.character, .preview.logo { background-color:#f5f5f0; background-image:linear-gradient(45deg,#e5e9e3 25%,transparent 25%),linear-gradient(-45deg,#e5e9e3 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e5e9e3 75%),linear-gradient(-45deg,transparent 75%,#e5e9e3 75%); background-size:24px 24px; background-position:0 0,0 12px,12px -12px,-12px 0; }
+    .preview.character img { padding:16px; }
+    .preview.icon img { padding:22px; }
+    .preview.logo, .preview.logo-dark { aspect-ratio:2/1; }
+    .preview.logo img, .preview.logo-dark img { padding:22px; }
+    .preview.logo-dark { background:#243c47; }
+    .preview.wide img { padding:10px; }
+    .asset-card h3 { margin:18px 0 7px; font-size:18px; line-height:1.55; }
+    .description { color:var(--muted); font-size:14px; margin:0 0 14px; }
+    .meta { display:flex; align-items:center; flex-wrap:wrap; gap:6px 10px; color:var(--muted); font-size:12px; margin:0 0 16px; }
+    .badge { display:inline-block; padding:2px 8px; border-radius:6px; background:#eaf2ed; color:#275a55; }
+    .actions { margin-top:auto; display:grid; gap:8px; }
+    .download { display:flex; align-items:center; justify-content:space-between; gap:10px; min-height:48px; padding:11px 14px; border-radius:10px; text-decoration:none; background:var(--teal); color:white; font-size:14px; font-weight:700; }
+    .download:hover { background:#205e64; }
+    .download span { font-size:12px; font-weight:400; white-space:nowrap; }
+    .download.secondary { background:#eaf2ed; color:#205e64; }
+    .open-links { display:flex; flex-wrap:wrap; column-gap:18px; align-items:center; margin-top:5px; font-size:13px; }
+    .open-links a { display:flex; align-items:center; min-height:44px; }
+    .back { display:inline-flex; align-items:center; min-height:44px; margin-top:20px; font-size:14px; }
+    .closing { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:28px; background:#eaf2ed; border-radius:20px; margin:0 0 40px; }
+    .closing h2 { font-size:22px; }
+    .closing p { margin:0; color:var(--muted); }
+    .closing .pill { flex-shrink:0; }
+    footer { padding:28px 0 40px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    footer p { margin:0 0 10px; }
+    @media (max-width:950px) { .asset-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media (max-width:600px) {
+      header, main, footer { width:calc(100% - 32px); }
+      header { gap:8px; padding-block:16px; }
+      header nav { gap:14px; font-size:13px; }
+      .brand { width:92px; }
+      .hero { grid-template-columns:1fr; padding:32px 0 24px; gap:20px; }
+      .hero-art { display:none; }
+      .hero p { font-size:15px; }
+      .hero-links { gap:10px 18px; font-size:14px; }
+      .counts { flex-wrap:wrap; gap:8px; font-size:12px; }
+      .save-help { padding:14px 18px; }
+      .save-help li { font-size:14px; }
+      .category-nav { gap:8px; }
+      .category-nav a { padding:8px 12px; font-size:13px; }
+      .asset-grid { grid-template-columns:1fr; gap:20px; }
+      .preview img, .preview video { max-height:320px; }
+      .preview.phone { aspect-ratio:1/1.15; }
+      .preview.phone img, .preview.phone video { max-height:360px; }
+      .preview.card { aspect-ratio:1/1.1; }
+      .preview.card img { max-height:350px; }
+      .closing { flex-direction:column; align-items:flex-start; padding:22px; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#materials">素材一覧へ進む</a>
+  <header>
+    <a class="brand" href="index.html" aria-label="Reenoの紹介ページ"><img src="images/guide/reeno-wordmark-teal.svg" width="1400" height="440" alt="Reeno"></a>
+    <nav aria-label="ページナビゲーション"><a href="guide.html">使い方ガイド</a><a href="#save-help">保存方法</a></nav>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">REENO / 投稿用素材</p>
+        <h1>電話が来る楽しみを、<br>あなたの投稿に。</h1>
+        <p>Reenoの紹介に使える画像と動画を集めました。<br>好きな素材を選んで、スマホから1点ずつ保存できます。</p>
+        <div class="hero-links"><a class="pill" href="#materials">素材を選ぶ ↓</a><a href="guide.html">アプリの使い方を見る →</a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><img src="media-kit/02-characters/reeno-calling.png" width="1254" height="1254" alt="" decoding="async"></div>
+    </div>
+    <p class="counts"><span>画像 25 点 / 動画 3 点</span><span>PNG・MP4</span><span>個別ダウンロード</span></p>
+    <details id="save-help" class="save-help" open>
+      <summary>スマホでの保存方法</summary>
+      <ol>
+        <li>各素材の<strong>「PNGを保存」「MP4を保存」</strong>を押すと、そのファイルをダウンロードできます。</li>
+        <li>写真アプリへ保存したい場合は、<strong>「画像を原寸で開く」</strong>から画像の長押し、または<strong>「動画を開く」</strong>からブラウザの共有メニューをお使いください。</li>
+        <li>SNSアプリ内でうまく保存できない場合は、このページをSafariやChromeで開いてください。</li>
+      </ol>
+      <p>保存先やメニュー名は端末・ブラウザで異なります。透過画像のプレビューにある市松模様や背景色は、保存する画像には含まれません。</p>
+    </details>
+    <nav id="materials" class="category-nav" aria-label="素材のカテゴリー"><a href="#intro">紹介画像</a><a href="#incoming">着信</a><a href="#calls">通話</a><a href="#home">ホーム</a><a href="#characters">キャラクター</a><a href="#icons">アイコン</a><a href="#logos">ロゴ</a></nav>
+    <section id="intro" aria-labelledby="intro-title">
+      <p class="section-number">01 / 紹介画像</p>
+      <h2 id="intro-title">まずは、紹介に使いやすい3枚。</h2>
+      <p class="section-intro">Reenoの楽しみ方と、電話の向こうの仲間たちを伝える画像です。</p>
+      <div class="asset-grid">
+        <article class="asset-card">
+          <a class="preview card" href="media-kit/05-how-to/reeno-three-steps.png" target="_blank" rel="noopener" aria-label="使い方の3ステップの画像を原寸で開く"><img src="media-kit/05-how-to/reeno-three-steps.png" width="1080" height="1350" loading="lazy" decoding="async" alt="使い方の3ステップ"></a>
+          <h3>使い方の3ステップ</h3>
+          <p class="description">設定して、電話を待って、おしゃべり。アプリの流れを1枚に。</p>
+          <p class="meta"><span>1080 × 1350 px</span></p>
+          <div class="actions"><a class="download" href="media-kit/05-how-to/reeno-three-steps.png" download="reeno-three-steps.png" aria-label="使い方の3ステップのPNGを保存（169 KB）">PNGを保存 <span>169 KB ↓</span></a><div class="open-links"><a href="media-kit/05-how-to/reeno-three-steps.png" target="_blank" rel="noopener" aria-label="使い方の3ステップの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview card" href="media-kit/06-character-cards/reeno-introduction.png" target="_blank" rel="noopener" aria-label="Reenoの紹介カードの画像を原寸で開く"><img src="media-kit/06-character-cards/reeno-introduction.png" width="1080" height="1350" loading="lazy" decoding="async" alt="Reenoの紹介カード"></a>
+          <h3>Reenoの紹介カード</h3>
+          <p class="description">外国語でおしゃべりする相手、Reenoの紹介に。</p>
+          <p class="meta"><span>1080 × 1350 px</span></p>
+          <div class="actions"><a class="download" href="media-kit/06-character-cards/reeno-introduction.png" download="reeno-introduction.png" aria-label="Reenoの紹介カードのPNGを保存（558 KB）">PNGを保存 <span>558 KB ↓</span></a><div class="open-links"><a href="media-kit/06-character-cards/reeno-introduction.png" target="_blank" rel="noopener" aria-label="Reenoの紹介カードの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview card" href="media-kit/06-character-cards/menta-introduction.png" target="_blank" rel="noopener" aria-label="Mentaの紹介カードの画像を原寸で開く"><img src="media-kit/06-character-cards/menta-introduction.png" width="1080" height="1350" loading="lazy" decoding="async" alt="Mentaの紹介カード"></a>
+          <h3>Mentaの紹介カード</h3>
+          <p class="description">会話の相談は、日本語でOK。その安心感を伝える1枚。</p>
+          <p class="meta"><span>1080 × 1350 px</span></p>
+          <div class="actions"><a class="download" href="media-kit/06-character-cards/menta-introduction.png" download="menta-introduction.png" aria-label="Mentaの紹介カードのPNGを保存（665 KB）">PNGを保存 <span>665 KB ↓</span></a><div class="open-links"><a href="media-kit/06-character-cards/menta-introduction.png" target="_blank" rel="noopener" aria-label="Mentaの紹介カードの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+      </div>
+      <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
+    </section>
+    <section id="incoming" aria-labelledby="incoming-title">
+      <p class="section-number">02 / 着信</p>
+      <h2 id="incoming-title">電話が来る瞬間。</h2>
+      <p class="section-intro">ロック中・操作中の着信画面と、「スライドで応答」の動きを紹介できます。</p>
+      <div class="asset-grid">
+        <article class="asset-card">
+          <div class="preview phone"><video controls playsinline preload="none" poster="media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" width="1206" height="2622" aria-label="ロック画面での着信の動画プレビュー"><source src="media-kit/08-incoming-calls/reeno-incoming-lock-screen.mp4" type="video/mp4"><a href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.mp4">動画を開く</a></video></div>
+          <h3>ロック画面での着信</h3>
+          <p class="description">iPhoneに届いたReenoの着信。動画は静止画から文字の光の動きを再現したものです。</p>
+          <p class="meta"><span>1206 × 2622 px</span><span class="badge">6秒・無音・再現アニメーション</span></p>
+          <div class="actions"><a class="download" href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.mp4" download="reeno-incoming-lock-screen.mp4" aria-label="ロック画面での着信のMP4を保存（120 KB）">MP4を保存 <span>120 KB ↓</span></a><a class="download secondary" href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" download="reeno-incoming-lock-screen.png" aria-label="ロック画面での着信のPNGを保存（482 KB）">PNGを保存 <span>482 KB ↓</span></a><div class="open-links"><a href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.mp4" target="_blank" rel="noopener" aria-label="ロック画面での着信の動画を開く">動画を開く ↗</a><a href="media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" target="_blank" rel="noopener" aria-label="ロック画面での着信の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview phone" href="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" target="_blank" rel="noopener" aria-label="操作中の着信バナーの画像を原寸で開く"><img src="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" width="1206" height="2622" loading="lazy" decoding="async" alt="操作中の着信バナー"></a>
+          <h3>操作中の着信バナー</h3>
+          <p class="description">スマホを使っているとき、画面上部に届く着信の表示例。</p>
+          <p class="meta"><span>1206 × 2622 px</span></p>
+          <div class="actions"><a class="download" href="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" download="reeno-incoming-home-screen.png" aria-label="操作中の着信バナーのPNGを保存（6.8 MB）">PNGを保存 <span>6.8 MB ↓</span></a><div class="open-links"><a href="media-kit/08-incoming-calls/reeno-incoming-home-screen.png" target="_blank" rel="noopener" aria-label="操作中の着信バナーの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+      </div>
+      <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
+    </section>
+    <section id="calls" aria-labelledby="calls-title">
+      <p class="section-number">03 / 通話</p>
+      <h2 id="calls-title">電話の向こうで、おしゃべり。</h2>
+      <p class="section-intro">通話中のアプリ画面。短い動画では、キャラクターの動きも伝えられます。</p>
+      <div class="asset-grid">
+        <article class="asset-card">
+          <div class="preview phone"><video controls playsinline preload="none" poster="media-kit/04-call-screens/reeno-call-ja.png" width="1206" height="2622" aria-label="Reenoとの通話の動画プレビュー"><source src="media-kit/04-call-screens/reeno-call-ja.mp4" type="video/mp4"><a href="media-kit/04-call-screens/reeno-call-ja.mp4">動画を開く</a></video></div>
+          <h3>Reenoとの通話</h3>
+          <p class="description">外国語で会話を楽しむ画面。サンプル表示の画面収録で、実際の会話音声は含みません。</p>
+          <p class="meta"><span>1206 × 2622 px</span><span class="badge">約10秒・無音・画面収録</span></p>
+          <div class="actions"><a class="download" href="media-kit/04-call-screens/reeno-call-ja.mp4" download="reeno-call-ja.mp4" aria-label="Reenoとの通話のMP4を保存（17.5 MB）">MP4を保存 <span>17.5 MB ↓</span></a><a class="download secondary" href="media-kit/04-call-screens/reeno-call-ja.png" download="reeno-call-ja.png" aria-label="Reenoとの通話のPNGを保存（3.6 MB）">PNGを保存 <span>3.6 MB ↓</span></a><div class="open-links"><a href="media-kit/04-call-screens/reeno-call-ja.mp4" target="_blank" rel="noopener" aria-label="Reenoとの通話の動画を開く">動画を開く ↗</a><a href="media-kit/04-call-screens/reeno-call-ja.png" target="_blank" rel="noopener" aria-label="Reenoとの通話の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <div class="preview phone"><video controls playsinline preload="none" poster="media-kit/04-call-screens/menta-call-ja.png" width="1206" height="2622" aria-label="Mentaとの相談の動画プレビュー"><source src="media-kit/04-call-screens/menta-call-ja.mp4" type="video/mp4"><a href="media-kit/04-call-screens/menta-call-ja.mp4">動画を開く</a></video></div>
+          <h3>Mentaとの相談</h3>
+          <p class="description">日本語で気軽に相談できるMenta。サンプル表示の画面収録で、実際の会話音声は含みません。</p>
+          <p class="meta"><span>1206 × 2622 px</span><span class="badge">約10秒・無音・画面収録</span></p>
+          <div class="actions"><a class="download" href="media-kit/04-call-screens/menta-call-ja.mp4" download="menta-call-ja.mp4" aria-label="Mentaとの相談のMP4を保存（20.6 MB）">MP4を保存 <span>20.6 MB ↓</span></a><a class="download secondary" href="media-kit/04-call-screens/menta-call-ja.png" download="menta-call-ja.png" aria-label="Mentaとの相談のPNGを保存（3.7 MB）">PNGを保存 <span>3.7 MB ↓</span></a><div class="open-links"><a href="media-kit/04-call-screens/menta-call-ja.mp4" target="_blank" rel="noopener" aria-label="Mentaとの相談の動画を開く">動画を開く ↗</a><a href="media-kit/04-call-screens/menta-call-ja.png" target="_blank" rel="noopener" aria-label="Mentaとの相談の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+      </div>
+      <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
+    </section>
+    <section id="home" aria-labelledby="home-title">
+      <p class="section-number">04 / ホーム</p>
+      <h2 id="home-title">朝も夜も、ホームの表情が変わる。</h2>
+      <p class="section-intro">今日の会話が終わったあとのホーム画面です。朝・昼・夕・夜で背景と時計を合わせています。</p>
+      <div class="asset-grid">
+        <article class="asset-card">
+          <a class="preview phone" href="media-kit/03-home-backgrounds/home-morning.png" target="_blank" rel="noopener" aria-label="朝のホーム / 7:30の画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-morning.png" width="1320" height="2868" loading="lazy" decoding="async" alt="朝のホーム / 7:30"></a>
+          <h3>朝のホーム / 7:30</h3>
+          <p class="description">やわらかな朝の光。朝の習慣を紹介する投稿に。</p>
+          <p class="meta"><span>1320 × 2868 px</span><span class="badge">四隅透過</span></p>
+          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-morning.png" download="home-morning.png" aria-label="朝のホーム / 7:30のPNGを保存（3.2 MB）">PNGを保存 <span>3.2 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-morning.png" target="_blank" rel="noopener" aria-label="朝のホーム / 7:30の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview phone" href="media-kit/03-home-backgrounds/home-daytime.png" target="_blank" rel="noopener" aria-label="昼のホーム / 12:30の画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-daytime.png" width="1320" height="2868" loading="lazy" decoding="async" alt="昼のホーム / 12:30"></a>
+          <h3>昼のホーム / 12:30</h3>
+          <p class="description">明るい昼の背景。日常のスキマ時間を伝える投稿に。</p>
+          <p class="meta"><span>1320 × 2868 px</span><span class="badge">四隅透過</span></p>
+          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-daytime.png" download="home-daytime.png" aria-label="昼のホーム / 12:30のPNGを保存（3.0 MB）">PNGを保存 <span>3.0 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-daytime.png" target="_blank" rel="noopener" aria-label="昼のホーム / 12:30の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview phone" href="media-kit/03-home-backgrounds/home-evening.png" target="_blank" rel="noopener" aria-label="夕方のホーム / 17:30の画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-evening.png" width="1320" height="2868" loading="lazy" decoding="async" alt="夕方のホーム / 17:30"></a>
+          <h3>夕方のホーム / 17:30</h3>
+          <p class="description">夕暮れの空。1日の終わりのおしゃべりの紹介に。</p>
+          <p class="meta"><span>1320 × 2868 px</span><span class="badge">四隅透過</span></p>
+          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-evening.png" download="home-evening.png" aria-label="夕方のホーム / 17:30のPNGを保存（3.0 MB）">PNGを保存 <span>3.0 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-evening.png" target="_blank" rel="noopener" aria-label="夕方のホーム / 17:30の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview phone" href="media-kit/03-home-backgrounds/home-night.png" target="_blank" rel="noopener" aria-label="夜のホーム / 21:30の画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-night.png" width="1320" height="2868" loading="lazy" decoding="async" alt="夜のホーム / 21:30"></a>
+          <h3>夜のホーム / 21:30</h3>
+          <p class="description">星と月が浮かぶ夜。落ち着いた雰囲気の投稿に。</p>
+          <p class="meta"><span>1320 × 2868 px</span><span class="badge">四隅透過</span></p>
+          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-night.png" download="home-night.png" aria-label="夜のホーム / 21:30のPNGを保存（3.1 MB）">PNGを保存 <span>3.1 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-night.png" target="_blank" rel="noopener" aria-label="夜のホーム / 21:30の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview wide" href="media-kit/03-home-backgrounds/home-four-times.png" target="_blank" rel="noopener" aria-label="4つの時間帯を1枚での画像を原寸で開く"><img src="media-kit/03-home-backgrounds/home-four-times.png" width="1920" height="1400" loading="lazy" decoding="async" alt="4つの時間帯を1枚で"></a>
+          <h3>4つの時間帯を1枚で</h3>
+          <p class="description">時間帯ごとの違いを、まとめて見せたいときに。</p>
+          <p class="meta"><span>1920 × 1400 px</span></p>
+          <div class="actions"><a class="download" href="media-kit/03-home-backgrounds/home-four-times.png" download="home-four-times.png" aria-label="4つの時間帯を1枚でのPNGを保存（1.8 MB）">PNGを保存 <span>1.8 MB ↓</span></a><div class="open-links"><a href="media-kit/03-home-backgrounds/home-four-times.png" target="_blank" rel="noopener" aria-label="4つの時間帯を1枚での画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+      </div>
+      <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
+    </section>
+    <section id="characters" aria-labelledby="characters-title">
+      <p class="section-number">05 / キャラクター</p>
+      <h2 id="characters-title">ReenoとMentaを、投稿のそばに。</h2>
+      <p class="section-intro">背景が透明なPNGです。写真や動画の上に重ねて使えます。</p>
+      <div class="asset-grid">
+        <article class="asset-card">
+          <a class="preview character" href="media-kit/02-characters/reeno-wiggling.png" target="_blank" rel="noopener" aria-label="Reeno / いつもの姿の画像を原寸で開く"><img src="media-kit/02-characters/reeno-wiggling.png" width="1374" height="1145" loading="lazy" decoding="async" alt="Reeno / いつもの姿"></a>
+          <h3>Reeno / いつもの姿</h3>
+          <p class="description">白い毛並みと青い目が目印の、電話の妖精。</p>
+          <p class="meta"><span>1374 × 1145 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-wiggling.png" download="reeno-wiggling.png" aria-label="Reeno / いつもの姿のPNGを保存（1.6 MB）">PNGを保存 <span>1.6 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-wiggling.png" target="_blank" rel="noopener" aria-label="Reeno / いつもの姿の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview character" href="media-kit/02-characters/reeno-calling.png" target="_blank" rel="noopener" aria-label="Reeno / おしゃべりの画像を原寸で開く"><img src="media-kit/02-characters/reeno-calling.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / おしゃべり"></a>
+          <h3>Reeno / おしゃべり</h3>
+          <p class="description">電話を持ったReeno。着信や会話の紹介に。</p>
+          <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-calling.png" download="reeno-calling.png" aria-label="Reeno / おしゃべりのPNGを保存（1.3 MB）">PNGを保存 <span>1.3 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-calling.png" target="_blank" rel="noopener" aria-label="Reeno / おしゃべりの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview character" href="media-kit/02-characters/reeno-writing.png" target="_blank" rel="noopener" aria-label="Reeno / メモの画像を原寸で開く"><img src="media-kit/02-characters/reeno-writing.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / メモ"></a>
+          <h3>Reeno / メモ</h3>
+          <p class="description">会話のふりかえりやノートの紹介に。</p>
+          <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-writing.png" download="reeno-writing.png" aria-label="Reeno / メモのPNGを保存（1.4 MB）">PNGを保存 <span>1.4 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-writing.png" target="_blank" rel="noopener" aria-label="Reeno / メモの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview character" href="media-kit/02-characters/reeno-peeking.png" target="_blank" rel="noopener" aria-label="Reeno / のぞき込みの画像を原寸で開く"><img src="media-kit/02-characters/reeno-peeking.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / のぞき込み"></a>
+          <h3>Reeno / のぞき込み</h3>
+          <p class="description">画面の端から、ちょこんとのぞく姿。</p>
+          <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-peeking.png" download="reeno-peeking.png" aria-label="Reeno / のぞき込みのPNGを保存（1.3 MB）">PNGを保存 <span>1.3 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-peeking.png" target="_blank" rel="noopener" aria-label="Reeno / のぞき込みの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview character" href="media-kit/02-characters/reeno-exploring.png" target="_blank" rel="noopener" aria-label="Reeno / 探検の画像を原寸で開く"><img src="media-kit/02-characters/reeno-exploring.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / 探検"></a>
+          <h3>Reeno / 探検</h3>
+          <p class="description">新しい話題を探しに行くような、楽しげな姿。</p>
+          <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-exploring.png" download="reeno-exploring.png" aria-label="Reeno / 探検のPNGを保存（1.2 MB）">PNGを保存 <span>1.2 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-exploring.png" target="_blank" rel="noopener" aria-label="Reeno / 探検の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview character" href="media-kit/02-characters/reeno-concerned.png" target="_blank" rel="noopener" aria-label="Reeno / 困り顔の画像を原寸で開く"><img src="media-kit/02-characters/reeno-concerned.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / 困り顔"></a>
+          <h3>Reeno / 困り顔</h3>
+          <p class="description">言葉に迷ったときのエピソードにも。</p>
+          <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-concerned.png" download="reeno-concerned.png" aria-label="Reeno / 困り顔のPNGを保存（1.3 MB）">PNGを保存 <span>1.3 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-concerned.png" target="_blank" rel="noopener" aria-label="Reeno / 困り顔の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview character" href="media-kit/02-characters/reeno-sleeping.png" target="_blank" rel="noopener" aria-label="Reeno / おやすみの画像を原寸で開く"><img src="media-kit/02-characters/reeno-sleeping.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Reeno / おやすみ"></a>
+          <h3>Reeno / おやすみ</h3>
+          <p class="description">夜の投稿や、1日の締めくくりに。</p>
+          <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/02-characters/reeno-sleeping.png" download="reeno-sleeping.png" aria-label="Reeno / おやすみのPNGを保存（1.6 MB）">PNGを保存 <span>1.6 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/reeno-sleeping.png" target="_blank" rel="noopener" aria-label="Reeno / おやすみの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview character" href="media-kit/02-characters/menta-calling.png" target="_blank" rel="noopener" aria-label="Menta / 相談の画像を原寸で開く"><img src="media-kit/02-characters/menta-calling.png" width="1254" height="1254" loading="lazy" decoding="async" alt="Menta / 相談"></a>
+          <h3>Menta / 相談</h3>
+          <p class="description">日本語で相談できる、クリーム色のメンター。</p>
+          <p class="meta"><span>1254 × 1254 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/02-characters/menta-calling.png" download="menta-calling.png" aria-label="Menta / 相談のPNGを保存（1.6 MB）">PNGを保存 <span>1.6 MB ↓</span></a><div class="open-links"><a href="media-kit/02-characters/menta-calling.png" target="_blank" rel="noopener" aria-label="Menta / 相談の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+      </div>
+      <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
+    </section>
+    <section id="icons" aria-labelledby="icons-title">
+      <p class="section-number">06 / アイコン</p>
+      <h2 id="icons-title">アプリの目印。</h2>
+      <p class="section-intro">Reenoを紹介するときのアプリアイコンです。</p>
+      <div class="asset-grid">
+        <article class="asset-card">
+          <a class="preview icon" href="media-kit/01-app-icon/app_icon_light.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ライトの画像を原寸で開く"><img src="media-kit/01-app-icon/app_icon_light.png" width="1024" height="1024" loading="lazy" decoding="async" alt="アプリアイコン / ライト"></a>
+          <h3>アプリアイコン / ライト</h3>
+          <p class="description">明るい背景のアイコン画像。</p>
+          <p class="meta"><span>1024 × 1024 px</span></p>
+          <div class="actions"><a class="download" href="media-kit/01-app-icon/app_icon_light.png" download="app_icon_light.png" aria-label="アプリアイコン / ライトのPNGを保存（4.1 MB）">PNGを保存 <span>4.1 MB ↓</span></a><div class="open-links"><a href="media-kit/01-app-icon/app_icon_light.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ライトの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview icon" href="media-kit/01-app-icon/app_icon_dark.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ダークの画像を原寸で開く"><img src="media-kit/01-app-icon/app_icon_dark.png" width="1024" height="1024" loading="lazy" decoding="async" alt="アプリアイコン / ダーク"></a>
+          <h3>アプリアイコン / ダーク</h3>
+          <p class="description">暗い背景のアイコン画像。</p>
+          <p class="meta"><span>1024 × 1024 px</span></p>
+          <div class="actions"><a class="download" href="media-kit/01-app-icon/app_icon_dark.png" download="app_icon_dark.png" aria-label="アプリアイコン / ダークのPNGを保存（4.3 MB）">PNGを保存 <span>4.3 MB ↓</span></a><div class="open-links"><a href="media-kit/01-app-icon/app_icon_dark.png" target="_blank" rel="noopener" aria-label="アプリアイコン / ダークの画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+      </div>
+      <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
+    </section>
+    <section id="logos" aria-labelledby="logos-title">
+      <p class="section-number">07 / ロゴ</p>
+      <h2 id="logos-title">投稿に添える、Reenoのロゴ。</h2>
+      <p class="section-intro">背景が透明なPNGです。重ねる写真や背景の色に合わせて選べます。</p>
+      <div class="asset-grid">
+        <article class="asset-card">
+          <a class="preview logo" href="media-kit/07-logo/reeno-wordmark-teal.png" target="_blank" rel="noopener" aria-label="ロゴ / 青緑の画像を原寸で開く"><img src="media-kit/07-logo/reeno-wordmark-teal.png" width="1400" height="440" loading="lazy" decoding="async" alt="ロゴ / 青緑"></a>
+          <h3>ロゴ / 青緑</h3>
+          <p class="description">明るい背景に合わせやすい、Reenoのブランドカラー。</p>
+          <p class="meta"><span>1400 × 440 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/07-logo/reeno-wordmark-teal.png" download="reeno-wordmark-teal.png" aria-label="ロゴ / 青緑のPNGを保存（57 KB）">PNGを保存 <span>57 KB ↓</span></a><div class="open-links"><a href="media-kit/07-logo/reeno-wordmark-teal.png" target="_blank" rel="noopener" aria-label="ロゴ / 青緑の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview logo" href="media-kit/07-logo/reeno-wordmark-dark.png" target="_blank" rel="noopener" aria-label="ロゴ / 濃色の画像を原寸で開く"><img src="media-kit/07-logo/reeno-wordmark-dark.png" width="1400" height="440" loading="lazy" decoding="async" alt="ロゴ / 濃色"></a>
+          <h3>ロゴ / 濃色</h3>
+          <p class="description">白や淡い色の背景に。</p>
+          <p class="meta"><span>1400 × 440 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/07-logo/reeno-wordmark-dark.png" download="reeno-wordmark-dark.png" aria-label="ロゴ / 濃色のPNGを保存（57 KB）">PNGを保存 <span>57 KB ↓</span></a><div class="open-links"><a href="media-kit/07-logo/reeno-wordmark-dark.png" target="_blank" rel="noopener" aria-label="ロゴ / 濃色の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+        <article class="asset-card">
+          <a class="preview logo-dark" href="media-kit/07-logo/reeno-wordmark-white.png" target="_blank" rel="noopener" aria-label="ロゴ / 白の画像を原寸で開く"><img src="media-kit/07-logo/reeno-wordmark-white.png" width="1400" height="440" loading="lazy" decoding="async" alt="ロゴ / 白"></a>
+          <h3>ロゴ / 白</h3>
+          <p class="description">暗い背景や写真の上に。プレビューの背景色は画像に含まれません。</p>
+          <p class="meta"><span>1400 × 440 px</span><span class="badge">透過PNG</span></p>
+          <div class="actions"><a class="download" href="media-kit/07-logo/reeno-wordmark-white.png" download="reeno-wordmark-white.png" aria-label="ロゴ / 白のPNGを保存（46 KB）">PNGを保存 <span>46 KB ↓</span></a><div class="open-links"><a href="media-kit/07-logo/reeno-wordmark-white.png" target="_blank" rel="noopener" aria-label="ロゴ / 白の画像を原寸で開く">画像を原寸で開く ↗</a></div></div>
+        </article>
+      </div>
+      <a class="back" href="#materials">カテゴリーへ戻る ↑</a>
+    </section>
+    <div class="closing">
+      <div><h2>使い方も、ひと目で。</h2><p>はじめての設定から会話のふりかえりまで、画面付きで案内しています。</p></div>
+      <a class="pill" href="guide.html">使い方ガイドへ →</a>
+    </div>
+  </main>
+  <footer>
+    <p>Reenoの紹介投稿にお使いください。キャラクターやロゴは縦横比を保って配置すると、きれいに仕上がります。</p>
+    <p>ホーム・通話画面はサンプル表示です。着信画面は提供された実機画像、着信動画は静止画からの再現アニメーションです。動画はいずれも無音です。</p>
+    <p><a href="index.html">Reenoについて</a> · <a href="guide.html">使い方ガイド</a> · <a href="../../privacy_policy/jp/index.html">プライバシーポリシー</a></p>
+    <p>© 2026 Reeno</p>
+  </footer>
+</body>
+</html>
