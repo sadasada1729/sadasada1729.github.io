@@ -1,0 +1,49 @@
+{
+  "captured_on": "2026-10-29T13:15:49.708764+09:00",
+  "app_source_commit": "8dd48a82e305c9ec93b4bf5746ae45ac4e50223c",
+  "native_source_sha256": {
+    "src/Sources/Sources/AppFeature/Presentations/Call/InProgress/CallInProgressScreen.swift": "5fcdd9f42ccddc581e5f77f5d390d23503c8da02a2b08edc575df3b08150b2e0",
+    "src/Sources/Sources/UIComponent/View/ReenoCharacterView.swift": "e814d71feeb576d804c680008efafe6c4f5ac71c82df124f116d0b853de89f0e",
+    "src/Sources/Sources/UIComponent/Font/Font+.swift": "eea3c09fa4b76e0336fbf889749848346201a3dd23c272ec1866d1d397b3bc67",
+    "src/Sources/Sources/UIComponent/Extensions/Image+.swift": "574c08b15acce4e45a772dda2a64ef3f40d54bb4bb0497a17d0bd14450994550",
+    "src/Sources/Sources/UIComponent/Extensions/Color+.swift": "40b58f136e306ec32a9d2402f4f11ddf0b63975900664c43bd082f4cb988bb75",
+    "src/Sources/Sources/UIComponent/Background/AppBackgroundImagePalette.swift": "f5cdc79fbda95732cb8afd4a36f0f22d2be1414edcaf1abb6d6f466faf51da3b",
+    "src/Sources/Sources/UIComponent/Background/AppBackgroundTimeSlot.swift": "9587d2c2cccecaa9e1d152ddf538d99660fc5b3e6a385cf6653c39f207e5aeee"
+  },
+  "layout_sha256": "9c3d90aacece59e81d16d28e38f410425b49b583d2c5d5270e4ceaad56472941",
+  "device": "iPhone 17 Pro",
+  "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5",
+  "locale": "ja_JP",
+  "method": "Native SwiftUI CallCharacterView in connecting phase and unmodified ConnectingRippleView, compiled with native character/background/font/color sources and assets in an isolated offline capture app. Direct simctl recording; H.264 video stream copied unchanged when adding Reflection AAC audio.",
+  "ringtone_sha256": "2f33e643c3cc58ce2b30a39d33b55f7077f93061a7767349b50a6b42602f6ea1",
+  "app_checkout_modified": false,
+  "intended_use": "Promotional illustration; not the actual incoming-call screen.",
+  "files": [
+    {
+      "file": "reeno-incoming-promo-night.mp4",
+      "sha256": "60044cea3177c2af2364ff0d65a0da3d3c7b6dd944437844590bd1a747c37079",
+      "duration_seconds": 10.026667,
+      "resolution": [
+        1206,
+        2622
+      ],
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "clock": "21:40",
+      "bytes": 21704417
+    },
+    {
+      "file": "reeno-incoming-promo-daytime.mp4",
+      "sha256": "fb5f204dfea5f16587f6aea8a3fd4cbacd987750c904f671a2c78bb348dadc4f",
+      "duration_seconds": 10.01,
+      "resolution": [
+        1206,
+        2622
+      ],
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "clock": "12:40",
+      "bytes": 21718987
+    }
+  ]
+}
