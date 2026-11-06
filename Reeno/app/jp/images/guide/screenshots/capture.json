@@ -1,0 +1,325 @@
+{
+  "captured_on": "2026-11-06",
+  "device": "iPhone 17 Pro Max",
+  "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5",
+  "locale": "ja_JP",
+  "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+  "method": "Actual app screens rendered with offline sample fixtures. Native iOS microphone permission dialog. No user data or backend access. Temporary source changes restored.",
+  "last_capture_on": "2026-11-06",
+  "appearance_policy": "Preserve app Info.plist Dark and each production view colorScheme. No global preferredColorScheme or screenshot-only background replacement.",
+  "files": [
+    {
+      "file": "ai-consent.png",
+      "sha256": "f9f3f0d6f72f49e4d68403d7a0538e229ade5f54a2425495364153fc3ed60341",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "call-settings.png",
+      "sha256": "6d13640cb7d6117760da28fba173f35764705806f5c58930862697e2bb3938df",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "call-tab.png",
+      "sha256": "87da27bcac1ac23b1a533b3be3b700be27aaf608f7224c8c3db812f7a76df5f0",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "first-call.png",
+      "sha256": "38fdd1d43b110e2e0acabf679e0dddf75ad72eaefb094bf6b4cc92e333a79afb",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "history-detail.png",
+      "sha256": "8fd700ed4f68ccdd471995c2cb1bd77275fb44e72889db4aea7ff48274b788ab",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "history-missed.png",
+      "sha256": "b5adb9d333fb8246dd3f71e4407c821d2e5e719f27819f3befe7629191b5272f",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "history-phrases.png",
+      "sha256": "0607f0498ba4ef5017ca5b2a2b543fe1331f030abc63c2e2514e284529a6afd1",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "history.png",
+      "sha256": "81474a1e5fe36ddae861b66853a397a5d3ef2bf96e8f3288185e94270412f93b",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "home-first.png",
+      "sha256": "ef1773b24cde1f41363c7ad0823a3d6b271bc52deb9b7605704356167c1b2c7b",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "home-settings.png",
+      "sha256": "7e232c3fc28150573f69967fe7f443c0a97dda60362c4885b89061e21e4041f8",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "home.png",
+      "sha256": "361dca325cd90618c3e2015c9c0606da7a160249a4aeb561e411a6e40b96e755",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "initial-schedule.png",
+      "sha256": "aed5b92502395cb6b280fe67a8e8736c2f917d95701ada23885078549f1a154b",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "microphone-dialog.png",
+      "sha256": "afda00a8977193ad7ea85cec9e2260e4888f67681e53e104106e0cc31f5a5c37",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "microphone.png",
+      "sha256": "0fef979983b6d9550fccc121a4a2df725a0902cc941dc81deb6198d63cbb1b75",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "name.png",
+      "sha256": "ecbcb86a0934ae6a3c6e6ea5e7845d3ccc8f889a9fe2414491676a5097ad9bb6",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "note-draft.png",
+      "sha256": "a7d9e5237bf7632de76da8cde266bc296288c67ad420c7b97e576c2fcf1f1f34",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "profile-language.png",
+      "sha256": "c31c7e7ecd2bc15c596c7bb3d69737d9cc80aefd7f673c5fddee33f3728dd150",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "profile-level.png",
+      "sha256": "0bc89fdfb0a55d9ed22e566c2b5f00ff8ddf91625e8f3aea8f74342f999955bf",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "profile.png",
+      "sha256": "4de5700ed93f5a4d162b3d01d028a7746e63843b39eb3fe371c11fec707eed5d",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "schedule-editor.png",
+      "sha256": "a5ddd02390637f29e4bd2e7780fca753609e430fc9eddf5de14980bda4f8d774",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "schedule-windows.png",
+      "sha256": "79296a2bb53eb2982e110b110aa20f0f0e6b55595ad826429de31ab25290f35d",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    },
+    {
+      "file": "welcome.png",
+      "sha256": "8639e1c9badd37f22d4f36dc9c97b1de3c7d3c66d6d250655daef99697883092",
+      "captured_on": "2026-11-06",
+      "source_commit": "eeceb40b4359eab3740d9c20b6398251e68a4074",
+      "display_time": "21:30",
+      "background": "app-defined (21:30 for time-dependent screens)",
+      "simulator_appearance": "light",
+      "app_interface_style": "Dark",
+      "resolution": [
+        1320,
+        2868
+      ]
+    }
+  ],
+  "harness_sha256": {
+    "capture.py": "08cc8d28a386faccc82ec64a69919a4bc10adb885ce54d11a4eef8e811f313a9",
+    "AppScreens.swift": "62b73bbc979058a80fa86115afb70131790a97d899749826a2d6e9b2d53faec0",
+    "HistoryFixtures.swift": "a3d961a704a315df64d432498fdd10fcbad0519503766cb791bb0214751cb60b"
+  }
+}
