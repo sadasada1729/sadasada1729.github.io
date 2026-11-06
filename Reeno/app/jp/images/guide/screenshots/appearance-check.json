@@ -1,0 +1,143 @@
+{
+  "device": "iPhone 17 Pro Max",
+  "runtime": "iOS 26.5",
+  "method": "Direct captures with simulator appearance set to light and dark; preserve app UIUserInterfaceStyle=Dark and view-specific light colorScheme. Animated characters, system status indicators and material rendering can differ between captures.",
+  "files": [
+    {
+      "file": "ai-consent.png",
+      "light_sha256": "f9f3f0d6f72f49e4d68403d7a0538e229ade5f54a2425495364153fc3ed60341",
+      "dark_sha256": "f9f3f0d6f72f49e4d68403d7a0538e229ade5f54a2425495364153fc3ed60341",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "call-settings.png",
+      "light_sha256": "6d13640cb7d6117760da28fba173f35764705806f5c58930862697e2bb3938df",
+      "dark_sha256": "6d13640cb7d6117760da28fba173f35764705806f5c58930862697e2bb3938df",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "call-tab.png",
+      "light_sha256": "87da27bcac1ac23b1a533b3be3b700be27aaf608f7224c8c3db812f7a76df5f0",
+      "dark_sha256": "87da27bcac1ac23b1a533b3be3b700be27aaf608f7224c8c3db812f7a76df5f0",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "first-call.png",
+      "light_sha256": "38fdd1d43b110e2e0acabf679e0dddf75ad72eaefb094bf6b4cc92e333a79afb",
+      "dark_sha256": "38fdd1d43b110e2e0acabf679e0dddf75ad72eaefb094bf6b4cc92e333a79afb",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "history-detail.png",
+      "light_sha256": "8fd700ed4f68ccdd471995c2cb1bd77275fb44e72889db4aea7ff48274b788ab",
+      "dark_sha256": "5536cbd996b4b58deae54a368de01fb0856d81d001afdc05ef77bfcbc9544248",
+      "mean_absolute_rgb_difference_0_to_255": 0.0179,
+      "expected_difference": "Animated character region only."
+    },
+    {
+      "file": "history-missed.png",
+      "light_sha256": "b5adb9d333fb8246dd3f71e4407c821d2e5e719f27819f3befe7629191b5272f",
+      "dark_sha256": "b5adb9d333fb8246dd3f71e4407c821d2e5e719f27819f3befe7629191b5272f",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "history-phrases.png",
+      "light_sha256": "0607f0498ba4ef5017ca5b2a2b543fe1331f030abc63c2e2514e284529a6afd1",
+      "dark_sha256": "0607f0498ba4ef5017ca5b2a2b543fe1331f030abc63c2e2514e284529a6afd1",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "history.png",
+      "light_sha256": "81474a1e5fe36ddae861b66853a397a5d3ef2bf96e8f3288185e94270412f93b",
+      "dark_sha256": "81474a1e5fe36ddae861b66853a397a5d3ef2bf96e8f3288185e94270412f93b",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "home-first.png",
+      "light_sha256": "ef1773b24cde1f41363c7ad0823a3d6b271bc52deb9b7605704356167c1b2c7b",
+      "dark_sha256": "36129bed50b5e9b54039e2f89382b2cbdce2aae4e946c6fee65c5b729c98c183",
+      "mean_absolute_rgb_difference_0_to_255": 0.1103,
+      "expected_difference": "Animated character region only."
+    },
+    {
+      "file": "home-settings.png",
+      "light_sha256": "7e232c3fc28150573f69967fe7f443c0a97dda60362c4885b89061e21e4041f8",
+      "dark_sha256": "7e232c3fc28150573f69967fe7f443c0a97dda60362c4885b89061e21e4041f8",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "home.png",
+      "light_sha256": "361dca325cd90618c3e2015c9c0606da7a160249a4aeb561e411a6e40b96e755",
+      "dark_sha256": "361dca325cd90618c3e2015c9c0606da7a160249a4aeb561e411a6e40b96e755",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "initial-schedule.png",
+      "light_sha256": "aed5b92502395cb6b280fe67a8e8736c2f917d95701ada23885078549f1a154b",
+      "dark_sha256": "aed5b92502395cb6b280fe67a8e8736c2f917d95701ada23885078549f1a154b",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "microphone-dialog.png",
+      "light_sha256": "afda00a8977193ad7ea85cec9e2260e4888f67681e53e104106e0cc31f5a5c37",
+      "dark_sha256": "c354be26c2ad6d5832379e9a8dd4283b3193f3dba6b15e22b1ffd4e48c58ba71",
+      "mean_absolute_rgb_difference_0_to_255": 75.8004,
+      "expected_difference": "Native iOS permission dialog follows system appearance. Published image shows light mode."
+    },
+    {
+      "file": "microphone.png",
+      "light_sha256": "0fef979983b6d9550fccc121a4a2df725a0902cc941dc81deb6198d63cbb1b75",
+      "dark_sha256": "0fef979983b6d9550fccc121a4a2df725a0902cc941dc81deb6198d63cbb1b75",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "name.png",
+      "light_sha256": "ecbcb86a0934ae6a3c6e6ea5e7845d3ccc8f889a9fe2414491676a5097ad9bb6",
+      "dark_sha256": "77bf6a5d50a053783d6ad1d429f79ebbfcf4ab7e141a702c4c853379862ca150",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "note-draft.png",
+      "light_sha256": "a7d9e5237bf7632de76da8cde266bc296288c67ad420c7b97e576c2fcf1f1f34",
+      "dark_sha256": "a7d9e5237bf7632de76da8cde266bc296288c67ad420c7b97e576c2fcf1f1f34",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "profile-language.png",
+      "light_sha256": "c31c7e7ecd2bc15c596c7bb3d69737d9cc80aefd7f673c5fddee33f3728dd150",
+      "dark_sha256": "c31c7e7ecd2bc15c596c7bb3d69737d9cc80aefd7f673c5fddee33f3728dd150",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "profile-level.png",
+      "light_sha256": "0bc89fdfb0a55d9ed22e566c2b5f00ff8ddf91625e8f3aea8f74342f999955bf",
+      "dark_sha256": "0bc89fdfb0a55d9ed22e566c2b5f00ff8ddf91625e8f3aea8f74342f999955bf",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "profile.png",
+      "light_sha256": "4de5700ed93f5a4d162b3d01d028a7746e63843b39eb3fe371c11fec707eed5d",
+      "dark_sha256": "4de5700ed93f5a4d162b3d01d028a7746e63843b39eb3fe371c11fec707eed5d",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "schedule-editor.png",
+      "light_sha256": "a5ddd02390637f29e4bd2e7780fca753609e430fc9eddf5de14980bda4f8d774",
+      "dark_sha256": "a5ddd02390637f29e4bd2e7780fca753609e430fc9eddf5de14980bda4f8d774",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "schedule-windows.png",
+      "light_sha256": "79296a2bb53eb2982e110b110aa20f0f0e6b55595ad826429de31ab25290f35d",
+      "dark_sha256": "79296a2bb53eb2982e110b110aa20f0f0e6b55595ad826429de31ab25290f35d",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    },
+    {
+      "file": "welcome.png",
+      "light_sha256": "8639e1c9badd37f22d4f36dc9c97b1de3c7d3c66d6d250655daef99697883092",
+      "dark_sha256": "8639e1c9badd37f22d4f36dc9c97b1de3c7d3c66d6d250655daef99697883092",
+      "mean_absolute_rgb_difference_0_to_255": 0.0
+    }
+  ],
+  "result": "21 app screens keep their production appearance across simulator light/dark: 19 pixel-identical; 2 differ only in animated character regions. The native iOS microphone permission dialog follows the simulator system appearance, as expected."
+}
