@@ -1,0 +1,21 @@
+{
+  "captured_on": "2026-11-08",
+  "locale": "ja",
+  "source_repository": "sadasada1729/call-ai",
+  "source_commit": "aba9ce1c012863a83ac901db8fe97383f41398ea",
+  "source_file": "src/StudyNoteWidget/StudyNoteWidget.swift",
+  "source_sha256": "510e5019ee2188ad94acfd051dfcde165f036449041328e37fc09c72556f62b8",
+  "method": "Existing iOS Simulator ImageRenderer output of NoteWidgetView with offline sample phrases. The widget containerBackground modifier was replaced with the same NoteWidgetBackground as a regular background; 16pt padding, 321x155pt frame, 22pt corner radius, scale 2.",
+  "limitations": "Rendered widget example, not a Home Screen screenshot. Does not verify WidgetKit hosting, tinted appearance, or interactive intents. Source includes previous/next arrows from the app branch; app release availability was not verified.",
+  "renderer_sha256": "9878befb9a94270ae82408cb877b11dce91c86363f023022dfd502b2c01a8001",
+  "files": [
+    {
+      "file": "widget-notes.png",
+      "resolution": [
+        642,
+        310
+      ],
+      "sha256": "3b3ccae643909e8f7d1a09d557a36ec486983a4efc77d4e0709b7d6e888b8cd2"
+    }
+  ]
+}
