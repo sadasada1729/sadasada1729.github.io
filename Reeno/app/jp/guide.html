@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reenoの使い方 | 電話が来たら、会話を楽しもう。</title>
-  <meta name="description" content="Reenoの始め方を3ステップで紹介。初回設定・マイク許可・ホーム・履歴とノート・今すぐの着信・時間設定を、ボタンの位置が分かる画面付きで案内。">
+  <meta name="description" content="Reenoの始め方を3ステップで紹介。初回設定・マイク許可・ホーム・履歴とノート・ウィジェット・今すぐの着信・時間設定を、画面付きで案内。">
   <link rel="canonical" href="https://sadasada1729.github.io/Reeno/app/jp/guide.html">
   <meta property="og:title" content="Reenoの使い方">
   <meta property="og:description" content="AIから、ふいに電話。Reenoと会話を楽しむための利用ガイド。">
@@ -69,6 +69,7 @@
     .screen-card h3 { margin-bottom:20px; }
     .phone { position:relative; display:block; width:min(100%,280px); margin-inline:auto; line-height:0; }
     .phone img { width:100%; }
+    .widget-preview { width:min(100%,360px); }
     .hotspot { position:absolute; border:2px solid #b94320; border-radius:8px; box-shadow:0 0 0 1px #fff; pointer-events:none; }
     .hotspot b { position:absolute; left:-10px; top:-10px; display:grid; place-items:center; width:25px; height:25px; border:2px solid white; border-radius:50%; background:#b94320; color:white; font:700 14px/1 sans-serif; }
     .screen-card figcaption { text-align:center; font-size:12px; padding:10px 0 18px; }
@@ -119,7 +120,7 @@
     <section id="contents" aria-labelledby="contents-title">
       <h2 id="contents-title">画面を見ながら、使ってみよう。</h2>
       <nav class="contents" aria-label="利用ガイドの目次">
-        <a href="#setup">はじめての設定</a><a href="#calls">電話の設定</a><a href="#receiving">電話を受ける</a><a href="#history">会話のふりかえり・ノート</a><a href="#timing">着信時刻の決まり方</a><a href="#mentor">Mentaに日本語で相談</a><a href="#characters">ReenoとMenta</a>
+        <a href="#setup">はじめての設定</a><a href="#calls">電話の設定</a><a href="#receiving">電話を受ける</a><a href="#history">会話のふりかえり・ノート</a><a href="#widgets">ウィジェット</a><a href="#timing">着信時刻の決まり方</a><a href="#mentor">Mentaに日本語で相談</a><a href="#characters">ReenoとMenta</a>
       </nav>
       <p class="note">画像の赤茶色の番号と、下の操作説明が対応しています。画像はタップで拡大できます。アプリ画面は日本語表示のサンプルです。初回設定などの明るい配色と、ホーム・履歴などの暗い配色は、アプリ本来の表示に合わせています。時刻で変わる背景は21:30の例です。着信画面にはiPhoneの実際の表示例を掲載しています。実際の背景は時間帯や画面により異なります。登録済みの設定や通話状況により、表示される案内は変わります。</p>
     </section>
@@ -276,8 +277,48 @@
 
       <a class="back" href="#contents">目次へ戻る ↑</a>
     </section>
+    <section id="widgets" aria-labelledby="widgets-title">
+      <h2 id="widgets-title">05 話したいフレーズを、ホーム画面に。</h2>
+      <p>「話したいことノート」のウィジェットをiPhoneのホーム画面に置くと、アプリを開かずにフレーズと母語の意味を見返せます。次の会話で使いたい言葉を、ふと目に入る場所に置いてみましょう。</p>
+      <div class="screen-grid">
+        <article class="screen-card">
+          <h3>ホーム画面に追加する</h3>
+          <ol class="actions">
+            <li>Reenoを開き、<strong>「ノート」タブ</strong>で表示したい言語とフレーズを確認します。表現の保存方法は<a href="#history">「会話のふりかえり・ノート」</a>をご覧ください。</li>
+            <li>iPhoneのホーム画面に戻り、何もない場所を長押しします。</li>
+            <li><strong>「編集」→「ウィジェットを追加」</strong>を押し、Reenoを探します。</li>
+            <li><strong>「話したいことノート」</strong>の中サイズを選び、「ウィジェットを追加」を押します。好きな場所に配置して「完了」を押せば準備完了です。</li>
+          </ol>
+          <p class="note">iPhoneの操作については、<a href="https://support.apple.com/ja-jp/118610">Appleのウィジェット追加ガイド</a>も参照できます。</p>
+        </article>
+        <article class="screen-card">
+          <h3>フレーズを切り替えて見返す</h3>
+          <figure>
+            <a class="phone widget-preview" href="images/guide/screenshots/widget-notes.png" aria-label="話したいことノートのウィジェットの表示例を拡大">
+              <img loading="lazy" decoding="async" src="images/guide/screenshots/widget-notes.png" width="642" height="310" alt="夜空を背景にした話したいことノートのウィジェット。英語のフレーズと日本語の意味、右上に前後へ切り替える矢印ボタン。">
+              <span class="hotspot" aria-hidden="true" style="left:64%;top:10%;width:15%;height:20%"><b>1</b></span>
+              <span class="hotspot" aria-hidden="true" style="left:80%;top:10%;width:15%;height:20%"><b>2</b></span>
+              <span class="hotspot" aria-hidden="true" style="left:4%;top:35%;width:92%;height:46%"><b>3</b></span>
+            </a>
+            <figcaption>アプリのウィジェット画面から描画したサンプルです。画像をタップすると拡大できます。</figcaption>
+          </figure>
+          <ol class="actions">
+            <li><strong>「←」</strong>で前のフレーズに戻ります。</li>
+            <li><strong>「→」</strong>で次のフレーズへ進みます。アプリを開かずに切り替えられ、端まで進むと一覧を一周します。</li>
+            <li>フレーズと母語の意味を見返します。本文をタップするとReenoが開くので、<strong>「ノート」タブ</strong>で続きを確認できます。</li>
+          </ol>
+          <p class="note">フレーズが1件だけのときは切り替えられません。長い文章は省略されることがあります。画像は中サイズの表示例で、iPhoneの設定やアプリのバージョンによって見た目が異なります。</p>
+        </article>
+      </div>
+      <div class="callout">
+        <p><strong>ノートが表示されない・内容が古いときは？</strong></p>
+        <p>Reenoを開き、「ノート」タブの「会話する言語」とフレーズを確認してください。別の端末で変更した内容は、このiPhoneでアプリを開いて同期するまで反映されないことがあります。ウィジェットの一覧にReenoが出ない場合は、ウィジェット対応版に更新し、一度アプリを開いてから追加を試してください。</p>
+      </div>
+      <p class="note">Reenoのウィジェットはホーム画面の中サイズに対応しています。ロック画面への配置と、ウィジェットからの音声再生には対応していません。</p>
+      <a class="back" href="#contents">目次へ戻る ↑</a>
+    </section>
     <section id="timing" aria-labelledby="timing-title">
-      <h2 id="timing-title">05 電話の時刻は、どう決まる？</h2>
+      <h2 id="timing-title">06 電話の時刻は、どう決まる？</h2>
       <p>「毎日19時ちょうど」のような固定時刻ではなく、出られる時間の中からランダムに選びます。</p>
       <ol class="algorithm">
         <li><strong>今日の曜日に設定した時間帯を確認。</strong>過ぎた時間や一時停止中の時間を除き、今日これから電話できる時間を探します。</li>
@@ -290,7 +331,7 @@
       <a class="back" href="#contents">目次へ戻る ↑</a>
     </section>
     <section id="mentor" aria-labelledby="mentor-title">
-      <h2 id="mentor-title">06 Mentaへの相談は、日本語でOK。</h2>
+      <h2 id="mentor-title">07 Mentaへの相談は、日本語でOK。</h2>
       <p>メンターのMentaは、Reenoとの会話で感じたことや悩みを相談できる相手です。「言いたいことが出てこなかった」「旅行先でこんな話をしてみたい」など、気軽に話してみてください。</p>
       <div class="callout"><p><strong>Reenoとの会話を英語などの外国語に設定していても、Mentaには日本語で相談できます。</strong></p><p>相談画面の「話しやすい言語」で日本語を選びましょう。感想や希望を日本語で伝えながら、次の会話を楽しむ方法を一緒に考えられます。</p></div>
       <ol class="instructions">
