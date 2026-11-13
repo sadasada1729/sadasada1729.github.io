@@ -1,0 +1,69 @@
+#secBeginner{
+	scroll-margin-top: 150px;
+}
+
+.beginnerSupport{
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+	align-items: center;
+	gap: clamp(28px, 5vw, 64px);
+}
+
+.beginnerIntro{
+	font-size: clamp(18px, 2vw, 22px);
+	color: #dbece6;
+}
+
+.beginnerBenefits{
+	list-style: none;
+	padding: 0;
+	margin: 28px 0;
+}
+
+.beginnerBenefits li{
+	padding: 18px 0;
+	border-top: 1px solid rgba(110,231,200,.28);
+}
+
+.beginnerBenefits h3{
+	margin: 0 0 8px;
+	color: #6ee7c8;
+	font-size: 20px;
+}
+
+.beginnerBenefits p,
+.beginnerSetup{
+	margin: 0;
+	color: #dbece6;
+}
+
+.beginnerSetup{
+	padding: 18px;
+	border-radius: 8px;
+	background: rgba(110,231,200,.08);
+}
+
+.beginnerScreen{
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.beginnerScreen img{
+	width: 100%;
+	border: 1px solid rgba(255,255,255,.18);
+	border-radius: 24px;
+}
+
+.beginnerScreen figcaption{
+	margin-top: 14px;
+	color: #bed0ca;
+	font-size: 14px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 760px){
+	.beginnerSupport{
+		grid-template-columns: 1fr;
+	}
+}
