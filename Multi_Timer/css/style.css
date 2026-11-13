@@ -55,6 +55,23 @@ h2{margin:0;font-size:clamp(28px,4vw,46px);line-height:1.3}
 .utilityLinks a{padding:10px 14px;border:1px solid rgba(113,227,210,.34);border-radius:8px;color:#f5fbfa}
 #footer{width:84%;padding:28px;text-align:center;color:#8aa5a0;font-size:12px}
 
+.multiTimerPage .purchaseNote{max-width:640px;margin:18px 0 0;color:#b9d0cc;font-size:14px}
+.multiTimerPage .quickFacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:1060px;margin:0 auto}
+.multiTimerPage .quickFacts>div{padding:22px 26px;border-left:3px solid #71e3d2;background:rgba(255,255,255,.055)}
+.multiTimerPage .quickFacts dt{margin-bottom:8px;color:#71e3d2;font-weight:900}
+.multiTimerPage .quickFacts dd{margin:0;color:#d2e5e2}
+.multiTimerPage .sectionNote{max-width:920px;margin:28px auto 0;color:#b9d0cc;font-size:14px}
+.multiTimerPage .modeGrid .modeLabel{margin:-4px 0 14px;color:#b9d0cc;font-size:13px;font-weight:700}
+.multiTimerPage .timingSteps{max-width:920px;margin:0 auto;padding-left:28px}
+.multiTimerPage .timingSteps li{padding:0 0 24px 12px}
+.multiTimerPage .timingSteps li::marker{color:#71e3d2;font-weight:900}
+.multiTimerPage .timingSteps h3{margin:0 0 8px;font-size:20px}
+.multiTimerPage .timingSteps p{margin:0;color:#d2e5e2}
+.multiTimerPage .downloadSection{text-align:center;background:#0b2220}
+.multiTimerPage .pageUpdated{margin:28px 0 0;color:#b9d0cc;font-size:13px}
+.multiTimerPage a:focus-visible,.multiTimerPage summary:focus-visible{outline:3px solid #71e3d2;outline-offset:5px}
+.multiTimerPage section[id],.multiTimerPage details[id]{scroll-margin-top:24px}
+
 .starterKitPage{background:#090b10}
 .starterKitPage .productHero{background:radial-gradient(circle at 15% 10%,rgba(85,221,236,.2),transparent 32rem),linear-gradient(145deg,#090b10,#14292d)}
 .starterKitPage .eyebrow,.starterKitPage .sectionLabel,.starterKitPage .featureGrid h3{color:#7ee4ef}
@@ -70,6 +87,11 @@ h2{margin:0;font-size:clamp(28px,4vw,46px);line-height:1.3}
 	#mainnav a{padding:7px}
 	.productHero{min-height:auto;padding-top:64px}
 	#galleryGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+	.multiTimerPage #mainnav{min-width:0;max-width:100%}
+	.multiTimerPage #mainnav ul{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto}
+	.multiTimerPage #mainnav li{flex-shrink:0}
+	.multiTimerPage #mainnav a{white-space:nowrap}
+	.multiTimerPage section[id],.multiTimerPage details[id]{scroll-margin-top:120px}
 }
 
 @media(max-width:680px){
@@ -79,4 +101,8 @@ h2{margin:0;font-size:clamp(28px,4vw,46px);line-height:1.3}
 	.productHero>img{max-height:none;transform:none}
 	.featureGrid,.developerGrid{grid-template-columns:1fr}
 	.contentSection,.gallerySection{padding:62px 20px}
+	.multiTimerPage .quickFacts{grid-template-columns:1fr}
+	.multiTimerPage h1{font-size:clamp(46px,8vw,104px);overflow-wrap:anywhere}
 }
+
+@media(prefers-reduced-motion:reduce){html:has(.multiTimerPage){scroll-behavior:auto}}
