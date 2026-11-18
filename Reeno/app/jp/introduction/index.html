@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AIから電話がかかってくる会話アプリReenoの紹介資料。開発の背景、会話の楽しみ方、設定から振り返りまでをスライドで紹介します。">
+  <title>Reeno｜サービス紹介スライド</title>
+  <link rel="canonical" href="https://sadasada1729.github.io/Reeno/app/jp/introduction/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="slides.js" defer></script>
+  <noscript><style>#viewport{height:auto;overflow:visible}#deck{position:static;transform:none;width:auto;height:auto}.slide,.slide.active{position:relative;display:flex;inset:auto;min-height:900px}.toolbar,.progress{display:none}</style></noscript>
+</head>
+<body>
+<main id="viewport" aria-label="Reenoサービス紹介スライド">
+<div id="deck">
+
+  <section class="slide cover active" data-title="電話が来たら、会話を楽しもう。">
+    <div class="orb"></div>
+    <img class="cover-logo" src="../images/guide/reeno-wordmark-teal.svg" alt="Reeno">
+    <div class="cover-copy">
+      <p class="kicker">Meet Reeno</p>
+      <h1>電話が来たら、<br>会話を楽しもう。</h1>
+      <p class="lead">AIから、あなたに電話がかかってくる。<br>日常の中に、外国語で話すきっかけを。</p>
+      <p class="signature">長田 公喜 / Reeno 企画・開発・運営</p>
+    </div>
+    <img class="hero-character" src="../media-kit/02-characters/reeno-calling.png" alt="電話を持つReeno">
+    <p class="note">サービス紹介 / 2026.11</p>
+  </section>
+
+  <section class="slide mint" data-title="つくっている人：長田 公喜">
+    <p class="kicker">About the maker</p>
+    <div class="split wide-left">
+      <div>
+        <h2>長田 公喜 <span class="small">Koki Osada</span></h2>
+        <p class="lead">iOSアプリの企画・開発・運営。</p>
+        <div class="timeline">
+          <div><span class="year">約8年</span><h3>アプリ開発</h3><p class="small">学生時代から<br>アプリづくりを継続。</p></div>
+          <div><span class="year">医師としての背景</span><h3>医療の現場</h3><p class="small">東北大学卒業後、<br>大学病院で勤務。</p></div>
+          <div><span class="year">現在の開発領域</span><h3>SaMDにも従事</h3><p class="small">厳しい規制のある<br>医療機器ソフトウェア。</p></div>
+        </div>
+      </div>
+      <div><p class="big accent">つくる。<br>届ける。<br>育てる。</p></div>
+    </div>
+    <p class="note">開発アプリの例：Multi-Timer / Starter Kit / SprintLens</p>
+  </section>
+
+  <section class="slide agenda" data-title="この資料の内容：どんな体験？">
+    <p class="kicker">Explore Reeno</p>
+    <h2>この資料の内容。</h2>
+    <div class="columns">
+      <div class="agenda-item agenda-current" aria-current="step"><span class="giant accent">01</span><h3>どんな体験？</h3><p>Reenoが生まれた理由と、<br>電話が来る楽しさ。</p></div>
+      <div class="agenda-item"><span class="giant accent">02</span><h3>どう使う？</h3><p>着信・会話の設定から、<br>通話後のふりかえりまで。</p></div>
+      <div class="agenda-item"><span class="giant accent">03</span><h3>Reenoを投稿するなら</h3><p>Reenoの特徴と、<br>ガイド・紹介用素材。</p></div>
+    </div>
+    <p class="callout">まずは「どんな体験？」から。Reenoの特徴と楽しみ方をご紹介します。</p>
+  </section>
+
+  <section class="slide" data-title="楽しむうちに、話す機会が積み重なる">
+    <p class="kicker">Talk first</p>
+    <h2>会話を楽しむ。<br>その先に、外国語を話す機会が増える。</h2>
+    <div class="columns">
+      <div class="panel"><span class="num">01 / 電話が来る</span><h3>話すきっかけ</h3><p>日常の中で、<br>Reenoから声がかかる。</p></div>
+      <div class="panel"><span class="num">02 / おしゃべり</span><h3>自分の言葉で</h3><p>今日の出来事や、<br>好きなものを話してみる。</p></div>
+      <div class="panel"><span class="num">03 / ふりかえる</span><h3>次の会話へ</h3><p>話した内容と、<br>次に使いたい表現を見る。</p></div>
+    </div>
+    <p class="note">会話言語：英語・日本語・韓国語・中国語・スペイン語・フランス語・ドイツ語</p>
+  </section>
+
+  <section class="slide peach" data-title="自分自身も、話せるようになりたかった">
+    <p class="kicker">Why I built Reeno</p>
+    <div class="split">
+      <div><h2>自分自身も、<br>話せるようになりたかった。</h2><p class="lead">留学に行く機会があり、<br>外国語で話すことが、<br>自分にとっても身近な課題になった。</p><div class="callout">日常の中に、話すきっかけをつくりたい。</div></div>
+      <div class="stack"><div class="bubble"><small>きっかけ</small>「自分も、話せるように<br>なりたい」</div><div class="bubble reply"><small>アプリにしたアイデア</small>AIのほうから<br>電話してくれたら？</div><img class="character" style="height:240px" src="../media-kit/02-characters/reeno-exploring.png" alt="新しいことに興味を示すReeno"></div>
+    </div>
+  </section>
+
+  <section class="slide dark" data-title="なぜ電話？① 忘れずに、続けられる">
+    <p class="kicker">Why a phone call? / 01</p>
+    <div class="split">
+      <div>
+        <h2>なぜ電話？</h2>
+        <h3>自分から開くアプリは、</h3>
+        <p class="lead" style="margin-top:18px">開くのを忘れたり、<br>開きたくなくなったり。</p>
+        <div class="callout"><p class="lead">→ Reeno側からかけてくるから、<br>忘れずに、続けられる。</p></div>
+        <p class="note">通常の着信は、設定した曜日・時間帯と通話枠の範囲内。<br>アプリを開いたまま待つ必要はない。</p>
+      </div>
+      <figure class="figure"><img class="phone tall" src="../media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" alt="ReenoからのiPhone着信画面"><figcaption>iPhoneの着信表示例</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide dark" data-title="なぜ電話？② 力まず自然におしゃべり">
+    <p class="kicker">Why a phone call? / 02</p>
+    <div class="split">
+      <div>
+        <h2>なぜ電話？</h2>
+        <h3>普通の英語アプリは、</h3>
+        <p class="lead" style="margin-top:18px">「英語を勉強しなきゃ」と<br>頑張ってしまう。</p>
+        <div class="callout"><p class="lead">→ Reenoなら、ふいに来た電話で、<br>準備せず、力まず自然におしゃべり。</p></div>
+        <p class="note">そのときの気分や、今日の出来事から。<br>話す内容を決めておく必要はありません。</p>
+      </div>
+      <figure class="figure"><img class="phone tall" src="../media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" alt="ReenoからのiPhone着信画面"><figcaption>iPhoneの着信表示例</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide peach" data-title="言葉が出なくても、大丈夫。">
+    <p class="kicker">A little discovery</p>
+    <h2>言葉が出なくても、大丈夫。</h2>
+    <div class="split equal">
+      <div class="stack">
+        <p class="small muted">準備していないときに、電話が来る。</p>
+        <div class="bubble"><small>話してみたら</small>伝えたいことはあるのに、<br>英語が出てこない……。</div>
+        <div class="bubble reply"><small>そこで生まれる気持ち</small>これ、英語で<br>なんて言うんだろう？</div>
+      </div>
+      <div>
+        <h3>その「言いたい」が、<br>学びのきっかけに。</h3>
+        <p class="lead" style="margin-top:24px">言えなかった表現を、あとで知る。<br>次のおしゃべりで、使ってみる。</p>
+        <div class="callout">最初から、うまく話せなくてOK。<br>会話の中で「知りたい」を見つけよう。</div>
+      </div>
+    </div>
+    <div class="rule" style="margin-top:28px">
+      <p class="small">研究でも、外国語を使おうとして表現上の問題に気づくことが、学びにつながりうるとされています。</p>
+      <p class="source">参考：<a href="https://doi.org/10.1093/applin/16.3.371" target="_blank" rel="noopener">Swain &amp; Lapkin（1995）／アウトプットと「気づき」の研究 ↗</a>（研究内容の要約）</p>
+    </div>
+  </section>
+
+  <section class="slide research-slide" data-title="論文紹介：言葉に詰まるときの「気づき」">
+    <p class="kicker">Research paper / 1995</p>
+    <h2>論文紹介：言葉に詰まるときの「気づき」</h2>
+    <div class="research-paper">
+      <p class="research-paper-title" lang="en">Problems in Output and the Cognitive Processes They Generate:<br>A Step Towards Second Language Learning</p>
+      <p class="small">Merrill Swain &amp; Sharon Lapkin（1995）<span class="muted">／ Applied Linguistics, 16(3), 371–391</span></p>
+    </div>
+    <p class="small research-method"><strong>何を調べた？</strong> フランス語の作文・推敲中に、学習者が考えたことを声に出してもらい、分析。</p>
+    <figure class="research-diagram" aria-label="表現しようとすることで問題に気づき、表現を考え直すという、論文が示唆する過程">
+      <ol class="research-flow">
+        <li><span class="research-step">01 / アウトプット</span><h3>伝えようとする</h3><p>伝えたい内容を、<br>外国語で書いてみる。</p></li>
+        <li><span class="research-step">02 / 気づき</span><h3>「どう言えばいい？」</h3><p>言いたいことと、<br>今の自分の表現の差に気づく。</p></li>
+        <li><span class="research-step">03 / 表現の見直し</span><h3>考え直して、試す</h3><p>単語や文の形を見直し、<br>表現を修正する。</p></li>
+      </ol>
+      <figcaption>論文で扱われた過程をもとに作成した模式図。</figcaption>
+    </figure>
+    <p class="callout"><strong>論文のポイント</strong><br>表現しようとして問題に気づき、考え直す。その過程が、外国語の学びの一部になりうる。</p>
+    <p class="source"><a href="https://doi.org/10.1093/applin/16.3.371" target="_blank" rel="noopener">論文を読む：Swain &amp; Lapkin（1995）↗</a> ／ 日本語の説明・図は論文内容の要約です。Reenoの学習効果を検証した研究ではありません。</p>
+  </section>
+
+  <section class="slide mint" data-title="前に話したことが、次の会話につながる">
+    <p class="kicker">A conversation that continues</p>
+    <h2>前に話したことが、<br>次の会話につながる。</h2>
+    <div class="split equal">
+      <div class="stack"><div class="bubble"><small>ある日のあなた</small>「週末、カフェに行くんだ」</div><div class="bubble reply"><small>次の会話のイメージ</small>「そのカフェ、どうだった？」</div></div>
+      <div><img class="character" style="height:300px" src="../media-kit/02-characters/reeno-writing.png" alt="メモを持ったReeno"><p class="lead">話したことや好みをもとに、<br>あなたに合った話題へ。</p></div>
+    </div>
+    <p class="note">会話例は説明用。実際の発言・応答は毎回変わる。</p>
+  </section>
+
+  <section class="slide agenda" data-title="この資料の内容：どう使う？">
+    <p class="kicker">Explore Reeno</p>
+    <h2>この資料の内容。</h2>
+    <div class="columns">
+      <div class="agenda-item"><span class="giant accent">01</span><h3>どんな体験？</h3><p>Reenoが生まれた理由と、<br>電話が来る楽しさ。</p></div>
+      <div class="agenda-item agenda-current" aria-current="step"><span class="giant accent">02</span><h3>どう使う？</h3><p>着信・会話の設定から、<br>通話後のふりかえりまで。</p></div>
+      <div class="agenda-item"><span class="giant accent">03</span><h3>Reenoを投稿するなら</h3><p>Reenoの特徴と、<br>ガイド・紹介用素材。</p></div>
+    </div>
+    <p class="callout">続いて「どう使う？」。設定から振り返りまで、一緒に見ていきましょう。</p>
+  </section>
+
+  <section class="slide" data-title="使い方の流れ：設定 → 電話に出る → 振り返り">
+    <p class="kicker">How it works</p>
+    <h2>設定 → 電話に出る → 振り返り</h2>
+    <div class="columns">
+      <div class="panel"><span class="num">01</span><h3>設定する</h3><p>「着信設定」で、<br>電話に出られる曜日・時間帯。</p><p style="margin-top:24px">「会話プロフィール」で、<br>話す言語・会話レベル。</p></div>
+      <div class="panel"><span class="num">02</span><h3>電話に出る</h3><p>Reenoからの電話に出て、<br>気軽におしゃべり。</p><p class="small muted" style="margin-top:24px">今、話したいときは、<br>ホームの電話ボタンから<br>「今すぐ電話をもらう」。</p></div>
+      <div class="panel"><span class="num">03</span><h3>振り返る</h3><p>「履歴」で、<br>会話のまとめを確認。</p><p style="margin-top:24px">使ってみたい表現は、<br>「ノートに入れる」で保存。</p></div>
+    </div>
+    <p class="callout">まずは自分に合う設定を。この流れに沿って、実際の画面を見ていきましょう。</p>
+  </section>
+
+  <section class="slide" data-title="電話に出られる時間を、自分で決める">
+    <ol class="flow-progress" aria-label="使い方の流れ">
+      <li aria-current="step">設定</li>
+      <li>電話に出る</li>
+      <li>振り返る</li>
+    </ol>
+    <div class="split wide-left">
+      <div><h2>電話に出られる時間を、<br>自分で決める。</h2><p class="lead">「通話設定」→「着信設定」。<br>曜日の「＋」から、開始・終了時刻を選び、<br>「追加する」を押します。</p>
+        <div class="schedule"><p class="small">例：19:00〜23:00</p><div class="schedule-track"><div class="schedule-window">この時間帯のどこかで着信</div><div class="schedule-dot" aria-hidden="true"></div></div><div class="time-labels"><span>19:00</span><span>23:00</span></div></div>
+        <p class="small" style="margin-top:22px">忙しい日は「今日はもう鳴らさない」。<br>その日のうちに戻すときは「今すぐ再開」。</p></div>
+      <figure class="figure"><img class="phone tall" src="../images/guide/screenshots/schedule-windows.png" alt="曜日ごとの着信時間帯を設定する画面"><figcaption>着信設定を下へスクロールした画面</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide" data-title="話す言語と、会話レベルを選ぶ">
+    <ol class="flow-progress" aria-label="使い方の流れ">
+      <li aria-current="step">設定</li>
+      <li>電話に出る</li>
+      <li>振り返る</li>
+    </ol>
+    <div class="split">
+      <div>
+        <h2>話す言語と、<br>会話レベルを選ぶ。</h2>
+        <p class="lead">「通話設定」→「会話プロフィール」へ。</p>
+        <div class="stack" style="margin-top:28px">
+          <div><h3>会話する言語</h3><p>Reenoと話したい言語を選びます。</p></div>
+          <div><h3>会話レベル</h3><p>迷ったら「初心者」から。<br>自分に合うレベルを選びます。</p></div>
+        </div>
+        <div class="callout">選び終わったら、画面下の「保存」を押す。<br>あとから同じ画面で変更できます。</div>
+      </div>
+      <figure class="figure"><img class="phone tall" src="../images/guide/screenshots/call-tab.png" alt="通話設定タブ。「着信設定」の下に「会話プロフィール」の入口がある"><figcaption>「会話プロフィール」から言語・レベルの設定へ</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide dark" data-title="電話が来るところから、試してみよう">
+    <ol class="flow-progress" aria-label="使い方の流れ">
+      <li>設定</li>
+      <li aria-current="step">電話に出る</li>
+      <li>振り返る</li>
+    </ol>
+    <div class="split">
+      <div><h2>一度、電話に<br>出てみよう。</h2><p class="small" style="margin-bottom:20px">ホームの「着信設定」の下にある電話ボタンから</p><div class="stack"><p>① ホームの電話ボタンを押す</p><p>② 「今すぐ電話をもらう」を押す</p><p>③ 着信に応答して「Hello?」</p><p>④ 一言話す → 終える → 履歴を見る</p></div><div class="callout">今日の残り通話枠を使ってリクエスト。<br>受付後、着信まで待ち時間がある。</div></div>
+      <figure class="figure"><div class="home-call-demo"><img class="phone tall" src="screenshots/home-call-now.png" alt="ホーム画面。「着信設定」の下に、クリーム色と青緑色の電話ボタンがある"></div><figcaption>枠内の電話ボタン →「今すぐ電話をもらう」</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide peach" data-title="聞き取れないときは、ボタンで">
+    <ol class="flow-progress" aria-label="使い方の流れ">
+      <li>設定</li>
+      <li aria-current="step">電話に出る</li>
+      <li>振り返る</li>
+    </ol>
+    <div class="split">
+      <div>
+        <span class="label">会話レベル「初心者（beginner）」のみ</span>
+        <h2>聞き取れないときは、<br>ボタンで。</h2>
+        <div class="stack">
+          <div><h3>速く感じたら「もっとゆっくり」</h3><p>Reenoに、もっとゆっくり話してほしいと<br>ボタンでお願いできます。</p></div>
+          <div><h3>聞き逃したら「もう一度話して」</h3><p>Reenoが直前に話した内容を、<br>もう一度話してもらえます。</p></div>
+        </div>
+        <div class="callout">聞き返す言葉が出てこなくても大丈夫。<br>会話中の画面から、タップで伝えられます。</div>
+      </div>
+      <figure class="figure"><img class="phone tall" src="screenshots/call-beginner-assistance.png" alt="初心者設定の会話中画面。下部に亀のアイコンの「もっとゆっくり」と、矢印のアイコンの「もう一度話して」ボタンが並ぶ"><figcaption>初心者設定での会話中の画面 / サンプル</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide" data-title="話して終わり。そのあと、ちょっとふりかえる">
+    <ol class="flow-progress" aria-label="使い方の流れ">
+      <li>設定</li>
+      <li>電話に出る</li>
+      <li aria-current="step">振り返る</li>
+    </ol>
+    <div class="split">
+      <div><h2>話したあとに、<br>ちょっとふりかえる。</h2><div class="stack"><div><h3>何を話した？</h3><p>「履歴」→ 見たい通話を開く。</p></div><div><h3>次は、こう言ってみよう。</h3><p>下へスクロールして「ノートに入れる」。<br>内容を確認し、右上の「保存」を押す。</p></div></div><div class="callout">振り返りのヒント：<br>「今日、言えたこと」を一つ見つけよう。</div></div>
+      <figure class="figure"><img class="phone tall" src="../images/guide/screenshots/history-detail.png?v=20261106" alt="会話の要約、Reenoからのメモ、下部の「ノートに入れる」ボタンが表示された通話詳細"><figcaption>会話のまとめと「ノートに入れる」 / 内容はサンプル</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="slide agenda" data-title="この資料の内容：Reenoを投稿するなら">
+    <p class="kicker">Explore Reeno</p>
+    <h2>この資料の内容。</h2>
+    <div class="columns">
+      <div class="agenda-item"><span class="giant accent">01</span><h3>どんな体験？</h3><p>Reenoが生まれた理由と、<br>電話が来る楽しさ。</p></div>
+      <div class="agenda-item"><span class="giant accent">02</span><h3>どう使う？</h3><p>着信・会話の設定から、<br>通話後のふりかえりまで。</p></div>
+      <div class="agenda-item agenda-current" aria-current="step"><span class="giant accent">03</span><h3>Reenoを投稿するなら</h3><p>Reenoの特徴と、<br>ガイド・紹介用素材。</p></div>
+    </div>
+    <p class="callout">向こうから電話が来る。だから、会話を続けやすい。Reenoの特徴を振り返りましょう。</p>
+  </section>
+
+  <section class="slide concept-slide" data-title="Reenoらしさ、5つのポイント">
+    <p class="kicker">Reeno concept</p>
+    <h2>Reenoらしさ、5つのポイント。</h2>
+    <div class="concept-hero">
+      <div><p class="small">いちばんの新しさ</p><p class="concept-message">AIから、電話が来る。</p><p class="lead">自分から始めなくても、会話が始まる。</p></div>
+      <img src="../media-kit/02-characters/reeno-calling.png" alt="電話を持つReeno">
+    </div>
+    <div class="columns four concept-points">
+      <div class="panel"><h3>忘れず、続けられる</h3><p>開くのを忘れていても、<br><strong>Reenoから電話が来る。</strong><br>だから、会話を続けやすい。</p></div>
+      <div class="panel"><h3>力まず、おしゃべり</h3><p><strong>ふいの電話に出るだけ。</strong><br>「勉強しなきゃ」と構えず、<br>自然に会話が始まる。</p></div>
+      <div class="panel"><h3>「言えない」も<br>大切な学び</h3><p><strong>準備なしで話すから、</strong><br>言えない表現に気づく。<br>「知りたい」が生まれる。</p></div>
+      <div class="panel"><h3>あなたを知る、<br>話し相手に。</h3><p><strong>前の会話や好みを覚えて、</strong><br>あなたに合う話題を選ぶ。<br>友達のように、会話が続く。</p></div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="投稿用素材も利用OK">
+    <p class="kicker">Creator assets</p>
+    <div class="split equal">
+      <div><h2>投稿用素材も<br>利用OK</h2><div class="stack"><p>① 公開中の「投稿用素材」を開く</p><p>② 着信・通話・キャラクターを選ぶ</p><p>③ 自分の映像やテロップと組み合わせる</p></div><p class="small muted" style="margin-top:26px">画像は開いて長押し保存。<br>うまくいかないときはSafari / Chromeへ。</p></div>
+      <div class="panel"><div class="asset-row"><img src="../media-kit/08-incoming-calls/reeno-incoming-lock-screen.png" alt="着信画像の素材"><img src="../media-kit/02-characters/reeno-calling.png" alt="透過のReeno素材"><img src="../images/guide/reeno-wordmark-teal.svg" alt="Reenoのロゴ素材"></div><p class="small">画像・動画を1点ずつ保存。<br>トリミング、文字入れ、動画編集もOK。</p><p class="small" style="margin-top:20px"><a href="../assets.html" target="_blank" rel="noopener">投稿用素材を開く ↗</a></p></div>
+    </div>
+    <p class="note">実際の着信表示・サンプル画面・紹介用イメージの区別は、各素材の説明を確認する。</p>
+  </section>
+
+  <section class="slide dark" data-title="まず一度、電話に出てみよう。">
+    <p class="kicker">Start a conversation</p>
+    <div class="split equal">
+      <div><h2>まず一度、<br>電話に出てみよう。</h2><p class="lead">電話が、話すきっかけになったこと。<br>構えず、自然に話せたこと。</p><p class="lead" style="margin-top:24px">あなたのペースで、<br>Reenoとの会話を楽しもう。</p><img class="character" style="height:240px;object-position:left" src="../media-kit/02-characters/reeno-calling.png" alt="電話を楽しむReeno"></div>
+      <div><div class="links"><a class="resource-link" href="../guide.html" target="_blank" rel="noopener"><strong>使い方ガイド ↗</strong><span>sadasada1729.github.io/Reeno/app/jp/guide.html</span></a><a class="resource-link" href="../assets.html" target="_blank" rel="noopener"><strong>投稿用素材 ↗</strong><span>sadasada1729.github.io/Reeno/app/jp/assets.html</span></a><a class="resource-link" href="https://apps.apple.com/jp/app/id6794762206" target="_blank" rel="noopener"><strong>App StoreでReenoを開く ↗</strong><span>iPhone / iOS 26以降</span></a></div><p style="margin-top:40px"><a href="../index.html">Reenoの紹介ページへ →</a></p></div>
+    </div>
+  </section>
+
+</div>
+</main>
+<nav class="toolbar" aria-label="スライド操作">
+  <button id="previous" type="button" aria-label="前のスライド">← 前へ</button>
+  <span id="counter" class="counter" aria-hidden="true">1 / 21</span>
+  <button id="next" type="button" aria-label="次のスライド">次へ →</button>
+  <button id="toc-toggle" type="button" aria-haspopup="dialog">目次</button>
+  <button id="fullscreen" class="fullscreen" type="button">全画面</button>
+  <button id="print" type="button">印刷</button>
+  <span class="hint">← → ページ送り · O 目次</span>
+</nav>
+<dialog id="toc" aria-labelledby="toc-title">
+  <div class="dialog-head"><h2 id="toc-title">スライド目次</h2><button id="toc-close" type="button">閉じる</button></div>
+  <div id="toc-grid" class="toc-grid"></div>
+</dialog>
+<div class="progress" aria-hidden="true"></div>
+<div id="announcement" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+<noscript>ページ送りにはJavaScriptが必要。ブラウザでJavaScriptを有効にするか、印刷メニューから全スライドを表示。</noscript>
+</body>
+</html>
