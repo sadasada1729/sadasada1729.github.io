@@ -43,6 +43,17 @@
 	background: rgba(110,231,200,.08);
 }
 
+.beginnerMore{
+	margin: 0 0 24px;
+	color: #dbece6;
+}
+
+.beginnerNote{
+	margin: 12px 0 0;
+	color: #bed0ca;
+	font-size: 14px;
+}
+
 .beginnerScreen{
 	width: 100%;
 	max-width: 300px;
